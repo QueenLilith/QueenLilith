@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Author: QueenLilith
+Ver: 1
+
+REQUIRED:
+- ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
+- Tome of Botanical Folklore - Gyr Abania :: http://xivdb.com/item/17840/
+- Tome of Botanical Folklore - Othard :: http://xivdb.com/item/17841/
+
+IMPORTANT:
+- Ensure you change your Gear Set Number in the CodeChunks section
+- This profile is endless and requires a manual stop
+- Due to being endless, watch your bag space and ensure it is as empty as possible
+- Due to their rarity and scarcity these are highly populated nodes. Always keep and eye on your character just in case of whispers or other unforeseen issues.
+-->
+
+<!-- User Configuration -->
+<!DOCTYPE Profile [
+
+<!ENTITY WaitZoneID "635">
+<!ENTITY WaitTeleportXYZ "73.62236, 0.04875755, 92.93031"> <!-- The location your character is in right after the teleport finishes -->
+<!ENTITY WaitLocationXYZ "73.62236, 0.04875755, 92.93031"> <!-- The place you want your character to actually stand after teleport -->
+
+<!ENTITY LogColor "#66FF66">
+]>
+
+<!-- Start Routine -->
+<Profile>
+	
+	<Name>[BTN] Yellow Gatherers' Scrip</Name>
+	<KillRadius>25</KillRadius>
+
+	<CodeChunks>
+		<CodeChunk Name="Botanist">
+			<![CDATA[ 
+				ff14bot.Managers.ChatManager.SendChat("/gs change 7");
+		]]>
+		</CodeChunk>
+		<CodeChunk Name="EnableMount">
+			<![CDATA[
+				ff14bot.Settings.CharacterSettings.Instance.UseMount = true;
+		]]>
+		</CodeChunk>
+		<CodeChunk Name="DisableMount">
+			<![CDATA[
+				ff14bot.Settings.CharacterSettings.Instance.UseMount = false;
+		]]>
+		</CodeChunk>
+		<CodeChunk Name="BotanistStealth">
+			<![CDATA[ SpellData data;
+				if (!Core.Me.HasAura(47) && ActionManager.CurrentActions.TryGetValue(212, out data) && ActionManager.CanCast(data, Core.Me)) ActionManager.DoAction(212, Core.Me);
+		]]>
+		</CodeChunk>
+	</CodeChunks>
+	
+	<Order>
+
+	<While Condition="not HasAtLeast(99,99)">
+
+		<!-- Switch Gear Set to Botanist -->
+		<If Condition="ClassName != ClassJobType.Botanist">
+			<RunCode Name="Botanist" />
+			<WaitTimer WaitTime="3" />
+		</If>
+
+		<!-- Rhea -->
+		<If Condition="IsTimeBetween(0,2)">
+				
+			<If Condition="not IsOnMap(622)">
+				<GetTo ZoneId="622" XYZ="552.2073, -19.50565, 350.6904" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-107.9645, 108.7088, -567.3173" />
+
+			<GatherCollectable while="True">
+
+				<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="-107.9645, 108.7088, -567.3173" name="Rhea" />
+					<HotSpot Radius="25" XYZ="-55.55882, 93.57091, -622.8127" name="Rhea" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Rhea" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(0,2)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(0,2)" />
+			
+		</If>
+
+		<!-- Othardian Plum -->
+		<If Condition="IsTimeBetween(2,4)">
+				
+			<If Condition="not IsOnMap(622)">
+				<GetTo ZoneId="622" XYZ="552.2073, -19.50565, 350.6904" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="278.6212, 25.16371, -263.9799" />
+
+			<Dismount />
+			<WaitTimer WaitTime="3" />
+			<RunCode Name="BotanistStealth" />
+			<WaitTimer WaitTime="3" />
+			<RunCode Name="DisableMount" />
+
+			<GatherCollectable while="True">
+
+				<GatherObject>Unspoiled Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="278.6212, 25.16371, -263.9799" name="Othardian Plum" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Othardian Plum" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+			<RunCode Name="EnableMount" />
+			<WaitTimer WaitTime="3" />
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(2,4)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(2,4)" />
+			
+		</If>
+
+		<!-- Jhammel Ginger -->
+		<If Condition="IsTimeBetween(4,6)">
+				
+			<If Condition="not IsOnMap(621)">
+				<GetTo ZoneId="621" XYZ="-646.1082, 50.4631, -16.03533" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-668.5442, 86.52296, -640.8523" />
+
+			<GatherCollectable while="True">
+
+				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="25" XYZ="-668.5442, 86.52296, -640.8523" name="Jhammel Ginger" />
+					<HotSpot Radius="25" XYZ="-733.3004, 95.95591, -594.0698" name="Jhammel Ginger" />
+					<HotSpot Radius="25" XYZ="-785.4583, 96.30029, -637.4994" name="Jhammel Ginger" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Jhammel Ginger" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(4,6)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(4,6)" />
+			
+		</If>
+
+		<!-- Torreya Log -->
+		<If Condition="IsTimeBetween(6,8)">
+				
+			<If Condition="not IsOnMap(621)">
+				<GetTo ZoneId="621" XYZ="-646.1082, 50.4631, -16.03533" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-461.0616, 46.58082, -457.4597" />
+
+			<Dismount />
+			<WaitTimer WaitTime="3" />
+			<RunCode Name="BotanistStealth" />
+			<WaitTimer WaitTime="3" />
+			<RunCode Name="DisableMount" />
+	
+			<GatherCollectable while="True">
+
+				<GatherObject>Legendary Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="-461.0616, 46.58082, -457.4597" name="Torreya Log" />
+					<HotSpot Radius="25" XYZ="-509.107, 43.19233, -411.8711" name="Torreya Log" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Torreya Log" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+			<RunCode Name="EnableMount" />
+			<WaitTimer WaitTime="3" />
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(6,12)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(6,12)" />
+			
+		</If>
+
+		<!-- Rhea -->
+		<If Condition="IsTimeBetween(12,14)">
+				
+			<If Condition="not IsOnMap(622)">
+				<GetTo ZoneId="622" XYZ="552.2073, -19.50565, 350.6904" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-107.9645, 108.7088, -567.3173" />
+
+			<GatherCollectable while="True">
+
+				<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="-107.9645, 108.7088, -567.3173" name="Rhea" />
+					<HotSpot Radius="25" XYZ="-55.55882, 93.57091, -622.8127" name="Rhea" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Rhea" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(12,14)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(12,14)" />
+			
+		</If>
+
+		<!-- Othardian Plum -->
+		<If Condition="IsTimeBetween(14,16)">
+				
+			<If Condition="not IsOnMap(622)">
+				<GetTo ZoneId="622" XYZ="552.2073, -19.50565, 350.6904" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="278.6212, 25.16371, -263.9799" />
+
+			<Dismount />
+			<WaitTimer WaitTime="3" />
+			<RunCode Name="BotanistStealth" />
+			<WaitTimer WaitTime="3" />
+			<RunCode Name="DisableMount" />
+
+			<GatherCollectable while="True">
+
+				<GatherObject>Unspoiled Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="278.6212, 25.16371, -263.9799" name="Othardian Plum" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Othardian Plum" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+			<RunCode Name="EnableMount" />
+			<WaitTimer WaitTime="3" />
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(14,16)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(14,16)" />
+			
+		</If>
+
+		<!-- Jhammel Ginger -->
+		<If Condition="IsTimeBetween(16,18)">
+				
+			<If Condition="not IsOnMap(621)">
+				<GetTo ZoneId="621" XYZ="-646.1082, 50.4631, -16.03533" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-668.5442, 86.52296, -640.8523" />
+
+			<GatherCollectable while="True">
+
+				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="25" XYZ="-668.5442, 86.52296, -640.8523" name="Jhammel Ginger" />
+					<HotSpot Radius="25" XYZ="-733.3004, 95.95591, -594.0698" name="Jhammel Ginger" />
+					<HotSpot Radius="25" XYZ="-785.4583, 96.30029, -637.4994" name="Jhammel Ginger" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Jhammel Ginger" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(16,18)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(16,18)" />
+			
+		</If>
+
+		<!-- Torreya Log -->
+		<If Condition="IsTimeBetween(18,20)">
+				
+			<If Condition="not IsOnMap(621)">
+				<GetTo ZoneId="621" XYZ="-646.1082, 50.4631, -16.03533" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-461.0616, 46.58082, -457.4597" />
+
+			<Dismount />
+			<WaitTimer WaitTime="3" />
+			<RunCode Name="BotanistStealth" />
+			<WaitTimer WaitTime="3" />
+			<RunCode Name="DisableMount" />
+	
+			<GatherCollectable while="True">
+
+				<GatherObject>Legendary Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="-461.0616, 46.58082, -457.4597" name="Torreya Log" />
+					<HotSpot Radius="25" XYZ="-509.107, 43.19233, -411.8711" name="Torreya Log" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Torreya Log" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+			<RunCode Name="EnableMount" />
+			<WaitTimer WaitTime="3" />
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(18,24)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(18,24)" />
+			
+		</If>
+
+
+	</While>
+
+	</Order>
+
+</Profile>

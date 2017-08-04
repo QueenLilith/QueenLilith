@@ -1,0 +1,34 @@
+<Profile>
+	
+	<Name>[MIN] Crescent Spring Water</Name>
+	<KillRadius>25</KillRadius>
+	
+	<Order>
+	
+		<If Condition="not IsOnMap(614)">
+			<GetTo ZoneId="614" XYZ="521.73, 40.31493, -83.59307" />
+		</If>
+	
+		<Gather while="True">
+		
+			<GatherObject>Mineral Deposit</GatherObject>
+		
+			<HotSpots>
+				<HotSpot Radius="25" XYZ="519.5167, 40.98824, -76.49162" name="Crescent Spring Water" />
+				<HotSpot Radius="50" XYZ="600.384, 91.55322, 84.24567" name="Crescent Spring Water" />
+				<HotSpot Radius="50" XYZ="418.0356, 68.45224, 18.37699" name="Crescent Spring Water" />
+			</HotSpots>
+		
+			<ItemNames>
+				<ItemName>Crescent Spring Water</ItemName>
+			</ItemNames>
+
+			<GatheringSkillOrder>
+				<GatheringSkill SpellName="Unearth III" TimesToCast="1" />
+			</GatheringSkillOrder>
+			
+		</Gather>
+	
+	</Order>
+
+</Profile>

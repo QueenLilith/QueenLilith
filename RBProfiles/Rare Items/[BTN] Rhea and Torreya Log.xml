@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Author: QueenLilith
+Ver: 3
+
+REQUIRED:
+- ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
+- Tome of Botanical Folklore - Gyr Abania :: http://xivdb.com/item/17840/
+- Tome of Botanical Folklore - Othard :: http://xivdb.com/item/17841/
+
+IMPORTANT:
+- Ensure you change your Gear Set Number in the CodeChunks section
+- Due to their rarity and scarcity these are highly populated nodes. Always keep and eye on your character just in case of whispers or other unforeseen issues.
+-->
+
+<!-- User Configuration -->
+<!DOCTYPE Profile [
+
+<!ENTITY DiscoverUnknowns "True">
+<!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
+
+<!ENTITY FarmItemID "19991"> <!-- 19991 for Rhea or 19934 for Torreya Log. ONLY ONE! -->
+<!ENTITY FarmAmount "99"> <!-- Number of above item farmed until profile stops -->
+<!ENTITY FarmSkill "Leaf Turn II"> <!-- Replace with the skill you wish to use while farming. IE: "Blassed Harvest II" or "Leaf Turn II" -->
+
+<!ENTITY WaitZoneID "635">
+<!ENTITY WaitTeleportName "Rhalgr's Reach">
+<!ENTITY WaitTeleportID "104">
+
+<!ENTITY LogColor "#66FF66">
+]>
+
+<!-- Start Routine -->
+<Profile>
+	
+	<Name>[BTN] Rhea and Torreya Log</Name>
+	<KillRadius>25</KillRadius>
+
+	<CodeChunks>
+		<CodeChunk Name="Botanist">
+			<![CDATA[ 
+				ff14bot.Managers.ChatManager.SendChat("/gs change 7");
+		]]>
+		</CodeChunk>
+		<CodeChunk Name="EnableMount">
+			<![CDATA[
+				ff14bot.Settings.CharacterSettings.Instance.UseMount = true;
+		]]>
+		</CodeChunk>
+		<CodeChunk Name="DisableMount">
+			<![CDATA[
+				ff14bot.Settings.CharacterSettings.Instance.UseMount = false;
+		]]>
+		</CodeChunk>
+		<CodeChunk Name="BotanistStealth">
+			<![CDATA[ SpellData data;
+				if (!Core.Me.HasAura(47) && ActionManager.CurrentActions.TryGetValue(212, out data) && ActionManager.CanCast(data, Core.Me)) ActionManager.DoAction(212, Core.Me);
+		]]>
+		</CodeChunk>
+	</CodeChunks>
+	
+	<Order>
+
+	<While Condition="not HasAtLeast(&FarmItemID;,&FarmAmount;)">
+
+		<!-- Switch Gear Set to Botanist -->
+		<If Condition="ClassName != ClassJobType.Botanist">
+			<RunCode Name="Botanist" />
+			<WaitTimer WaitTime="3" />
+		</If>
+
+		<!-- Rhea -->
+		<If Condition="IsTimeBetween(0,2)">
+				
+			<If Condition="not IsOnMap(622)">
+				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-107.9645, 108.7088, -567.3173" />
+
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
+				<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="-107.9645, 108.7088, -567.3173" name="Rhea" />
+					<HotSpot Radius="25" XYZ="-55.55882, 93.57091, -622.8127" name="Rhea" />
+				</HotSpots>
+		
+				<Slot>3</Slot>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkill;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(0,6)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+			</If>
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(0,6)" />
+			
+		</If>
+
+		<!-- Torreya Log -->
+		<If Condition="IsTimeBetween(6,8)">
+				
+			<If Condition="not IsOnMap(621)">
+				<TeleportTo name="Porta Praetoria" aetheryteId="102" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-461.0616, 46.58082, -457.4597" />
+
+			<Dismount />
+			<WaitTimer WaitTime="2" />
+			<RunCode Name="BotanistStealth" />
+			<WaitTimer WaitTime="2" />
+			<RunCode Name="DisableMount" />
+	
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
+				<GatherObject>Legendary Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="-461.0616, 46.58082, -457.4597" name="Torreya Log" />
+					<HotSpot Radius="25" XYZ="-509.107, 43.19233, -411.8711" name="Torreya Log" />
+				</HotSpots>
+		
+				<Slot>5</Slot>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkill;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+			<RunCode Name="EnableMount" />
+			<WaitTimer WaitTime="2" />
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(6,12)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+			</If>
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(6,12)" />
+			
+		</If>
+
+		<!-- Rhea -->
+		<If Condition="IsTimeBetween(12,14)">
+				
+			<If Condition="not IsOnMap(622)">
+				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-107.9645, 108.7088, -567.3173" />
+
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
+				<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="-107.9645, 108.7088, -567.3173" name="Rhea" />
+					<HotSpot Radius="25" XYZ="-55.55882, 93.57091, -622.8127" name="Rhea" />
+				</HotSpots>
+		
+				<Slot>3</Slot>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkill;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(12,18)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+			</If>
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(12,18)" />
+			
+		</If>
+
+		<!-- Torreya Log -->
+		<If Condition="IsTimeBetween(18,20)">
+				
+			<If Condition="not IsOnMap(621)">
+				<TeleportTo name="Porta Praetoria" aetheryteId="102" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-461.0616, 46.58082, -457.4597" />
+
+			<Dismount />
+			<WaitTimer WaitTime="2" />
+			<RunCode Name="BotanistStealth" />
+			<WaitTimer WaitTime="2" />
+			<RunCode Name="DisableMount" />
+	
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
+				<GatherObject>Legendary Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="-461.0616, 46.58082, -457.4597" name="Torreya Log" />
+					<HotSpot Radius="25" XYZ="-509.107, 43.19233, -411.8711" name="Torreya Log" />
+				</HotSpots>
+		
+				<Slot>5</Slot>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkill;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+			<RunCode Name="EnableMount" />
+			<WaitTimer WaitTime="2" />
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(18,24)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+			</If>
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(18,24)" />
+			
+		</If>
+
+
+	</While>
+
+	</Order>
+
+</Profile>

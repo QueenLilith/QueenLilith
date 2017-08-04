@@ -1,0 +1,24 @@
+<Profile>
+
+    <Name>[FSH] Yanxia</Name>
+    <KillRadius>50</KillRadius>
+
+    <Order>
+
+		<If Condition="not IsOnMap(614)">
+			<TeleportTo Name="Namai" AetheryteId="107" />
+		</If>
+
+		<Fish Mooch="2" Condition="True">
+
+			<FishSpots>
+				<FishSpot XYZ="-313.3072, 1.230052, -307.466" Heading="5.47" Sit="True" />
+				<FishSpot XYZ="-458.1284, 0.5765588, -231.8133" Heading="2.14" Sit="True" />
+				<FishSpot XYZ="-522.0425, -0.2999992, -313.972" Heading="3.97" Sit="True" />
+			</FishSpots>
+			
+		</Fish>
+
+    </Order>
+
+</Profile>

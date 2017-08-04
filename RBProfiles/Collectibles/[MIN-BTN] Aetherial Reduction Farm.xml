@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Author: QueenLilith
+Ver: 1
+
+REQUIRED:
+- ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
+
+IMPORTANT:
+- Ensure you change your Gear Set Number in the CodeChunks section
+- This profile is endless and requires a manual stop
+- Due to being endless, watch your bag space and ensure it is as empty as possible
+- Due to their rarity and scarcity these are highly populated nodes. Always keep and eye on your character just in case of whispers or other unforeseen issues.
+-->
+
+<!-- User Configuration -->
+<!DOCTYPE Profile [
+
+<!ENTITY DiscoverUnknowns "True">
+<!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
+
+<!ENTITY WaitZoneID "635">
+<!ENTITY WaitTeleportName "Rhalgr's Reach">
+<!ENTITY WaitTeleportID "104">
+
+<!ENTITY LogColor "#66FF66">
+]>
+
+<!-- Start Routine -->
+<Profile>
+	
+	<Name>[MIN-BTN] Aetherial Reduction Farm</Name>
+	<KillRadius>25</KillRadius>
+	
+	<CodeChunks>
+		<CodeChunk Name="Miner">
+			<![CDATA[ 
+				ff14bot.Managers.ChatManager.SendChat("/gs change 6");
+		]]>
+		</CodeChunk>
+		<CodeChunk Name="Botanist">
+			<![CDATA[ 
+				ff14bot.Managers.ChatManager.SendChat("/gs change 7");
+		]]>
+		</CodeChunk>
+		<CodeChunk Name="EnableMount">
+			<![CDATA[
+				ff14bot.Settings.CharacterSettings.Instance.UseMount = true;
+		]]>
+		</CodeChunk>
+		<CodeChunk Name="DisableMount">
+			<![CDATA[
+				ff14bot.Settings.CharacterSettings.Instance.UseMount = false;
+		]]>
+		</CodeChunk>
+		<CodeChunk Name="BotanistStealth">
+			<![CDATA[ SpellData data;
+				if (!Core.Me.HasAura(47) && ActionManager.CurrentActions.TryGetValue(212, out data) && ActionManager.CanCast(data, Core.Me)) ActionManager.DoAction(212, Core.Me);
+		]]>
+		</CodeChunk>
+	</CodeChunks>
+
+	<Order>
+
+	<While condition="True">
+
+
+		<!-- Almandine -->
+		<If Condition="IsTimeBetween(0,2)">
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="3" />
+			</If>
+
+			<If Condition="not IsOnMap(621)">
+				<TeleportTo name="Porta Praetoria" aetheryteId="102" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-417.2996, 9.464314, -240.8296" />
+			
+			<Dismount />
+			<WaitTimer WaitTime="2" />
+	
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+
+				<GatherObject>Ephemeral Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="25" XYZ="-417.2996, 9.464314, -240.8296" name="Almandine" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Almandine" Value="515" />
+				</Collectables>
+
+				<GatherRotation>Collect515</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(0,4)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+			</If>
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(0,4)" />
+			
+		</If>
+
+		<!-- Torreya Branch -->
+		<If Condition="IsTimeBetween(4,6)">
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="3" />
+			</If>
+
+			<If Condition="not IsOnMap(621)">
+				<TeleportTo name="Porta Praetoria" aetheryteId="102" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="355.7778, 24.4941, -570.7396" />
+
+			<Dismount />
+			<WaitTimer WaitTime="2" />
+	
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+
+				<GatherObject>Ephemeral Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="25" XYZ="355.7778, 24.4941, -570.7396" name="Torreya Branch" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Torreya Branch" Value="515" />
+				</Collectables>
+
+				<GatherRotation>Collect515</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(4,8)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+			</If>
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(4,8)" />
+			
+		</If>
+
+		<!-- Doman Yellow -->
+		<If Condition="IsTimeBetween(8,10)">
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="3" />
+			</If>
+
+			<If Condition="not IsOnMap(622)">
+				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-258.2975, 12.78704, 333.611" />
+
+			<Dismount />
+			<WaitTimer WaitTime="2" />
+	
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+
+				<GatherObject>Ephemeral Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="25" XYZ="-258.2975, 12.78704, 333.611" name="Doman Yellow" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Doman Yellow" Value="515" />
+				</Collectables>
+
+				<GatherRotation>Collect515</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(8,12)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+			</If>
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(8,12)" />
+			
+		</If>
+
+		<!-- Schorl -->
+		<If Condition="IsTimeBetween(12,14)">
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="3" />
+			</If>
+
+			<If Condition="not IsOnMap(622)">
+				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="393.6369, 23.30025, -294.9897" />
+
+			<Dismount />
+			<WaitTimer WaitTime="2" />
+	
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+
+				<GatherObject>Ephemeral Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="25" XYZ="393.6369, 23.30025, -294.9897" name="Schorl" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Schorl" Value="515" />
+				</Collectables>
+
+				<GatherRotation>Collect515</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(12,16)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+			</If>
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(12,16)" />
+			
+		</If>
+
+		<!-- Perlite -->
+		<If Condition="IsTimeBetween(16,18)">
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="3" />
+			</If>
+
+			<If Condition="not IsOnMap(621)">
+				<TeleportTo name="Namai" aetheryteId="107" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="789.3203, 119.722, -107.4467" />
+
+			<Dismount />
+			<WaitTimer WaitTime="2" />
+	
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+
+				<GatherObject>Ephemeral Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="25" XYZ="789.3203, 119.722, -107.4467" name="Perlite" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Perlite" Value="515" />
+				</Collectables>
+
+				<GatherRotation>Collect515</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(16,20)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+			</If>
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(16,20)" />
+			
+		</If>
+
+		<!-- Windtea Leaves -->
+		<If Condition="IsTimeBetween(20,22)">
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="3" />
+			</If>
+
+			<If Condition="not IsOnMap(614)">
+				<TeleportTo name="The House of the Fierce" aetheryteId="108" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 77.57146, -409.364" />
+			<NoCombatMoveTo Name="Waiting Area" XYZ="40.48542, 63.95485, -437.4524" />
+
+			<Dismount />
+			<WaitTimer WaitTime="2" />
+	
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+
+				<GatherObject>Ephemeral Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="25" XYZ="40.48542, 63.95485, -437.4524" name="Windtea Leaves" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Windtea Leaves" Value="515" />
+				</Collectables>
+
+				<GatherRotation>Collect515</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(20,24)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+			</If>
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(20,24)" />
+			
+		</If>
+
+
+	</While>
+
+	</Order>
+
+</Profile>

@@ -1,0 +1,32 @@
+<Profile>
+	
+	<Name>[BTN] Sticky Rice</Name>
+	<KillRadius>50</KillRadius>
+	
+	<Order>
+	
+		<If Condition="not IsOnMap(139)">
+			<GetTo ZoneId="139" XYZ="-363.869, -1.99144, 160.5187" />
+		</If>
+	
+		<Gather while="True">
+		
+			<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+			<HotSpots>
+				<HotSpot Radius="100" XYZ="-363.869, -1.99144, 160.5187" name="Sticky Rice" />
+			</HotSpots>
+		
+			<ItemNames>
+				<ItemName>Sticky Rice</ItemName>
+			</ItemNames>
+
+			<GatheringSkillOrder>
+				<GatheringSkill SpellName="Leaf Turn III" TimesToCast="1" />
+			</GatheringSkillOrder>
+			
+		</Gather>
+	
+	</Order>
+
+</Profile>

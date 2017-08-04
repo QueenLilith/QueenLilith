@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Author: QueenLilith
+Ver: 2
+
+REQUIRED:
+- ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
+- Tome of Geological Folklore - Gyr Abania :: http://xivdb.com/item/17838/
+- Tome of Geological Folklore - Othard :: http://xivdb.com/item/17839/
+
+IMPORTANT:
+- Ensure you change your Gear Set Number in the CodeChunks section
+- This profile is endless and requires a manual stop
+- Due to being endless, watch your bag space and ensure it is as empty as possible
+- Due to their rarity and scarcity these are highly populated nodes. Always keep and eye on your character just in case of whispers or other unforeseen issues.
+-->
+
+<!-- User Configuration -->
+<!DOCTYPE Profile [
+
+<!ENTITY WaitZoneID "635">
+<!ENTITY WaitTeleportXYZ "73.62236, 0.04875755, 92.93031"> <!-- The location your character is in right after the teleport finishes -->
+<!ENTITY WaitLocationXYZ "73.62236, 0.04875755, 92.93031"> <!-- The place you want your character to actually stand -->
+
+<!ENTITY LogColor "#66FF66">
+]>
+
+<!-- Start Routine -->
+<Profile>
+	
+	<Name>[MIN] Yellow Gatherers' Scrip</Name>
+	<KillRadius>25</KillRadius>
+	
+	<CodeChunks>
+		<CodeChunk Name="Miner">
+			<![CDATA[ 
+				ff14bot.Managers.ChatManager.SendChat("/gs change 6");
+		]]>
+		</CodeChunk>
+	</CodeChunks>
+
+	<Order>
+
+	<While Condition="not HasAtLeast(99,99)">
+
+		<!-- Switch Gear Set to Miner -->
+		<If Condition="ClassName != ClassJobType.Miner">
+			<RunCode Name="Miner" />
+			<WaitTimer WaitTime="3" />
+		</If>
+
+
+		<If Condition="IsTimeBetween(0,4)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(0,4)" />
+			
+		</If>
+
+		<!-- Palladium Ore -->
+		<If Condition="IsTimeBetween(4,6)">
+				
+			<If Condition="not IsOnMap(614)">
+				<GetTo ZoneId="614" XYZ="243.5387, 4.387199, -392.2825" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 4.814125, -409.364" />
+			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 77.57146, -409.364" />
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-20.55031, 122.0667, -564.0088" />
+	
+			<GatherCollectable while="True">
+
+				<GatherObject>Legendary Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="-20.55031, 122.0667, -564.0088" name="Palladium Ore" />
+					<HotSpot Radius="100" XYZ="-123.0026, 96.3432, -659.2435" name="Palladium Ore" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Palladium Ore" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(4,6)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(4,6)" />
+			
+		</If>
+
+		<!-- Raw Imperial Jade -->
+		<If Condition="IsTimeBetween(6,8)">
+				
+			<If Condition="not IsOnMap(614)">
+				<GetTo ZoneId="614" XYZ="243.5387, 4.387199, -392.2825" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 4.814125, -409.364" />
+			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 77.57146, -409.364" />
+			<NoCombatMoveTo Name="Waiting Area" XYZ="395.2091, 22.49319, -632.4116" />
+	
+			<GatherCollectable while="True">
+				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="395.2091, 22.49319, -632.4116" name="Raw Imperial Jade" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Raw Imperial Jade" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(6,8)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(6,8)" />
+			
+		</If>
+
+		<!-- Raw Rhodonite -->
+		<If Condition="IsTimeBetween(8,10)">
+				
+			<If Condition="not IsOnMap(620)">
+				<GetTo ZoneId="620" XYZ="119.6215, 118.1558, -754.4393" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="279.2193, 151.7011, -478.8761" />
+	
+			<GatherCollectable while="True">
+
+				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="279.2193, 151.7011, -478.8761" name="Raw Rhodonite" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Raw Rhodonite" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(8,10)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(8,10)" />
+			
+		</If>
+
+		<!-- Chromite Ore -->
+		<If Condition="IsTimeBetween(10,12)">
+				
+			<If Condition="not IsOnMap(620)">
+				<GetTo ZoneId="620" XYZ="-277.5704, 257.8684, 745.6546" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-214.2586, 294.3613, 634.1948" />
+	
+			<GatherCollectable while="True">
+
+				<GatherObject>Legendary Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="-214.2586, 294.3613, 634.1948" name="Chromite Ore" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Chromite Ore" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(10,16)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(10,16)" />
+			
+		</If>
+
+		<!-- Palladium Ore -->
+		<If Condition="IsTimeBetween(16,18)">
+				
+			<If Condition="not IsOnMap(614)">
+				<GetTo ZoneId="614" XYZ="243.5387, 4.387199, -392.2825" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 4.814125, -409.364" />
+			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 77.57146, -409.364" />
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-20.55031, 122.0667, -564.0088" />
+	
+			<GatherCollectable while="True">
+
+				<GatherObject>Legendary Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="-20.55031, 122.0667, -564.0088" name="Palladium Ore" />
+					<HotSpot Radius="100" XYZ="-123.0026, 96.3432, -659.2435" name="Palladium Ore" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Palladium Ore" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(16,18)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(16,18)" />
+			
+		</If>
+
+		<!-- Raw Imperial Jade -->
+		<If Condition="IsTimeBetween(18,20)">
+				
+			<If Condition="not IsOnMap(614)">
+				<GetTo ZoneId="614" XYZ="243.5387, 4.387199, -392.2825" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 4.814125, -409.364" />
+			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 77.57146, -409.364" />
+			<NoCombatMoveTo Name="Waiting Area" XYZ="395.2091, 22.49319, -632.4116" />
+	
+			<GatherCollectable while="True">
+
+				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="395.2091, 22.49319, -632.4116" name="Raw Imperial Jade" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Raw Imperial Jade" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(18,20)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(18,20)" />
+			
+		</If>
+
+		<!-- Raw Rhodonite -->
+		<If Condition="IsTimeBetween(20,22)">
+				
+			<If Condition="not IsOnMap(620)">
+				<GetTo ZoneId="620" XYZ="119.6215, 118.1558, -754.4393" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="279.2193, 151.7011, -478.8761" />
+	
+			<GatherCollectable while="True">
+
+				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="279.2193, 151.7011, -478.8761" name="Raw Rhodonite" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Raw Rhodonite" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(20,22)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(20,22)" />
+			
+		</If>
+
+		<!-- Chromite Ore -->
+		<If Condition="IsTimeBetween(22,24)">
+				
+			<If Condition="not IsOnMap(620)">
+				<GetTo ZoneId="620" XYZ="-277.5704, 257.8684, 745.6546" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="-214.2586, 294.3613, 634.1948" />
+	
+			<GatherCollectable while="True">
+
+				<GatherObject>Legendary Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="-214.2586, 294.3613, 634.1948" name="Chromite Ore" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Chromite Ore" Value="470" />
+				</Collectables>
+
+				<GatherRotation>Collect470</GatherRotation>
+			
+			</GatherCollectable>
+
+		</If>
+
+
+		<If Condition="IsTimeBetween(22,24)">
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
+
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+			</If>
+
+			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
+
+			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
+
+			<WaitWhile Condition="IsTimeBetween(22,24)" />
+			
+		</If>
+
+
+	</While>
+
+	</Order>
+
+</Profile>
