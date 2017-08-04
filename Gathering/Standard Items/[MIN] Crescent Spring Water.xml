@@ -1,3 +1,7 @@
+<!--
+Author: QueenLilith
+-->
+
 <Profile>
 	
 	<Name>[MIN] Crescent Spring Water</Name>
@@ -6,7 +10,7 @@
 	<Order>
 	
 		<If Condition="not IsOnMap(614)">
-			<GetTo ZoneId="614" XYZ="521.73, 40.31493, -83.59307" />
+			<TeleportTo name="Namai" aetheryteId="107" />
 		</If>
 	
 		<Gather while="True">

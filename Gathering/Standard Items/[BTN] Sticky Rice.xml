@@ -1,14 +1,20 @@
+<!--
+Author: QueenLilith
+-->
+
 <Profile>
 	
 	<Name>[BTN] Sticky Rice</Name>
-	<KillRadius>50</KillRadius>
+	<KillRadius>25</KillRadius>
 	
 	<Order>
 	
-		<If Condition="not IsOnMap(139)">
-			<GetTo ZoneId="139" XYZ="-363.869, -1.99144, 160.5187" />
+		<If Condition="not IsOnMap(138)">
+			<TeleportTo name="Aleport" aetheryteId="14" />
 		</If>
 	
+		<NoCombatMoveTo Name="Farm Area" XYZ="-363.869, -1.99144, 160.5187" />
+
 		<Gather while="True">
 		
 			<GatherObject>Lush Vegetation Patch</GatherObject>

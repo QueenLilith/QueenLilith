@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-
 <!--
 Author: QueenLilith
-Ver: 1
 
 REQUIRED:
 - ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
@@ -21,9 +18,12 @@ IMPORTANT:
 <!-- User Configuration -->
 <!DOCTYPE Profile [
 
+<!ENTITY DiscoverUnknowns "True">
+<!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
+
 <!ENTITY WaitZoneID "635">
-<!ENTITY WaitTeleportXYZ "73.62236, 0.04875755, 92.93031"> <!-- The location your character is in right after the teleport finishes -->
-<!ENTITY WaitLocationXYZ "73.62236, 0.04875755, 92.93031"> <!-- The place you want your character to actually stand after teleport -->
+<!ENTITY WaitTeleportName "Rhalgr's Reach">
+<!ENTITY WaitTeleportID "104">
 
 <!ENTITY LogColor "#66FF66">
 ]>
@@ -64,7 +64,7 @@ IMPORTANT:
 	
 	<Order>
 
-	<While Condition="not HasAtLeast(99,99)">
+	<While condition="True">
 
 		<!-- Rhea -->
 		<If Condition="IsTimeBetween(0,2)">
@@ -72,16 +72,16 @@ IMPORTANT:
 			<!-- Switch Gear Set to Botanist -->
 			<If Condition="ClassName != ClassJobType.Botanist">
 				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(622)">
-				<GetTo ZoneId="622" XYZ="552.2073, -19.50565, 350.6904" />
+				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-107.9645, 108.7088, -567.3173" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-107.9645, 108.7088, -567.3173" />
 
-			<GatherCollectable while="True">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 		
@@ -106,10 +106,8 @@ IMPORTANT:
 			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
 
 			<If Condition="not IsOnMap(&WaitZoneID;)">
-				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
 			</If>
-
-			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
 
 			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
 
@@ -123,22 +121,22 @@ IMPORTANT:
 			<!-- Switch Gear Set to Botanist -->
 			<If Condition="ClassName != ClassJobType.Botanist">
 				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(622)">
-				<GetTo ZoneId="622" XYZ="552.2073, -19.50565, 350.6904" />
+				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="278.6212, 25.16371, -263.9799" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="278.6212, 25.16371, -263.9799" />
 
 			<Dismount />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 			<RunCode Name="BotanistStealth" />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 			<RunCode Name="DisableMount" />
 
-			<GatherCollectable while="True">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Unspoiled Mature Tree</GatherObject>
 		
@@ -155,7 +153,7 @@ IMPORTANT:
 			</GatherCollectable>
 
 			<RunCode Name="EnableMount" />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 
 		</If>
 
@@ -165,10 +163,8 @@ IMPORTANT:
 			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
 
 			<If Condition="not IsOnMap(&WaitZoneID;)">
-				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
 			</If>
-
-			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
 
 			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
 
@@ -182,18 +178,17 @@ IMPORTANT:
 			<!-- Switch Gear Set to Miner -->
 			<If Condition="ClassName != ClassJobType.Miner">
 				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(614)">
-				<GetTo ZoneId="614" XYZ="243.5387, 4.387199, -392.2825" />
+				<TeleportTo name="The House of the Fierce" aetheryteId="108" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 4.814125, -409.364" />
-			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 77.57146, -409.364" />
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-20.55031, 122.0667, -564.0088" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="246.0629, 77.57146, -409.364" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-20.55031, 122.0667, -564.0088" />
 	
-			<GatherCollectable while="True">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Legendary Mineral Deposit</GatherObject>
 		
@@ -218,10 +213,8 @@ IMPORTANT:
 			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
 
 			<If Condition="not IsOnMap(&WaitZoneID;)">
-				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
 			</If>
-
-			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
 
 			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
 
@@ -235,22 +228,22 @@ IMPORTANT:
 			<!-- Switch Gear Set to Botanist -->
 			<If Condition="ClassName != ClassJobType.Botanist">
 				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(621)">
-				<GetTo ZoneId="621" XYZ="-646.1082, 50.4631, -16.03533" />
+				<TeleportTo name="Porta Praetoria" aetheryteId="102" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-461.0616, 46.58082, -457.4597" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-461.0616, 46.58082, -457.4597" />
 
 			<Dismount />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 			<RunCode Name="BotanistStealth" />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 			<RunCode Name="DisableMount" />
 	
-			<GatherCollectable while="True">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Legendary Mature Tree</GatherObject>
 		
@@ -268,7 +261,7 @@ IMPORTANT:
 			</GatherCollectable>
 
 			<RunCode Name="EnableMount" />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 
 		</If>
 
@@ -278,10 +271,8 @@ IMPORTANT:
 			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
 
 			<If Condition="not IsOnMap(&WaitZoneID;)">
-				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
 			</If>
-
-			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
 
 			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
 
@@ -295,16 +286,16 @@ IMPORTANT:
 			<!-- Switch Gear Set to Miner -->
 			<If Condition="ClassName != ClassJobType.Miner">
 				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(620)">
-				<GetTo ZoneId="620" XYZ="119.6215, 118.1558, -754.4393" />
+				<TeleportTo name="Ala Gannha" aetheryteId="100" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="279.2193, 151.7011, -478.8761" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="279.2193, 151.7011, -478.8761" />
 	
-			<GatherCollectable while="True">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 		
@@ -328,10 +319,8 @@ IMPORTANT:
 			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
 
 			<If Condition="not IsOnMap(&WaitZoneID;)">
-				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
 			</If>
-
-			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
 
 			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
 
@@ -345,16 +334,16 @@ IMPORTANT:
 			<!-- Switch Gear Set to Miner -->
 			<If Condition="ClassName != ClassJobType.Miner">
 				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(620)">
-				<GetTo ZoneId="620" XYZ="-277.5704, 257.8684, 745.6546" />
+				<TeleportTo name="Ala Ghiri" aetheryteId="101" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-214.2586, 294.3613, 634.1948" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-214.2586, 294.3613, 634.1948" />
 	
-			<GatherCollectable while="True">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Legendary Mineral Deposit</GatherObject>
 		
@@ -378,10 +367,8 @@ IMPORTANT:
 			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
 
 			<If Condition="not IsOnMap(&WaitZoneID;)">
-				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
 			</If>
-
-			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
 
 			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
 
@@ -395,16 +382,16 @@ IMPORTANT:
 			<!-- Switch Gear Set to Botanist -->
 			<If Condition="ClassName != ClassJobType.Botanist">
 				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(622)">
-				<GetTo ZoneId="622" XYZ="552.2073, -19.50565, 350.6904" />
+				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-107.9645, 108.7088, -567.3173" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-107.9645, 108.7088, -567.3173" />
 
-			<GatherCollectable while="True">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 		
@@ -429,10 +416,8 @@ IMPORTANT:
 			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
 
 			<If Condition="not IsOnMap(&WaitZoneID;)">
-				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
 			</If>
-
-			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
 
 			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
 
@@ -446,22 +431,22 @@ IMPORTANT:
 			<!-- Switch Gear Set to Botanist -->
 			<If Condition="ClassName != ClassJobType.Botanist">
 				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(622)">
-				<GetTo ZoneId="622" XYZ="552.2073, -19.50565, 350.6904" />
+				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="278.6212, 25.16371, -263.9799" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="278.6212, 25.16371, -263.9799" />
 
 			<Dismount />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 			<RunCode Name="BotanistStealth" />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 			<RunCode Name="DisableMount" />
 
-			<GatherCollectable while="True">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Unspoiled Mature Tree</GatherObject>
 		
@@ -478,7 +463,7 @@ IMPORTANT:
 			</GatherCollectable>
 
 			<RunCode Name="EnableMount" />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 
 		</If>
 
@@ -488,10 +473,8 @@ IMPORTANT:
 			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
 
 			<If Condition="not IsOnMap(&WaitZoneID;)">
-				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
 			</If>
-
-			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
 
 			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
 
@@ -505,18 +488,17 @@ IMPORTANT:
 			<!-- Switch Gear Set to Miner -->
 			<If Condition="ClassName != ClassJobType.Miner">
 				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(614)">
-				<GetTo ZoneId="614" XYZ="243.5387, 4.387199, -392.2825" />
+				<TeleportTo name="The House of the Fierce" aetheryteId="108" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 4.814125, -409.364" />
-			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 77.57146, -409.364" />
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-20.55031, 122.0667, -564.0088" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="246.0629, 77.57146, -409.364" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-20.55031, 122.0667, -564.0088" />
 	
-			<GatherCollectable while="True">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Legendary Mineral Deposit</GatherObject>
 		
@@ -541,10 +523,8 @@ IMPORTANT:
 			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
 
 			<If Condition="not IsOnMap(&WaitZoneID;)">
-				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
 			</If>
-
-			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
 
 			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
 
@@ -558,22 +538,22 @@ IMPORTANT:
 			<!-- Switch Gear Set to Botanist -->
 			<If Condition="ClassName != ClassJobType.Botanist">
 				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(621)">
-				<GetTo ZoneId="621" XYZ="-646.1082, 50.4631, -16.03533" />
+				<TeleportTo name="Porta Praetoria" aetheryteId="102" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-461.0616, 46.58082, -457.4597" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-461.0616, 46.58082, -457.4597" />
 
 			<Dismount />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 			<RunCode Name="BotanistStealth" />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 			<RunCode Name="DisableMount" />
 	
-			<GatherCollectable while="True">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Legendary Mature Tree</GatherObject>
 		
@@ -591,7 +571,7 @@ IMPORTANT:
 			</GatherCollectable>
 
 			<RunCode Name="EnableMount" />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 
 		</If>
 
@@ -601,10 +581,8 @@ IMPORTANT:
 			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
 
 			<If Condition="not IsOnMap(&WaitZoneID;)">
-				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
 			</If>
-
-			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
 
 			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
 
@@ -618,16 +596,16 @@ IMPORTANT:
 			<!-- Switch Gear Set to Miner -->
 			<If Condition="ClassName != ClassJobType.Miner">
 				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(620)">
-				<GetTo ZoneId="620" XYZ="119.6215, 118.1558, -754.4393" />
+				<TeleportTo name="Ala Gannha" aetheryteId="100" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="279.2193, 151.7011, -478.8761" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="279.2193, 151.7011, -478.8761" />
 	
-			<GatherCollectable while="True">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 		
@@ -651,10 +629,8 @@ IMPORTANT:
 			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
 
 			<If Condition="not IsOnMap(&WaitZoneID;)">
-				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
 			</If>
-
-			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
 
 			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
 
@@ -668,16 +644,16 @@ IMPORTANT:
 			<!-- Switch Gear Set to Miner -->
 			<If Condition="ClassName != ClassJobType.Miner">
 				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(620)">
-				<GetTo ZoneId="620" XYZ="-277.5704, 257.8684, 745.6546" />
+				<TeleportTo name="Ala Ghiri" aetheryteId="101" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-214.2586, 294.3613, 634.1948" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-214.2586, 294.3613, 634.1948" />
 	
-			<GatherCollectable while="True">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Legendary Mineral Deposit</GatherObject>
 		
@@ -701,10 +677,8 @@ IMPORTANT:
 			<ExLog Color="&LogColor;" Name="Wait" Message="Moving to Wait Location" />
 
 			<If Condition="not IsOnMap(&WaitZoneID;)">
-				<GetTo ZoneId="&WaitZoneID;" XYZ="&WaitTeleportXYZ;" />
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
 			</If>
-
-			<NoCombatMoveTo Name="Waiting Area" XYZ="&WaitLocationXYZ;" />
 
 			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
 

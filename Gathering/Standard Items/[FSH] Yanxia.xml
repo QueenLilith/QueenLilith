@@ -1,7 +1,11 @@
+<!--
+Author: QueenLilith
+-->
+
 <Profile>
 
     <Name>[FSH] Yanxia</Name>
-    <KillRadius>50</KillRadius>
+    <KillRadius>25</KillRadius>
 
     <Order>
 

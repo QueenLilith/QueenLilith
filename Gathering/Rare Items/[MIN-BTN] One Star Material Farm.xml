@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-
 <!--
 Author: QueenLilith
-Ver: 2
 
 REQUIRED:
 - ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
@@ -13,8 +10,6 @@ REQUIRED:
 
 IMPORTANT:
 - Ensure you change your Gear Set Number in the CodeChunks section
-- This profile is endless and requires a manual stop
-- Due to being endless, watch your bag space and ensure it is as empty as possible
 - Due to their rarity and scarcity these are highly populated nodes. Always keep and eye on your character just in case of whispers or other unforeseen issues.
 -->
 
@@ -24,10 +19,13 @@ IMPORTANT:
 <!ENTITY DiscoverUnknowns "True">
 <!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
 
-<!ENTITY FarmItemID "19958"> <!-- 19958 for Palladium Ore or 19959 for Chromite Ore. ONLY ONE! --> 
-<!ENTITY FarmAmount "99"> <!-- Number of above item farmed until profile stops -->
-<!ENTITY FarmSkill "Unearth II"> <!-- Replace with the skill you wish to use while Mining. IE: "King's Yield II" or "Unearth II" -->
-<!ENTITY FarmSkill2 "Leaf Turn II"> <!-- Same as above but for Botanist. IE: "Blessed Harvest II" or "Leaf Turn II" -->
+<!ENTITY FarmItemID "19958"> <!-- Palladium Ore: 19958, Chromite Ore: 19959, Rhea: 19991, Torreya Log: 19934. ONLY ONE! --> 
+<!ENTITY FarmAmount "495"> <!-- Number of above item farmed until profile stops -->
+
+<!ENTITY FarmSkillGMIN "Sharp Vision II">
+<!ENTITY FarmSkillGBTN "Field Mastery II">
+<!ENTITY FarmSkillQMIN "King's Yield II">
+<!ENTITY FarmSkillQBTN "Blessed Harvest II">
 
 <!ENTITY WaitZoneID "635">
 <!ENTITY WaitTeleportName "Rhalgr's Reach">
@@ -80,14 +78,14 @@ IMPORTANT:
 			<!-- Switch Gear Set to Botanist -->
 			<If Condition="ClassName != ClassJobType.Botanist">
 				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(622)">
 				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-107.9645, 108.7088, -567.3173" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-107.9645, 108.7088, -567.3173" />
 
 			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
 		
@@ -101,9 +99,10 @@ IMPORTANT:
 				<Slot>3</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkill2;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
 				</GatheringSkillOrder>
-			
+
 			</ExGather>
 
 		</If>
@@ -129,15 +128,15 @@ IMPORTANT:
 			<!-- Switch Gear Set to Miner -->
 			<If Condition="ClassName != ClassJobType.Miner">
 				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(614)">
 				<TeleportTo name="The House of the Fierce" aetheryteId="108" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 77.57146, -409.364" />
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-20.55031, 122.0667, -564.0088" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="246.0629, 77.57146, -409.364" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-20.55031, 122.0667, -564.0088" />
 
 			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
 		
@@ -151,7 +150,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkill;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
@@ -179,19 +179,19 @@ IMPORTANT:
 			<!-- Switch Gear Set to Botanist -->
 			<If Condition="ClassName != ClassJobType.Botanist">
 				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(621)">
 				<TeleportTo name="Porta Praetoria" aetheryteId="102" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-461.0616, 46.58082, -457.4597" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-461.0616, 46.58082, -457.4597" />
 
 			<Dismount />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 			<RunCode Name="BotanistStealth" />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 			<RunCode Name="DisableMount" />
 	
 			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
@@ -206,13 +206,14 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkill2;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
 
 			<RunCode Name="EnableMount" />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 
 		</If>
 
@@ -237,14 +238,14 @@ IMPORTANT:
 			<!-- Switch Gear Set to Miner -->
 			<If Condition="ClassName != ClassJobType.Miner">
 				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(620)">
 				<TeleportTo name="Ala Ghiri" aetheryteId="101" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-260.8886, 277.9571, 628.5402" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-260.8886, 277.9571, 628.5402" />
 	
 			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
 		
@@ -257,7 +258,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkill;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
@@ -285,14 +287,14 @@ IMPORTANT:
 			<!-- Switch Gear Set to Botanist -->
 			<If Condition="ClassName != ClassJobType.Botanist">
 				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(622)">
 				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-107.9645, 108.7088, -567.3173" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-107.9645, 108.7088, -567.3173" />
 
 			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
 		
@@ -306,7 +308,8 @@ IMPORTANT:
 				<Slot>3</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkill2;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
@@ -334,15 +337,15 @@ IMPORTANT:
 			<!-- Switch Gear Set to Miner -->
 			<If Condition="ClassName != ClassJobType.Miner">
 				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(614)">
 				<TeleportTo name="The House of the Fierce" aetheryteId="108" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="246.0629, 77.57146, -409.364" />
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-20.55031, 122.0667, -564.0088" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="246.0629, 77.57146, -409.364" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-20.55031, 122.0667, -564.0088" />
 
 			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
 		
@@ -356,7 +359,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkill;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
@@ -384,19 +388,19 @@ IMPORTANT:
 			<!-- Switch Gear Set to Botanist -->
 			<If Condition="ClassName != ClassJobType.Botanist">
 				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(621)">
 				<TeleportTo name="Porta Praetoria" aetheryteId="102" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-461.0616, 46.58082, -457.4597" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-461.0616, 46.58082, -457.4597" />
 
 			<Dismount />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 			<RunCode Name="BotanistStealth" />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 			<RunCode Name="DisableMount" />
 	
 			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
@@ -411,13 +415,14 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkill2;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
 
 			<RunCode Name="EnableMount" />
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="2" />
 
 		</If>
 
@@ -442,14 +447,14 @@ IMPORTANT:
 			<!-- Switch Gear Set to Miner -->
 			<If Condition="ClassName != ClassJobType.Miner">
 				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="3" />
+				<WaitTimer WaitTime="2" />
 			</If>
 
 			<If Condition="not IsOnMap(620)">
 				<TeleportTo name="Ala Ghiri" aetheryteId="101" />
 			</If>
 
-			<NoCombatMoveTo Name="Waiting Area" XYZ="-260.8886, 277.9571, 628.5402" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-260.8886, 277.9571, 628.5402" />
 	
 			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
 		
@@ -462,7 +467,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkill;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
