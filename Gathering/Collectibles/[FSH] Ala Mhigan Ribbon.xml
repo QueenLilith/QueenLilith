@@ -1,0 +1,72 @@
+<!--
+Author: QueenLilith
+
+REQUIRED:
+- ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
+
+IMPORTANT:
+- Ensure you change your Gear Set Number in the CodeChunks section
+- This profile is endless and requires a manual stop
+- Due to being endless, watch your bag space and ensure it is as empty as possible
+- Make sure you have plenty of bait as well!
+-->
+
+<!DOCTYPE Profile [
+
+<!ENTITY ConfirmKey "F9"> <!-- Set to the key that is set at Settings-Keybinds-System-Confirm -->
+
+]>
+
+<Profile>
+
+    <Name>[FSH] Ala Mhigan Ribbon</Name>
+    <KillRadius>25</KillRadius>
+
+    <CodeChunks>
+		<CodeChunk Name="Fisher">
+			<![CDATA[ 
+				ff14bot.Managers.ChatManager.SendChat("/gs change 8");
+		]]>
+		</CodeChunk>
+    </CodeChunks>
+
+    <Order>
+
+    	<!-- Switch Gear Set to Fisher -->
+		<If Condition="ClassName != ClassJobType.Fisher">
+			<RunCode Name="Fisher" />
+			<WaitTimer WaitTime="2" />
+		</If>
+
+		<If Condition="not IsOnMap(620)">
+			<TeleportTo name="Ala Ghiri" aetheryteId="101" />
+		</If>
+
+		<NoCombatMoveTo Name="Farm Area" XYZ="-607.5000, 315.0000, 757.0000" />
+
+		<Fish Mooch="2" Condition="True" patience="Patience" confirmKey="&ConfirmKey;" moveCursorRightKey="&ConfirmKey;">
+
+			<Bait Name="Stonefly Larva" />
+
+			<Collectables>
+				<Collectable name="Ala Mhigan Ribbon" value="41" />
+			</Collectables>
+
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatienceTugs>
+
+			<FishSpots>
+				<FishSpot XYZ="-614.6525, 306.4427, 757.8823" Heading="4.72" Sit="True" />
+				<FishSpot XYZ="-600.1596, 306.6017, 756.9736" Heading="2.28" Sit="True" />
+				<FishSpot XYZ="-640.4139, 306.6994, 810.5743" Heading="0.01" Sit="True" />
+			</FishSpots>
+			
+		</Fish>
+
+
+    </Order>
+
+</Profile>
