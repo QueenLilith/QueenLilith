@@ -177,6 +177,7 @@ IMPORTANT:
 				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
 			</If>
 
+			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="-258.2975, 12.78704, 333.611" />
 
 			<Dismount />
@@ -228,6 +229,7 @@ IMPORTANT:
 				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
 			</If>
 
+			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="393.6369, 23.30025, -294.9897" />
 
 			<Dismount />

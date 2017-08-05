@@ -168,6 +168,7 @@ IMPORTANT:
 				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
 			</If>
 
+			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="-804.9413, 141.9625, 225.1124" />
 	
 			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
@@ -461,6 +462,7 @@ IMPORTANT:
 				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
 			</If>
 
+			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="-804.9413, 141.9625, 225.1124" />
 	
 			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">

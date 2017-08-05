@@ -200,14 +200,14 @@ IMPORTANT:
 				<TeleportTo name="Ala Ghiri" aetheryteId="101" />
 			</If>
 
-			<NoCombatMoveTo Name="Farm Area" XYZ="-214.2586, 294.3613, 634.1948" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-260.8886, 277.9571, 628.5402" />
 	
 			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Legendary Mineral Deposit</GatherObject>
 		
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="-214.2586, 294.3613, 634.1948" name="Chromite Ore" />
+					<HotSpot Radius="100" XYZ="-260.8886, 277.9571, 628.5402" name="Chromite Ore" />
 				</HotSpots>
 		
 				<Collectables>
@@ -371,14 +371,14 @@ IMPORTANT:
 				<TeleportTo name="Ala Ghiri" aetheryteId="101" />
 			</If>
 
-			<NoCombatMoveTo Name="Farm Area" XYZ="-214.2586, 294.3613, 634.1948" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-260.8886, 277.9571, 628.5402" />
 	
 			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Legendary Mineral Deposit</GatherObject>
 		
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="-214.2586, 294.3613, 634.1948" name="Chromite Ore" />
+					<HotSpot Radius="100" XYZ="-260.8886, 277.9571, 628.5402" name="Chromite Ore" />
 				</HotSpots>
 		
 				<Collectables>
