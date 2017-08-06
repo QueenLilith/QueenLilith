@@ -7,7 +7,7 @@ REQUIRED:
 
 <Profile>
 	
-	<Name>[BTN] Sticky Rice</Name>
+	<Name>[BTN] Persimmon Leaf</Name>
 	<KillRadius>25</KillRadius>
 
 	<CodeChunks>
@@ -19,33 +19,30 @@ REQUIRED:
 	</CodeChunks>
 
 	<Order>
-	
+
 		<!-- Switch Gear Set to Botanist -->
 		<If Condition="ClassName != ClassJobType.Botanist">
 			<RunCode Name="Botanist" />
 			<WaitTimer WaitTime="2" />
 		</If>
 
-		<If Condition="not IsOnMap(138)">
-			<TeleportTo name="Aleport" aetheryteId="14" />
+		<If Condition="not IsOnMap(612)">
+			<TeleportTo name="Castrum Oriens" aetheryteId="98" />
 		</If>
-
-		<If Condition="not IsOnMap(139)">
-			<GetTo ZoneId="139" XYZ="-363.869, -1.99144, 160.5187" />
-		</If>
+	
+		<NoCombatMoveTo Name="Farm Area" XYZ="-611.204, 57.07, 428.2605" />
 
 		<ExGather while="True" DiscoverUnknowns="True">
 		
-			<GatherObject>Lush Vegetation Patch</GatherObject>
+			<GatherObject>Mature Tree</GatherObject>
 		
 			<HotSpots>
-				<HotSpot Radius="100" XYZ="-363.869, -1.99144, 160.5187" name="Sticky Rice" />
+				<HotSpot Radius="100" XYZ="-611.204, 57.07, 428.2605" name="Persimmon Leaf" />
 			</HotSpots>
 		
 			<ItemNames>
-				<ItemName>Chamomile Seeds</ItemName>
-				<ItemName>Pixie Plum Seeds</ItemName>
-				<ItemName>Sticky Rice</ItemName>
+				<ItemName>Timeworn Gazelleskin Map</ItemName>
+				<ItemName>Persimmon Leaf</ItemName>
 			</ItemNames>
 
 			<GatheringSkillOrder>

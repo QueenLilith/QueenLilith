@@ -1,5 +1,8 @@
 <!--
 Author: QueenLilith
+
+REQUIRED:
+- ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
 -->
 
 <Profile>
@@ -7,13 +10,27 @@ Author: QueenLilith
 	<Name>[MIN] Crescent Spring Water</Name>
 	<KillRadius>25</KillRadius>
 	
+	<CodeChunks>
+		<CodeChunk Name="Miner">
+			<![CDATA[ 
+				ff14bot.Managers.ChatManager.SendChat("/gs change 6");
+		]]>
+		</CodeChunk>
+	</CodeChunks>
+
 	<Order>
 	
+		<!-- Switch Gear Set to Miner -->
+		<If Condition="ClassName != ClassJobType.Miner">
+			<RunCode Name="Miner" />
+			<WaitTimer WaitTime="2" />
+		</If>
+
 		<If Condition="not IsOnMap(614)">
 			<TeleportTo name="Namai" aetheryteId="107" />
 		</If>
 	
-		<Gather while="True">
+		<ExGather while="True" DiscoverUnknowns="True">
 		
 			<GatherObject>Mineral Deposit</GatherObject>
 		
@@ -31,7 +48,7 @@ Author: QueenLilith
 				<GatheringSkill SpellName="Unearth III" TimesToCast="1" />
 			</GatheringSkillOrder>
 			
-		</Gather>
+		</ExGather>
 	
 	</Order>
 
