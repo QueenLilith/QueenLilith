@@ -120,6 +120,7 @@ IMPORTANT:
 			<NoCombatMoveTo Name="Farm Area" XYZ="395.2091, 22.49319, -632.4116" />
 	
 			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+
 				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 		
 				<HotSpots>

@@ -128,7 +128,7 @@ IMPORTANT:
 			</If>
 
 			<NoCombatMoveTo Name="Farm Area" XYZ="246.0629, 77.57146, -409.364" />
-			<NoCombatMoveTo Name="Farm Area" XYZ="316.1641, -16.22713, -667.1022" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="308.8636, -16.22713, -681.2896" />
 	
 			<Dismount />
 			<WaitTimer WaitTime="2" />
@@ -141,7 +141,7 @@ IMPORTANT:
 				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 		
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="316.1641, -16.22713, -667.1022" name="Lotus Root" />
+					<HotSpot Radius="100" XYZ="308.8636, -16.22713, -681.2896" name="Lotus Root" />
 				</HotSpots>
 		
 				<Collectables>
@@ -264,7 +264,7 @@ IMPORTANT:
 			</If>
 
 			<NoCombatMoveTo Name="Farm Area" XYZ="246.0629, 77.57146, -409.364" />
-			<NoCombatMoveTo Name="Farm Area" XYZ="316.1641, -16.22713, -667.1022" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="308.8636, -16.22713, -681.2896" />
 	
 			<Dismount />
 			<WaitTimer WaitTime="2" />
@@ -277,7 +277,7 @@ IMPORTANT:
 				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 		
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="316.1641, -16.22713, -667.1022" name="Lotus Root" />
+					<HotSpot Radius="100" XYZ="308.8636, -16.22713, -681.2896" name="Lotus Root" />
 				</HotSpots>
 		
 				<Collectables>

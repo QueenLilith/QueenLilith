@@ -3,11 +3,11 @@ Author: QueenLilith
 
 REQUIRED:
 - ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
+- Tome of Botanical Folklore - Gyr Abania :: http://xivdb.com/item/17840/
+- Tome of Botanical Folklore - Othard :: http://xivdb.com/item/17841/
 
 IMPORTANT:
 - Ensure you change your Gear Set Number in the CodeChunks section
-- This profile is endless and requires a manual stop
-- Due to being endless, watch your bag space and ensure it is as empty as possible
 - Due to their rarity and scarcity these are highly populated nodes. Always keep and eye on your character just in case of whispers or other unforeseen issues.
 -->
 
@@ -16,6 +16,12 @@ IMPORTANT:
 
 <!ENTITY DiscoverUnknowns "True">
 <!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
+
+<!ENTITY FarmItemID "19959"> <!-- Item ID you wish in the loop you wish to track --> 
+<!ENTITY FarmAmount "990"> <!-- Number of above item farmed until profile stops -->
+
+<!ENTITY FarmSkillGBTN "Field Mastery II">
+<!ENTITY FarmSkillQBTN "Blessed Harvest II">
 
 <!ENTITY WaitZoneID "635">
 <!ENTITY WaitTeleportName "Rhalgr's Reach">
@@ -26,16 +32,11 @@ IMPORTANT:
 
 <!-- Start Routine -->
 <Profile>
-
-	<Name>[MIN-BTN] Red Gatherers' Scrip</Name>
+	
+	<Name>[BTN] Rare Crafting Material Farm</Name>
 	<KillRadius>25</KillRadius>
 
 	<CodeChunks>
-		<CodeChunk Name="Miner">
-			<![CDATA[ 
-				ff14bot.Managers.ChatManager.SendChat("/gs change 6");
-		]]>
-		</CodeChunk>
 		<CodeChunk Name="Botanist">
 			<![CDATA[ 
 				ff14bot.Managers.ChatManager.SendChat("/gs change 7");
@@ -57,40 +58,44 @@ IMPORTANT:
 		]]>
 		</CodeChunk>
 	</CodeChunks>
-
+	
 	<Order>
 
-	<While condition="True">
+	<While Condition="not HasAtLeast(&FarmItemID;,&FarmAmount;)">
 
-		<!-- Raw Star Spinel -->
+		<!-- Switch Gear Set to Botanist -->
+		<If Condition="ClassName != ClassJobType.Botanist">
+			<RunCode Name="Botanist" />
+			<WaitTimer WaitTime="2" />
+		</If>
+
+		<!-- Rhea -->
 		<If Condition="IsTimeBetween(0,2)">
 
-			<If Condition="ClassName != ClassJobType.Miner">
-				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="2" />
+			<If Condition="not IsOnMap(622)">
+				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
 			</If>
+
+			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-107.9645, 108.7088, -567.3173" />
+
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
 		
-			<If Condition="not IsOnMap(613)">
-				<TeleportTo name="Onokoro" aetheryteId="106" />
-			</If>
-
-			<NoCombatMoveTo Name="Farm Area" XYZ="-325.3954, 60.90504, -806.37" />
-	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
-
-				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+				<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 		
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="-325.3954, 60.90504, -806.37" name="Raw Star Spinel" />
+					<HotSpot Radius="50" XYZ="-107.9645, 108.7088, -567.3173" name="Rhea" />
+					<HotSpot Radius="25" XYZ="-55.55882, 93.57091, -622.8127" name="Rhea" />
 				</HotSpots>
 		
-				<Collectables>
-					<Collectable Name="Raw Star Spinel" Value="450" />
-				</Collectables>
+				<Slot>3</Slot>
 
-				<GatherRotation>Collect450</GatherRotation>
-			
-			</GatherCollectable>
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+
+			</ExGather>
 
 		</If>
 
@@ -109,35 +114,41 @@ IMPORTANT:
 			
 		</If>
 
-		<!-- Raw Triphane -->
+		<!-- Othardian Plum -->
 		<If Condition="IsTimeBetween(2,4)">
 
-			<If Condition="ClassName != ClassJobType.Miner">
-				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="2" />
+			<If Condition="not IsOnMap(622)">
+				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
 			</If>
 
-			<If Condition="not IsOnMap(612)">
-				<TeleportTo name="Castrum Oriens" aetheryteId="98" />
-			</If>
+			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="278.6212, 25.16371, -263.9799" />
 
-			<NoCombatMoveTo Name="Farm Area" XYZ="162.5724, 83.72106, -655.4832" />
+			<Dismount />
+			<WaitTimer WaitTime="2" />
+			<RunCode Name="BotanistStealth" />
+			<WaitTimer WaitTime="2" />
+			<RunCode Name="DisableMount" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
-
-				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
+				<GatherObject>Unspoiled Mature Tree</GatherObject>
 		
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="162.5724, 83.72106, -655.4832" name="Raw Triphane" />
+					<HotSpot Radius="100" XYZ="278.6212, 25.16371, -263.9799" name="Othardian Plum" />
 				</HotSpots>
 		
-				<Collectables>
-					<Collectable Name="Raw Triphane" Value="450" />
-				</Collectables>
+				<Slot>1</Slot>
 
-				<GatherRotation>Collect450</GatherRotation>
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
 			
-			</GatherCollectable>
+			</ExGather>
+
+			<RunCode Name="EnableMount" />
+			<WaitTimer WaitTime="2" />
 
 		</If>
 
@@ -156,37 +167,33 @@ IMPORTANT:
 			
 		</If>
 
-		<!-- Raw Azurite -->
+		<!-- Jhammel Ginger -->
 		<If Condition="IsTimeBetween(4,6)">
 
-			<If Condition="ClassName != ClassJobType.Miner">
-				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="2" />
+			<If Condition="not IsOnMap(621)">
+				<TeleportTo name="Porta Praetoria" aetheryteId="102" />
 			</If>
 
-			<If Condition="not IsOnMap(622)">
-				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
-			</If>
-
-			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
-			<NoCombatMoveTo Name="Farm Area" XYZ="-804.9413, 141.9625, 225.1124" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-668.5442, 86.52296, -640.8523" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
-
-				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
+				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 		
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="-813.3021, 142.205, 190.9483" name="Raw Azurite" />
-					<HotSpot Radius="100" XYZ="-802.1894, 114.0348, 424.4543" name="Raw Azurite" />
+					<HotSpot Radius="25" XYZ="-668.5442, 86.52296, -640.8523" name="Jhammel Ginger" />
+					<HotSpot Radius="25" XYZ="-733.3004, 95.95591, -594.0698" name="Jhammel Ginger" />
+					<HotSpot Radius="25" XYZ="-785.4583, 96.30029, -637.4994" name="Jhammel Ginger" />
 				</HotSpots>
 		
-				<Collectables>
-					<Collectable Name="Raw Azurite" Value="450" />
-				</Collectables>
+				<Slot>2</Slot>
 
-				<GatherRotation>Collect450</GatherRotation>
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
 			
-			</GatherCollectable>
+			</ExGather>
 
 		</If>
 
@@ -205,35 +212,31 @@ IMPORTANT:
 			
 		</If>
 
-		<!-- Beech Branch -->
+		<!-- Hallowed Basil -->
 		<If Condition="IsTimeBetween(6,8)">
 
-			<If Condition="ClassName != ClassJobType.Botanist">
-				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="2" />
+			<If Condition="not IsOnMap(620)">
+				<TeleportTo name="Ala Gannha" aetheryteId="100" />
 			</If>
 
-			<If Condition="not IsOnMap(612)">
-				<TeleportTo name="Castrum Oriens" aetheryteId="98" />
-			</If>
-
-			<NoCombatMoveTo Name="Farm Area" XYZ="-533.5005, 104.188, -120.0941" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="134.8579, 131.1383, -257.3762" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
-
-				<GatherObject>Unspoiled Mature Tree</GatherObject>
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
+				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 		
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="-533.5005, 104.188, -120.0941" name="Beech Branch" />
+					<HotSpot Radius="100" XYZ="134.8579, 131.1383, -257.3762" name="Hallowed Basil" />
 				</HotSpots>
 		
-				<Collectables>
-					<Collectable Name="Beech Branch" Value="470" />
-				</Collectables>
+				<Slot>5</Slot>
 
-				<GatherRotation>Collect470</GatherRotation>
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
 			
-			</GatherCollectable>
+			</ExGather>
 
 		</If>
 
@@ -255,11 +258,6 @@ IMPORTANT:
 		<!-- Lotus Root -->
 		<If Condition="IsTimeBetween(8,10)">
 
-			<If Condition="ClassName != ClassJobType.Botanist">
-				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="2" />
-			</If>
-
 			<If Condition="not IsOnMap(614)">
 				<TeleportTo name="The House of the Fierce" aetheryteId="108" />
 			</If>
@@ -272,22 +270,23 @@ IMPORTANT:
 			<RunCode Name="BotanistStealth" />
 			<WaitTimer WaitTime="2" />
 			<RunCode Name="DisableMount" />
-
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
-
+	
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
 				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 		
 				<HotSpots>
 					<HotSpot Radius="100" XYZ="308.8636, -16.22713, -681.2896" name="Lotus Root" />
 				</HotSpots>
 		
-				<Collectables>
-					<Collectable Name="Lotus Root" Value="450" />
-				</Collectables>
+				<Slot>6</Slot>
 
-				<GatherRotation>Collect450</GatherRotation>
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
 			
-			</GatherCollectable>
+			</ExGather>
 
 			<RunCode Name="EnableMount" />
 			<WaitTimer WaitTime="2" />
@@ -312,32 +311,28 @@ IMPORTANT:
 		<!-- Bamboo Shoot -->
 		<If Condition="IsTimeBetween(10,12)">
 
-			<If Condition="ClassName != ClassJobType.Botanist">
-				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="2" />
-			</If>
-
 			<If Condition="not IsOnMap(614)">
-				<GetTo ZoneId="614" XYZ="434.9483, 68.5521, -98.09551" />
+				<TeleportTo name="Namai" aetheryteId="107" />
 			</If>
 
 			<NoCombatMoveTo Name="Farm Area" XYZ="389.6135, 64.27015, 209.816" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
-
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
 				<GatherObject>Unspoiled Mature Tree</GatherObject>
 		
 				<HotSpots>
 					<HotSpot Radius="100" XYZ="389.6135, 64.27015, 209.816" name="Bamboo Shoot" />
 				</HotSpots>
 		
-				<Collectables>
-					<Collectable Name="Bamboo Shoot" Value="450" />
-				</Collectables>
+				<Slot>7</Slot>
 
-				<GatherRotation>Collect450</GatherRotation>
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
 			
-			</GatherCollectable>
+			</ExGather>
 
 		</If>
 
@@ -356,35 +351,33 @@ IMPORTANT:
 			
 		</If>
 
-		<!-- Raw Star Spinel -->
+		<!-- Rhea -->
 		<If Condition="IsTimeBetween(12,14)">
 
-			<If Condition="ClassName != ClassJobType.Miner">
-				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="2" />
+			<If Condition="not IsOnMap(622)">
+				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
 			</If>
 
-			<If Condition="not IsOnMap(613)">
-				<TeleportTo name="Onokoro" aetheryteId="106" />
-			</If>
+			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-107.9645, 108.7088, -567.3173" />
 
-			<NoCombatMoveTo Name="Farm Area" XYZ="-325.3954, 60.90504, -806.37" />
-	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
-
-				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
+				<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 		
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="-325.3954, 60.90504, -806.37" name="Raw Star Spinel" />
+					<HotSpot Radius="50" XYZ="-107.9645, 108.7088, -567.3173" name="Rhea" />
+					<HotSpot Radius="25" XYZ="-55.55882, 93.57091, -622.8127" name="Rhea" />
 				</HotSpots>
 		
-				<Collectables>
-					<Collectable Name="Raw Star Spinel" Value="450" />
-				</Collectables>
+				<Slot>3</Slot>
 
-				<GatherRotation>Collect450</GatherRotation>
-			
-			</GatherCollectable>
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+
+			</ExGather>
 
 		</If>
 
@@ -403,35 +396,41 @@ IMPORTANT:
 			
 		</If>
 
-		<!-- Raw Triphane -->
+		<!-- Othardian Plum -->
 		<If Condition="IsTimeBetween(14,16)">
 
-			<If Condition="ClassName != ClassJobType.Miner">
-				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="2" />
+			<If Condition="not IsOnMap(622)">
+				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
 			</If>
 
-			<If Condition="not IsOnMap(612)">
-				<TeleportTo name="Castrum Oriens" aetheryteId="98" />
-			</If>
+			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="278.6212, 25.16371, -263.9799" />
 
-			<NoCombatMoveTo Name="Farm Area" XYZ="162.5724, 83.72106, -655.4832" />
+			<Dismount />
+			<WaitTimer WaitTime="2" />
+			<RunCode Name="BotanistStealth" />
+			<WaitTimer WaitTime="2" />
+			<RunCode Name="DisableMount" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
-
-				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
+				<GatherObject>Unspoiled Mature Tree</GatherObject>
 		
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="162.5724, 83.72106, -655.4832" name="Raw Triphane" />
+					<HotSpot Radius="100" XYZ="278.6212, 25.16371, -263.9799" name="Othardian Plum" />
 				</HotSpots>
 		
-				<Collectables>
-					<Collectable Name="Raw Triphane" Value="450" />
-				</Collectables>
+				<Slot>1</Slot>
 
-				<GatherRotation>Collect450</GatherRotation>
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
 			
-			</GatherCollectable>
+			</ExGather>
+
+			<RunCode Name="EnableMount" />
+			<WaitTimer WaitTime="2" />
 
 		</If>
 
@@ -450,37 +449,33 @@ IMPORTANT:
 			
 		</If>
 
-		<!-- Raw Azurite -->
+		<!-- Jhammel Ginger -->
 		<If Condition="IsTimeBetween(16,18)">
 
-			<If Condition="ClassName != ClassJobType.Miner">
-				<RunCode Name="Miner" />
-				<WaitTimer WaitTime="2" />
+			<If Condition="not IsOnMap(621)">
+				<TeleportTo name="Porta Praetoria" aetheryteId="102" />
 			</If>
 
-			<If Condition="not IsOnMap(622)">
-				<TeleportTo name="The Dawn Throne" aetheryteId="110" />
-			</If>
-
-			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
-			<NoCombatMoveTo Name="Farm Area" XYZ="-804.9413, 141.9625, 225.1124" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="-668.5442, 86.52296, -640.8523" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
-
-				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
+				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 		
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="-813.3021, 142.205, 190.9483" name="Raw Azurite" />
-					<HotSpot Radius="100" XYZ="-802.1894, 114.0348, 424.4543" name="Raw Azurite" />
+					<HotSpot Radius="25" XYZ="-668.5442, 86.52296, -640.8523" name="Jhammel Ginger" />
+					<HotSpot Radius="25" XYZ="-733.3004, 95.95591, -594.0698" name="Jhammel Ginger" />
+					<HotSpot Radius="25" XYZ="-785.4583, 96.30029, -637.4994" name="Jhammel Ginger" />
 				</HotSpots>
 		
-				<Collectables>
-					<Collectable Name="Raw Azurite" Value="450" />
-				</Collectables>
+				<Slot>2</Slot>
 
-				<GatherRotation>Collect450</GatherRotation>
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
 			
-			</GatherCollectable>
+			</ExGather>
 
 		</If>
 
@@ -499,35 +494,31 @@ IMPORTANT:
 			
 		</If>
 
-		<!-- Beech Branch -->
+		<!-- Hallowed Basil -->
 		<If Condition="IsTimeBetween(18,20)">
 
-			<If Condition="ClassName != ClassJobType.Botanist">
-				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="2" />
+			<If Condition="not IsOnMap(620)">
+				<TeleportTo name="Ala Gannha" aetheryteId="100" />
 			</If>
 
-			<If Condition="not IsOnMap(612)">
-				<TeleportTo name="Castrum Oriens" aetheryteId="98" />
-			</If>
-
-			<NoCombatMoveTo Name="Farm Area" XYZ="-533.5005, 104.188, -120.0941" />
+			<NoCombatMoveTo Name="Farm Area" XYZ="134.8579, 131.1383, -257.3762" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
-
-				<GatherObject>Unspoiled Mature Tree</GatherObject>
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
+				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 		
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="-533.5005, 104.188, -120.0941" name="Beech Branch" />
+					<HotSpot Radius="100" XYZ="134.8579, 131.1383, -257.3762" name="Hallowed Basil" />
 				</HotSpots>
 		
-				<Collectables>
-					<Collectable Name="Beech Branch" Value="470" />
-				</Collectables>
+				<Slot>5</Slot>
 
-				<GatherRotation>Collect470</GatherRotation>
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
 			
-			</GatherCollectable>
+			</ExGather>
 
 		</If>
 
@@ -549,11 +540,6 @@ IMPORTANT:
 		<!-- Lotus Root -->
 		<If Condition="IsTimeBetween(20,22)">
 
-			<If Condition="ClassName != ClassJobType.Botanist">
-				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="2" />
-			</If>
-
 			<If Condition="not IsOnMap(614)">
 				<TeleportTo name="The House of the Fierce" aetheryteId="108" />
 			</If>
@@ -566,22 +552,23 @@ IMPORTANT:
 			<RunCode Name="BotanistStealth" />
 			<WaitTimer WaitTime="2" />
 			<RunCode Name="DisableMount" />
-
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
-
+	
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
 				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 		
 				<HotSpots>
 					<HotSpot Radius="100" XYZ="308.8636, -16.22713, -681.2896" name="Lotus Root" />
 				</HotSpots>
 		
-				<Collectables>
-					<Collectable Name="Lotus Root" Value="450" />
-				</Collectables>
+				<Slot>6</Slot>
 
-				<GatherRotation>Collect450</GatherRotation>
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
 			
-			</GatherCollectable>
+			</ExGather>
 
 			<RunCode Name="EnableMount" />
 			<WaitTimer WaitTime="2" />
@@ -606,32 +593,28 @@ IMPORTANT:
 		<!-- Bamboo Shoot -->
 		<If Condition="IsTimeBetween(22,24)">
 
-			<If Condition="ClassName != ClassJobType.Botanist">
-				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="2" />
-			</If>
-
 			<If Condition="not IsOnMap(614)">
-				<GetTo ZoneId="614" XYZ="434.9483, 68.5521, -98.09551" />
+				<TeleportTo name="Namai" aetheryteId="107" />
 			</If>
 
 			<NoCombatMoveTo Name="Farm Area" XYZ="389.6135, 64.27015, 209.816" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
-
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+		
 				<GatherObject>Unspoiled Mature Tree</GatherObject>
 		
 				<HotSpots>
 					<HotSpot Radius="100" XYZ="389.6135, 64.27015, 209.816" name="Bamboo Shoot" />
 				</HotSpots>
 		
-				<Collectables>
-					<Collectable Name="Bamboo Shoot" Value="450" />
-				</Collectables>
+				<Slot>7</Slot>
 
-				<GatherRotation>Collect450</GatherRotation>
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
 			
-			</GatherCollectable>
+			</ExGather>
 
 		</If>
 
