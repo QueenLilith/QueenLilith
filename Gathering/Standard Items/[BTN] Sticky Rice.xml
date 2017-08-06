@@ -5,6 +5,12 @@ REQUIRED:
 - ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
 -->
 
+<!DOCTYPE Profile [
+
+<!ENTITY FarmAmount "495">
+
+]>
+
 <Profile>
 	
 	<Name>[BTN] Sticky Rice</Name>
@@ -20,6 +26,8 @@ REQUIRED:
 
 	<Order>
 	
+	<While Condition="not HasAtLeast(4819,&FarmAmount;)">
+
 		<!-- Switch Gear Set to Botanist -->
 		<If Condition="ClassName != ClassJobType.Botanist">
 			<RunCode Name="Botanist" />
@@ -43,8 +51,6 @@ REQUIRED:
 			</HotSpots>
 		
 			<ItemNames>
-				<ItemName>Chamomile Seeds</ItemName>
-				<ItemName>Pixie Plum Seeds</ItemName>
 				<ItemName>Sticky Rice</ItemName>
 			</ItemNames>
 
@@ -54,6 +60,8 @@ REQUIRED:
 			
 		</ExGather>
 	
+	</While>
+
 	</Order>
 
 </Profile>

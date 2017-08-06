@@ -5,6 +5,12 @@ REQUIRED:
 - ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
 -->
 
+<!DOCTYPE Profile [
+
+<!ENTITY FarmAmount "495">
+
+]>
+
 <Profile>
 	
 	<Name>[BTN] Persimmon Leaf</Name>
@@ -19,6 +25,8 @@ REQUIRED:
 	</CodeChunks>
 
 	<Order>
+
+	<While Condition="not HasAtLeast(19870,&FarmAmount;)">
 
 		<!-- Switch Gear Set to Botanist -->
 		<If Condition="ClassName != ClassJobType.Botanist">
@@ -51,6 +59,8 @@ REQUIRED:
 			
 		</ExGather>
 	
+	</While>
+
 	</Order>
 
 </Profile>

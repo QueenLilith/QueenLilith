@@ -5,6 +5,12 @@ REQUIRED:
 - ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
 -->
 
+<!DOCTYPE Profile [
+
+<!ENTITY FarmAmount "495">
+
+]>
+
 <Profile>
 	
 	<Name>[MIN] Crescent Spring Water</Name>
@@ -20,6 +26,8 @@ REQUIRED:
 
 	<Order>
 	
+	<While Condition="not HasAtLeast(19872,&FarmAmount;)">
+
 		<!-- Switch Gear Set to Miner -->
 		<If Condition="ClassName != ClassJobType.Miner">
 			<RunCode Name="Miner" />
@@ -50,6 +58,8 @@ REQUIRED:
 			
 		</ExGather>
 	
+	</While>
+
 	</Order>
 
 </Profile>

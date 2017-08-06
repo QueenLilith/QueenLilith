@@ -19,8 +19,8 @@ IMPORTANT:
 <!ENTITY DiscoverUnknowns "True">
 <!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
 
-<!ENTITY FarmItemID "19958"> <!-- Palladium Ore: 19958, Chromite Ore: 19959, Rhea: 19991, Torreya Log: 19934. ONLY ONE! --> 
-<!ENTITY FarmAmount "495"> <!-- Number of above item farmed until profile stops -->
+<!ENTITY FarmItemID "19959"> <!-- Palladium Ore: 19958, Chromite Ore: 19959, Rhea: 19991, Torreya Log: 19934. ONLY ONE! --> 
+<!ENTITY FarmAmount "990"> <!-- Number of above item farmed until profile stops -->
 
 <!ENTITY FarmSkillGMIN "Sharp Vision II">
 <!ENTITY FarmSkillGBTN "Field Mastery II">
@@ -437,7 +437,7 @@ IMPORTANT:
 
 			<ExLog Color="&LogColor;" Name="Wait" Message="Waiting for next node spawn" />
 
-			<WaitWhile Condition="IsTimeBetween(18,12)" />
+			<WaitWhile Condition="IsTimeBetween(18,22)" />
 			
 		</If>
 
