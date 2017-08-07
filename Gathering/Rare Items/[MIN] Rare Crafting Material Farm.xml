@@ -17,11 +17,11 @@ IMPORTANT:
 <!ENTITY DiscoverUnknowns "True">
 <!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
 
-<!ENTITY FarmItemID "19959"> <!-- Item ID you wish in the loop you wish to track --> 
+<!ENTITY FarmItemID "19968"> <!-- Item ID you wish in the loop you wish to track --> 
 <!ENTITY FarmAmount "990"> <!-- Number of above item farmed until profile stops -->
 
-<!ENTITY FarmSkillGMIN "Field Mastery II">
-<!ENTITY FarmSkillQMIN "Blessed Harvest II">
+<!ENTITY FarmSkillGMIN "Sharp Vision II">
+<!ENTITY FarmSkillQMIN "King's Yield II">
 
 <!ENTITY WaitZoneID "635">
 <!ENTITY WaitTeleportName "Rhalgr's Reach">
@@ -37,9 +37,9 @@ IMPORTANT:
 	<KillRadius>25</KillRadius>
 
 	<CodeChunks>
-		<CodeChunk Name="Botanist">
+		<CodeChunk Name="Miner">
 			<![CDATA[ 
-				ff14bot.Managers.ChatManager.SendChat("/gs change 7");
+				ff14bot.Managers.ChatManager.SendChat("/gs change 6");
 		]]>
 		</CodeChunk>
 		<CodeChunk Name="EnableMount">
