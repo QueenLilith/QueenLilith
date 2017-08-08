@@ -16,7 +16,7 @@ REQUIRED:
 
 <Profile>
 	
-	<Name>[MIN] Crescent Spring Water</Name>
+	<Name>[MIN] Slate</Name>
 	<KillRadius>25</KillRadius>
 	
 	<CodeChunks>
@@ -29,7 +29,7 @@ REQUIRED:
 
 	<Order>
 	
-	<While Condition="not HasAtLeast(19872,&FarmAmount;)">
+	<While Condition="not HasAtLeast(20007,&FarmAmount;)">
 
 		<!-- Switch Gear Set to Miner -->
 		<If Condition="ClassName != ClassJobType.Miner">
@@ -37,22 +37,23 @@ REQUIRED:
 			<WaitTimer WaitTime="2" />
 		</If>
 
-		<If Condition="not IsOnMap(614)">
-			<TeleportTo name="Namai" aetheryteId="107" />
+		<If Condition="not IsOnMap(620)">
+			<TeleportTo name="Ala Gannha" aetheryteId="100" />
 		</If>
 	
 		<ExGather While="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;">
 		
-			<GatherObject>Mineral Deposit</GatherObject>
+			<GatherObject>Rocky Outcrop</GatherObject>
 		
 			<HotSpots>
-				<HotSpot Radius="50" XYZ="519.5167, 40.98824, -76.49162" name="Crescent Spring Water" />
-				<HotSpot Radius="50" XYZ="600.384, 91.55322, 84.24567" name="Crescent Spring Water" />
-				<HotSpot Radius="50" XYZ="418.0356, 68.45224, 18.37699" name="Crescent Spring Water" />
+				<HotSpot Radius="1" XYZ="-10.74014, 113.094, -367.6719" name="Slate" />
+				<HotSpot Radius="50" XYZ="-10.74014, 113.094, -367.6719" name="Slate" />
+				<HotSpot Radius="50" XYZ="182.7417, 136.5884, -338.5491" name="Slate" />
+				<HotSpot Radius="50" XYZ="111.4164, 114.3518, -520.3472" name="Slate" />
 			</HotSpots>
 		
 			<ItemNames>
-				<ItemName>Crescent Spring Water</ItemName>
+				<ItemName>Slate</ItemName>
 			</ItemNames>
 
 			<GatheringSkillOrder>
