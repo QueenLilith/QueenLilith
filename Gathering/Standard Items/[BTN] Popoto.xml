@@ -11,6 +11,7 @@ REQUIRED:
 
 ]>
 
+<!-- Start Routine -->
 <Profile>
 	
 	<Name>[BTN] Popoto</Name>
@@ -19,7 +20,7 @@ REQUIRED:
 	<CodeChunks>
 		<CodeChunk Name="Botanist">
 			<![CDATA[ 
-				ff14bot.Managers.ChatManager.SendChat("/gs change 7");
+				ff14bot.Managers.ChatManager.SendChat("/gs change 6");
 		]]>
 		</CodeChunk>
 	</CodeChunks>

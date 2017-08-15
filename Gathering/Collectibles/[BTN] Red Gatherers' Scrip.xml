@@ -33,7 +33,7 @@ IMPORTANT:
 	<CodeChunks>
 		<CodeChunk Name="Botanist">
 			<![CDATA[ 
-				ff14bot.Managers.ChatManager.SendChat("/gs change 7");
+				ff14bot.Managers.ChatManager.SendChat("/gs change 6");
 		]]>
 		</CodeChunk>
 		<CodeChunk Name="EnableMount">
@@ -141,7 +141,34 @@ IMPORTANT:
 				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 		
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="308.8636, -16.22713, -681.2896" name="Lotus Root" />
+					<HotSpot Radius="25" XYZ="308.8636, -16.22713, -681.2896" name="Lotus Root" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Lotus Root" Value="450" />
+				</Collectables>
+
+				<GatherRotation>Collect450</GatherRotation>
+			
+			</GatherCollectable>
+
+			<RunCode Name="EnableMount" />
+			<WaitTimer WaitTime="2" />
+
+			<NoCombatMoveTo Name="Farm Area" XYZ="366.0348, -14.70129, -718.2805" />
+	
+			<Dismount />
+			<WaitTimer WaitTime="2" />
+			<RunCode Name="BotanistStealth" />
+			<WaitTimer WaitTime="2" />
+			<RunCode Name="DisableMount" />
+
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+
+				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="25" XYZ="366.0348, -14.70129, -718.2805" name="Lotus Root" />
 				</HotSpots>
 		
 				<Collectables>
@@ -277,7 +304,34 @@ IMPORTANT:
 				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 		
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="308.8636, -16.22713, -681.2896" name="Lotus Root" />
+					<HotSpot Radius="25" XYZ="308.8636, -16.22713, -681.2896" name="Lotus Root" />
+				</HotSpots>
+		
+				<Collectables>
+					<Collectable Name="Lotus Root" Value="450" />
+				</Collectables>
+
+				<GatherRotation>Collect450</GatherRotation>
+			
+			</GatherCollectable>
+
+			<RunCode Name="EnableMount" />
+			<WaitTimer WaitTime="2" />
+
+			<NoCombatMoveTo Name="Farm Area" XYZ="366.0348, -14.70129, -718.2805" />
+	
+			<Dismount />
+			<WaitTimer WaitTime="2" />
+			<RunCode Name="BotanistStealth" />
+			<WaitTimer WaitTime="2" />
+			<RunCode Name="DisableMount" />
+
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+
+				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="25" XYZ="366.0348, -14.70129, -718.2805" name="Lotus Root" />
 				</HotSpots>
 		
 				<Collectables>

@@ -35,7 +35,7 @@ IMPORTANT:
 	<CodeChunks>
 		<CodeChunk Name="Botanist">
 			<![CDATA[ 
-				ff14bot.Managers.ChatManager.SendChat("/gs change 7");
+				ff14bot.Managers.ChatManager.SendChat("/gs change 6");
 		]]>
 		</CodeChunk>
 		<CodeChunk Name="EnableMount">

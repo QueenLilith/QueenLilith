@@ -33,12 +33,12 @@ IMPORTANT:
 	<CodeChunks>
 		<CodeChunk Name="Miner">
 			<![CDATA[ 
-				ff14bot.Managers.ChatManager.SendChat("/gs change 6");
+				ff14bot.Managers.ChatManager.SendChat("/gs change 5");
 		]]>
 		</CodeChunk>
 		<CodeChunk Name="Botanist">
 			<![CDATA[ 
-				ff14bot.Managers.ChatManager.SendChat("/gs change 7");
+				ff14bot.Managers.ChatManager.SendChat("/gs change 6");
 		]]>
 		</CodeChunk>
 		<CodeChunk Name="EnableMount">
