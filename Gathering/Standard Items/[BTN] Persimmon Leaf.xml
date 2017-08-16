@@ -7,7 +7,7 @@ REQUIRED:
 
 <!DOCTYPE Profile [
 
-<!ENTITY FarmAmount "495">
+<!ENTITY FarmAmount "792">
 
 ]>
 
@@ -27,7 +27,7 @@ REQUIRED:
 
 	<Order>
 
-	<While Condition="not HasAtLeast(19870,&FarmAmount;)">
+	<If Condition="not HasAtLeast(19870,&FarmAmount;)">
 
 		<!-- Switch Gear Set to Botanist -->
 		<If Condition="ClassName != ClassJobType.Botanist">
@@ -41,7 +41,7 @@ REQUIRED:
 	
 		<NoCombatMoveTo Name="Farm Area" XYZ="-611.204, 57.07, 428.2605" />
 
-		<ExGather while="True" DiscoverUnknowns="True">
+		<ExGather While="not HasAtLeast(19870,&FarmAmount;)" DiscoverUnknowns="True">
 		
 			<GatherObject>Mature Tree</GatherObject>
 		
@@ -60,7 +60,7 @@ REQUIRED:
 			
 		</ExGather>
 	
-	</While>
+	</If>
 
 	</Order>
 

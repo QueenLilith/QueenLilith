@@ -7,10 +7,7 @@ REQUIRED:
 
 <!DOCTYPE Profile [
 
-<!ENTITY DiscoverUnknowns "True">
-<!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
-
-<!ENTITY FarmAmount "495">
+<!ENTITY FarmAmount "792">
 
 ]>
 
@@ -30,7 +27,7 @@ REQUIRED:
 
 	<Order>
 	
-	<While Condition="not HasAtLeast(20007,&FarmAmount;)">
+	<If Condition="not HasAtLeast(20007,&FarmAmount;)">
 
 		<!-- Switch Gear Set to Miner -->
 		<If Condition="ClassName != ClassJobType.Miner">
@@ -42,7 +39,7 @@ REQUIRED:
 			<TeleportTo name="Ala Gannha" aetheryteId="100" />
 		</If>
 	
-		<ExGather While="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;">
+		<ExGather While="not HasAtLeast(20007,&FarmAmount;)" DiscoverUnknowns="True">
 		
 			<GatherObject>Rocky Outcrop</GatherObject>
 		
@@ -63,7 +60,7 @@ REQUIRED:
 			
 		</ExGather>
 	
-	</While>
+	</If>
 
 	</Order>
 

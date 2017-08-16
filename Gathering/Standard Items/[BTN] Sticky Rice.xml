@@ -7,7 +7,7 @@ REQUIRED:
 
 <!DOCTYPE Profile [
 
-<!ENTITY FarmAmount "495">
+<!ENTITY FarmAmount "792">
 
 ]>
 
@@ -27,7 +27,7 @@ REQUIRED:
 
 	<Order>
 	
-	<While Condition="not HasAtLeast(4819,&FarmAmount;)">
+	<If Condition="not HasAtLeast(4819,&FarmAmount;)">
 
 		<!-- Switch Gear Set to Botanist -->
 		<If Condition="ClassName != ClassJobType.Botanist">
@@ -43,7 +43,7 @@ REQUIRED:
 			<GetTo ZoneId="139" XYZ="-363.869, -1.99144, 160.5187" />
 		</If>
 
-		<ExGather while="True" DiscoverUnknowns="True">
+		<ExGather While="not HasAtLeast(4819,&FarmAmount;)" DiscoverUnknowns="True">
 		
 			<GatherObject>Lush Vegetation Patch</GatherObject>
 		
@@ -61,7 +61,7 @@ REQUIRED:
 			
 		</ExGather>
 	
-	</While>
+	</If>
 
 	</Order>
 
