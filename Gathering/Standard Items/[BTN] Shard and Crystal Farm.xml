@@ -25,8 +25,11 @@ REQUIRED:
 <!ENTITY LightningCrystal "0">
 <!ENTITY WaterCrystal "0">
 
-<!ENTITY LogColor "#66FF66">
+<!ENTITY WaitZoneID "635">
+<!ENTITY WaitTeleportName "Rhalgr's Reach">
+<!ENTITY WaitTeleportID "104">
 
+<!ENTITY LogColor "#66FF66">
 ]>
 
 <!-- Start Routine -->
@@ -67,7 +70,8 @@ REQUIRED:
 				<GatherObject>Lush Vegetation Patch</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="90" XYZ="40.98051, 52.17653, -114.0182" name="Lush Vegetation Patch" />
+					<HotSpot Radius="100" XYZ="40.98051, 52.17653, -114.0182" name="Lush Vegetation Patch" />
+					<HotSpot Radius="5" XYZ="40.98051, 52.17653, -114.0182" name="Lush Vegetation Patch" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -99,7 +103,8 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="90" XYZ="76.97958, 5.136707, -185.5606" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="76.97958, 5.136707, -185.5606" name="Mature Trees" />
+					<HotSpot Radius="5" XYZ="76.97958, 5.136707, -185.5606" name="Mature Trees" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -131,7 +136,8 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="90" XYZ="247.9115, -12.2392, -53.57527" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="247.9115, -12.2392, -53.57527" name="Mature Trees" />
+					<HotSpot Radius="5" XYZ="247.9115, -12.2392, -53.57527" name="Mature Trees" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -163,7 +169,8 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="90" XYZ="253.7264, -20.969, 289.4138" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="253.7264, -20.969, 289.4138" name="Mature Trees" />
+					<HotSpot Radius="5" XYZ="253.7264, -20.969, 289.4138" name="Mature Trees" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -195,7 +202,8 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="180" XYZ="62.14651, 2.785228, 284.068" name="Mature Trees" />
+					<HotSpot Radius="200" XYZ="62.14651, 2.785228, 284.068" name="Mature Trees" />
+					<HotSpot Radius="5" XYZ="62.14651, 2.785228, 284.068" name="Mature Trees" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -227,7 +235,8 @@ REQUIRED:
 				<GatherObject>Lush Vegetation Patch</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="90" XYZ="155.1757, 49.41785, -122.2227" name="Lush Vegetation Patch" />
+					<HotSpot Radius="100" XYZ="155.1757, 49.41785, -122.2227" name="Lush Vegetation Patch" />
+					<HotSpot Radius="5" XYZ="155.1757, 49.41785, -122.2227" name="Lush Vegetation Patch" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -259,7 +268,8 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="90" XYZ="-232.7466, 15.10347, -382.7352" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="-232.7466, 15.10347, -382.7352" name="Mature Trees" />
+					<HotSpot Radius="5" XYZ="-232.7466, 15.10347, -382.7352" name="Mature Trees" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -292,7 +302,8 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="90" XYZ="-202.1286, 6.432597, 27.724" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="-202.1286, 6.432597, 27.724" name="Mature Trees" />
+					<HotSpot Radius="5" XYZ="-202.1286, 6.432597, 27.724" name="Mature Trees" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -325,7 +336,8 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="90" XYZ="154.5393, -23.913, 478.6511" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="154.5393, -23.913, 478.6511" name="Mature Trees" />
+					<HotSpot Radius="5" XYZ="154.5393, -23.913, 478.6511" name="Mature Trees" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -358,7 +370,8 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="90" XYZ="251.9866, -9.133508, 14.80032" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="251.9866, -9.133508, 14.80032" name="Mature Trees" />
+					<HotSpot Radius="5" XYZ="251.9866, -9.133508, 14.80032" name="Mature Trees" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -391,7 +404,8 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="180" XYZ="156.0196, 11.17611, 459.9057" name="Mature Trees" />
+					<HotSpot Radius="200" XYZ="156.0196, 11.17611, 459.9057" name="Mature Trees" />
+					<HotSpot Radius="5" XYZ="156.0196, 11.17611, 459.9057" name="Mature Trees" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -424,7 +438,8 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="90" XYZ="321.0446, 32.97112, 612.6232" name="Mature Treee" />
+					<HotSpot Radius="100" XYZ="321.0446, 32.97112, 612.6232" name="Mature Treee" />
+					<HotSpot Radius="5" XYZ="321.0446, 32.97112, 612.6232" name="Mature Treee" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -439,6 +454,17 @@ REQUIRED:
 				
 			</ExGather>
 		
+		</If>
+
+		<!-- Go to Wait Location -->
+		<If>
+			
+			<ExLog Color="&LogColor;" Name="INFO" Message="Collection complete. Moving to AFK Area." />
+			
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+			</If>
+
 		</If>
 
 
