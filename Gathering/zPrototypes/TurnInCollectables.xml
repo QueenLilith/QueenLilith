@@ -1,0 +1,38 @@
+<!DOCTYPE Profile [
+
+<!ENTITY BlueGatherToken_Count "0">
+<!ENTITY RedGatherToken_Count "0">
+<!ENTITY BlueCrafterToken_Count "0">
+<!ENTITY RedCrafterToken_Count "0">
+<!ENTITY HiCordial_Count "198">
+<!ENTITY CommercialSurvivalManual_Count "0">
+<!ENTITY CommercialEngineeringManual_Count "0">
+
+]>
+
+<Profile>
+
+	<Name>TurnInCollectables</Name>
+	<KillRadius>25</KillRadius>
+
+	<Order>
+
+		<ExLog Color="#FFC0CB" Name="ExBuddy" Message="Turning in collectables"/>
+
+		<ExTurnInCollectables Location="Idyllshire" ForcePurchase="True">
+
+			<ShopPurchases>
+				<ShopPurchase ShopItem="BlueGatherToken" MaxCount="&BlueGatherToken_Count;" />
+				<ShopPurchase ShopItem="RedGatherToken" MaxCount="&RedGatherToken_Count;" />
+				<ShopPurchase ShopItem="BlueCrafterToken" MaxCount="&BlueCrafterToken_Count;" />
+				<ShopPurchase ShopItem="RedCrafterToken" MaxCount="&RedCrafterToken_Count;" />
+				<ShopPurchase ShopItem="HiCordial" MaxCount="&HiCordial_Count;" />
+				<ShopPurchase ShopItem="CommercialSurvivalManual" MaxCount="&CommercialSurvivalManual_Count;" />
+				<ShopPurchase ShopItem="CommercialEngineeringManual" MaxCount="&CommercialEngineeringManual_Count;" />
+			</ShopPurchases>
+
+		</ExTurnInCollectables>
+
+	</Order>
+
+</Profile>

@@ -1,0 +1,37 @@
+<!--
+Author: QueenLilith
+
+REQUIRED:
+- ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
+-->
+
+<!-- User Configuration -->
+<!DOCTYPE Profile [
+
+<!ENTITY LogColor "#66FF66">
+]>
+
+<!-- Start Routine -->
+<Profile>
+
+	<Name>AetherialReduction</Name>
+	<KillRadius>25</KillRadius>
+
+	<Order>
+
+		<ExLog Color="&LogColor;" Name="INFO" Message="Starting Reduction Process"/>
+
+		<ExPurify>
+			<Item>Almandine</Item>
+			<Item>Torreya Branch</Item>
+			<Item>Doman Yellow</Item>
+			<Item>Schorl</Item>
+			<Item>Perlite</Item>
+			<Item>Windtea Leaves</Item>
+		</ExPurify>
+
+		<ExLog Color="&LogColor;" Name="INFO" Message="Process Complete"/>
+
+	</Order>
+
+</Profile>
