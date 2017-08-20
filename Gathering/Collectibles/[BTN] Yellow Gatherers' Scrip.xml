@@ -18,6 +18,7 @@ IMPORTANT:
 
 <!ENTITY DiscoverUnknowns "True">
 <!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
+<!ENTITY CordialTime "BeforeGather"> <!-- BeforeGather or AfterGather -->
 
 <!ENTITY WaitZoneID "635">
 <!ENTITY WaitTeleportName "Rhalgr's Reach">
@@ -75,7 +76,7 @@ IMPORTANT:
 			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="-107.9645, 108.7088, -567.3173" />
 
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 		
@@ -125,7 +126,7 @@ IMPORTANT:
 			<WaitTimer WaitTime="2" />
 			<RunCode Name="DisableMount" />
 
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Unspoiled Mature Tree</GatherObject>
 		
@@ -170,7 +171,7 @@ IMPORTANT:
 
 			<NoCombatMoveTo Name="Farm Area" XYZ="-668.5442, 86.52296, -640.8523" />
 
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 		
@@ -220,7 +221,7 @@ IMPORTANT:
 			<WaitTimer WaitTime="2" />
 			<RunCode Name="DisableMount" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Legendary Mature Tree</GatherObject>
 		
@@ -267,7 +268,7 @@ IMPORTANT:
 			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="-107.9645, 108.7088, -567.3173" />
 
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 		
@@ -317,7 +318,7 @@ IMPORTANT:
 			<WaitTimer WaitTime="2" />
 			<RunCode Name="DisableMount" />
 
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Unspoiled Mature Tree</GatherObject>
 		
@@ -362,7 +363,7 @@ IMPORTANT:
 
 			<NoCombatMoveTo Name="Farm Area" XYZ="-668.5442, 86.52296, -640.8523" />
 
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 		
@@ -412,7 +413,7 @@ IMPORTANT:
 			<WaitTimer WaitTime="2" />
 			<RunCode Name="DisableMount" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Legendary Mature Tree</GatherObject>
 		

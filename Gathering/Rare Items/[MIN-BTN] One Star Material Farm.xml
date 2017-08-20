@@ -18,6 +18,7 @@ IMPORTANT:
 
 <!ENTITY DiscoverUnknowns "True">
 <!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
+<!ENTITY CordialTime "BeforeGather"> <!-- BeforeGather or AfterGather -->
 
 <!ENTITY FarmItemID "19959"> <!-- Palladium Ore: 19958, Chromite Ore: 19959, Rhea: 19991, Torreya Log: 19934. ONLY ONE! --> 
 <!ENTITY FarmAmount "990"> <!-- Number of above item farmed until profile stops -->
@@ -88,7 +89,7 @@ IMPORTANT:
 			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="-107.9645, 108.7088, -567.3173" />
 
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1">
 		
 				<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 		
@@ -139,7 +140,7 @@ IMPORTANT:
 			<NoCombatMoveTo Name="Farm Area" XYZ="246.0629, 77.57146, -409.364" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="-20.55031, 122.0667, -564.0088" />
 
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1">
 		
 				<GatherObject>Legendary Mineral Deposit</GatherObject>
 		
@@ -195,7 +196,7 @@ IMPORTANT:
 			<WaitTimer WaitTime="2" />
 			<RunCode Name="DisableMount" />
 	
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1">
 		
 				<GatherObject>Legendary Mature Tree</GatherObject>
 		
@@ -248,7 +249,7 @@ IMPORTANT:
 
 			<NoCombatMoveTo Name="Farm Area" XYZ="-260.8886, 277.9571, 628.5402" />
 	
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1">
 		
 				<GatherObject>Legendary Mineral Deposit</GatherObject>
 		
@@ -298,7 +299,7 @@ IMPORTANT:
 			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="-107.9645, 108.7088, -567.3173" />
 
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1">
 		
 				<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 		
@@ -349,7 +350,7 @@ IMPORTANT:
 			<NoCombatMoveTo Name="Farm Area" XYZ="246.0629, 77.57146, -409.364" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="-20.55031, 122.0667, -564.0088" />
 
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1">
 		
 				<GatherObject>Legendary Mineral Deposit</GatherObject>
 		
@@ -405,7 +406,7 @@ IMPORTANT:
 			<WaitTimer WaitTime="2" />
 			<RunCode Name="DisableMount" />
 	
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1">
 		
 				<GatherObject>Legendary Mature Tree</GatherObject>
 		
@@ -458,7 +459,7 @@ IMPORTANT:
 
 			<NoCombatMoveTo Name="Farm Area" XYZ="-260.8886, 277.9571, 628.5402" />
 	
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1">
 		
 				<GatherObject>Legendary Mineral Deposit</GatherObject>
 		

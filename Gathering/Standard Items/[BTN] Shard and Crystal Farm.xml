@@ -65,7 +65,7 @@ REQUIRED:
 			
 			<NoCombatMoveTo Name="Farming Area" XYZ="40.98051, 52.17653, -114.0182" />
 			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" while="not HasAtLeast(2,&FireShard;)">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(2,&FireShard;)">
 				
 				<GatherObject>Lush Vegetation Patch</GatherObject>
 				
@@ -98,7 +98,7 @@ REQUIRED:
 			
 			<NoCombatMoveTo Name="Farming Area" XYZ="95.58908, -3.38692, -135.0398" />
 			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" while="not HasAtLeast(3,&IceShard;)">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(3,&IceShard;)">
 				
 				<GatherObject>Mature Tree</GatherObject>
 				
@@ -131,7 +131,7 @@ REQUIRED:
 			
 			<NoCombatMoveTo Name="Farming Area" XYZ="184.803, -8.851445, -27.4311" />
 			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" while="not HasAtLeast(4,&WindShard;)">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(4,&WindShard;)">
 				
 				<GatherObject>Mature Tree</GatherObject>
 				
@@ -164,7 +164,7 @@ REQUIRED:
 			
 			<NoCombatMoveTo Name="Farming Area" XYZ="192.6879, -27.27029, 293.5937" />
 			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" while="not HasAtLeast(5,&EarthShard;)">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(5,&EarthShard;)">
 				
 				<GatherObject>Mature Tree</GatherObject>
 				
@@ -197,7 +197,7 @@ REQUIRED:
 			
 			<NoCombatMoveTo Name="Farming Area" XYZ="66.88654, 13.19682, 181.055" />
 			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" while="not HasAtLeast(6,&LightningShard;)">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(6,&LightningShard;)">
 				
 				<GatherObject>Mature Tree</GatherObject>
 				
@@ -230,7 +230,7 @@ REQUIRED:
 			
 			<NoCombatMoveTo Name="Farming Area" XYZ="155.1757, 49.41785, -122.2227" />
 			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" while="not HasAtLeast(7,&WaterShard;)">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(7,&WaterShard;)">
 			
 				<GatherObject>Lush Vegetation Patch</GatherObject>
 				
@@ -263,7 +263,7 @@ REQUIRED:
 			
 			<NoCombatMoveTo Name="Farming Area" XYZ="-177.4732, 12.04764, -367.3405" />
 			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" while="not HasAtLeast(8,&FireCrystal;)">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(8,&FireCrystal;)">
 			
 				<GatherObject>Mature Tree</GatherObject>
 				
@@ -297,7 +297,7 @@ REQUIRED:
 			
 			<NoCombatMoveTo Name="Farming Area" XYZ="-174.0778, 7.315338, -10.8868" />
 			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" while="not HasAtLeast(9,&IceCrystal;)">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(9,&IceCrystal;)">
 				
 				<GatherObject>Mature Tree</GatherObject>
 				
@@ -331,7 +331,7 @@ REQUIRED:
 			
 			<NoCombatMoveTo Name="Farming Area" XYZ="189.1244, -32.63171, 409.1171" />
 			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" while="not HasAtLeast(10,&WindCrystal;)">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(10,&WindCrystal;)">
 				
 				<GatherObject>Mature Tree</GatherObject>
 				
@@ -365,7 +365,7 @@ REQUIRED:
 			
 			<NoCombatMoveTo Name="Farming Area" XYZ="288.5969, -11.66098, 47.45194" />
 			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" while="not HasAtLeast(11,&EarthCrystal;)">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(11,&EarthCrystal;)">
 			
 				<GatherObject>Mature Tree</GatherObject>
 				
@@ -399,7 +399,7 @@ REQUIRED:
 			
 			<NoCombatMoveTo Name="Farming Area" XYZ="107.2583, 3.673464, 427.6072" />
 			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" while="not HasAtLeast(12,&LightningCrystal;)">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(12,&LightningCrystal;)">
 			
 				<GatherObject>Mature Tree</GatherObject>
 				
@@ -433,7 +433,7 @@ REQUIRED:
 			
 			<NoCombatMoveTo Name="Farming Area" XYZ="340.5255, 24.45108, 563.5051" />
 			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" while="not HasAtLeast(13,&WaterCrystal;)">
+			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(13,&WaterCrystal;)">
 			
 				<GatherObject>Mature Tree</GatherObject>
 				

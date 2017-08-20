@@ -16,6 +16,7 @@ IMPORTANT:
 
 <!ENTITY DiscoverUnknowns "True">
 <!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
+<!ENTITY CordialTime "BeforeGather"> <!-- BeforeGather or AfterGather -->
 
 <!ENTITY WaitZoneID "635">
 <!ENTITY WaitTeleportName "Rhalgr's Reach">
@@ -57,7 +58,7 @@ IMPORTANT:
 
 			<NoCombatMoveTo Name="Farm Area" XYZ="-325.3954, 60.90504, -806.37" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 		
@@ -99,7 +100,7 @@ IMPORTANT:
 
 			<NoCombatMoveTo Name="Farm Area" XYZ="162.5724, 83.72106, -655.4832" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 		
@@ -142,7 +143,7 @@ IMPORTANT:
 			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="-804.9413, 141.9625, 225.1124" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 		
@@ -185,7 +186,7 @@ IMPORTANT:
 
 			<NoCombatMoveTo Name="Farm Area" XYZ="-325.3954, 60.90504, -806.37" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 		
@@ -227,7 +228,7 @@ IMPORTANT:
 
 			<NoCombatMoveTo Name="Farm Area" XYZ="162.5724, 83.72106, -655.4832" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 		
@@ -270,7 +271,7 @@ IMPORTANT:
 			<NoCombatMoveTo Name="Farm Area" XYZ="78.12397, 167.0607, 36.27269" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="-804.9413, 141.9625, 225.1124" />
 	
-			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" Loops="1" SpellDelay="1000">
+			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
 
 				<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 		
