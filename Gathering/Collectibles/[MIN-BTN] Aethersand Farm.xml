@@ -15,9 +15,9 @@ IMPORTANT:
 <!DOCTYPE Profile [
 
 <!ENTITY DiscoverUnknowns "True">
-<!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
-<!ENTITY CordialTime "BeforeGather"> <!-- BeforeGather or AfterGather -->
-<!ENTITY NumberOfLoops "2"> <!-- Number of times to run through a standard gathering loop. This is required to make the node pop back up but also needed for some regen of GP if you do not have Cordials. 1 = Hi-Cordial and Cordial HQ, 2 = Cordial NQ and 4 = Nothing -->
+<!ENTITY CordialGrade "Cordial"> <!-- None, Cordial, HiCordial or Auto -->
+<!ENTITY CordialTime "BeforeGather"> <!-- None, BeforeGather, AfterGather, IfNeeded, IfNeededOrAfter, or Auto -->
+<!ENTITY NumberOfLoops "1"> <!-- 1 = If using Cordial or Enhanced GP Regen Trait acquired :: 3 = If no Cordial and/or Enhanced GP Regen trait -->
 
 <!ENTITY WaitZoneID "635">
 <!ENTITY WaitTeleportName "Rhalgr's Reach">
@@ -208,7 +208,7 @@ IMPORTANT:
 				<HotSpots>
 					<HotSpot Radius="50" XYZ="-309.5093, 6.127701, 407.3436" name="Earth Crystal" />
 					<HotSpot Radius="50" XYZ="-352.7221, 22.4985, 216.7281" name="Earth Crystal" />
-					<HotSpot Radius="5" XYZ="-137.7109, 14.09635, 331.9674" name="Earth Crystal" />
+					<HotSpot Radius="5" XYZ="-175.3695, 50.272776, 356.9485" name="Earth Crystal" />
 					<HotSpot Radius="50" XYZ="-175.3695, 3.272776, 356.9485" name="Earth Crystal" />
 				</HotSpots>
 		

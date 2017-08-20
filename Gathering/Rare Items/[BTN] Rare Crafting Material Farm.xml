@@ -15,8 +15,8 @@ IMPORTANT:
 <!DOCTYPE Profile [
 
 <!ENTITY DiscoverUnknowns "True">
-<!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
-<!ENTITY CordialTime "BeforeGather"> <!-- BeforeGather or AfterGather -->
+<!ENTITY CordialGrade "Cordial"> <!-- None, Cordial, HiCordial or Auto -->
+<!ENTITY CordialTime "BeforeGather"> <!-- None, BeforeGather, AfterGather, IfNeeded, IfNeededOrAfter, or Auto -->
 
 <!ENTITY FarmItemID "19959"> <!-- Item ID you wish in the loop you wish to track --> 
 <!ENTITY FarmAmount "990"> <!-- Number of above item farmed until profile stops -->
@@ -692,6 +692,17 @@ IMPORTANT:
 
 
 	</While>
+
+		<!-- Go to Wait Location -->
+		<If>
+			
+			<ExLog Color="&LogColor;" Name="INFO" Message="Collection complete. Moving to AFK Area." />
+			
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+			</If>
+
+		</If>
 
 	</Order>
 

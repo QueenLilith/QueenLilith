@@ -17,8 +17,8 @@ IMPORTANT:
 <!DOCTYPE Profile [
 
 <!ENTITY DiscoverUnknowns "True">
-<!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
-<!ENTITY CordialTime "BeforeGather"> <!-- BeforeGather or AfterGather -->
+<!ENTITY CordialGrade "Cordial"> <!-- None, Cordial, HiCordial or Auto -->
+<!ENTITY CordialTime "BeforeGather"> <!-- None, BeforeGather, AfterGather, IfNeeded, IfNeededOrAfter, or Auto -->
 
 <!ENTITY FarmItemID "19959"> <!-- Palladium Ore: 19958, Chromite Ore: 19959, Rhea: 19991, Torreya Log: 19934. ONLY ONE! --> 
 <!ENTITY FarmAmount "990"> <!-- Number of above item farmed until profile stops -->
@@ -495,6 +495,17 @@ IMPORTANT:
 
 
 	</While>
+
+		<!-- Go to Wait Location -->
+		<If>
+			
+			<ExLog Color="&LogColor;" Name="INFO" Message="Collection complete. Moving to AFK Area." />
+			
+			<If Condition="not IsOnMap(&WaitZoneID;)">
+				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+			</If>
+
+		</If>
 
 	</Order>
 

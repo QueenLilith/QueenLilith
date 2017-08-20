@@ -9,6 +9,11 @@ REQUIRED:
 
 <!ENTITY FarmAmount "792">
 
+<!ENTITY WaitZoneID "635">
+<!ENTITY WaitTeleportName "Rhalgr's Reach">
+<!ENTITY WaitTeleportID "104">
+
+<!ENTITY LogColor "#66FF66">
 ]>
 
 <!-- Start Routine -->
@@ -60,6 +65,17 @@ REQUIRED:
 			
 		</ExGather>
 	
+	</If>
+
+	<!-- Go to Wait Location -->
+	<If>
+			
+		<ExLog Color="&LogColor;" Name="INFO" Message="Collection complete. Moving to AFK Area." />
+			
+		<If Condition="not IsOnMap(&WaitZoneID;)">
+			<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+		</If>
+
 	</If>
 
 	</Order>

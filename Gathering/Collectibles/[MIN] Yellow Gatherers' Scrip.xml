@@ -17,8 +17,8 @@ IMPORTANT:
 <!DOCTYPE Profile [
 
 <!ENTITY DiscoverUnknowns "True">
-<!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
-<!ENTITY CordialTime "BeforeGather"> <!-- BeforeGather or AfterGather -->
+<!ENTITY CordialGrade "Cordial"> <!-- None, Cordial, HiCordial or Auto -->
+<!ENTITY CordialTime "BeforeGather"> <!-- None, BeforeGather, AfterGather, IfNeeded, IfNeededOrAfter, or Auto -->
 
 <!ENTITY WaitZoneID "635">
 <!ENTITY WaitTeleportName "Rhalgr's Reach">
