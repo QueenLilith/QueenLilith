@@ -17,7 +17,7 @@ IMPORTANT:
 <!ENTITY DiscoverUnknowns "True">
 <!ENTITY CordialGrade "Cordial"> <!-- Cordial or Hi-Cordial -->
 <!ENTITY CordialTime "BeforeGather"> <!-- BeforeGather or AfterGather -->
-<!ENTITY NumberOfLoops "2"> <!-- Number of times to run through a standar gathering loop. This is required to make the node pop back up and if you need to regen you GP. 1 = Hi-Cordial, 2 = Cordial HQ, 3 = Cordial NQ and 4 = Nothing -->
+<!ENTITY NumberOfLoops "2"> <!-- Number of times to run through a standard gathering loop. This is required to make the node pop back up but also needed for some regen of GP if you do not have Cordials. 1 = Hi-Cordial and Cordial HQ, 2 = Cordial NQ and 4 = Nothing -->
 
 <!ENTITY WaitZoneID "635">
 <!ENTITY WaitTeleportName "Rhalgr's Reach">
@@ -372,6 +372,7 @@ IMPORTANT:
 					<HotSpot Radius="50" XYZ="-16.49264, 78.27033, -365.0367" name="Wind Crystal" />
 					<HotSpot Radius="50" XYZ="21.66402, 45.15734, -537.5494" name="Wind Crystal" />
 					<HotSpot Radius="50" XYZ="104.9086, 47.44813, -485.661" name="Wind Crystal" />
+					<HotSpot Radius="5" XYZ="128.9989, 131.2185, -426.213" name="Wind Crystal" />
 				</HotSpots>
 		
 				<ItemName>Wind Crystal</ItemName>
