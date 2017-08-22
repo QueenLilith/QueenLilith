@@ -72,7 +72,7 @@ REQUIRED:
 	<!-- ################ -->
 	<If Condition="&GatheringMIN;">
 
-		<ExLog Color="&LogColor;" Name="INFO" Message="ADD SOMETHING HERE ASSCLOWN!" />
+		<ExLog Color="&LogColor;" Name="INFO" Message="ADD SOMETHING HERE!" />
 
 	</If>
 
@@ -82,7 +82,7 @@ REQUIRED:
 	<!-- ################ -->
 	<If Condition="&GatheringBTN;">
 
-		<ExLog Color="&LogColor;" Name="INFO" Message="ADD SOMETHING HERE ASSCLOWN!" />
+		<ExLog Color="&LogColor;" Name="INFO" Message="ADD SOMETHING HERE!" />
 
 	</If>
 
