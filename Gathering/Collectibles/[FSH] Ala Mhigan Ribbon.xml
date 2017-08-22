@@ -26,8 +26,8 @@ IMPORTANT:
 
     <CodeChunks>
 		<CodeChunk Name="Fisher">
-			<![CDATA[ 
-				ff14bot.Managers.ChatManager.SendChat("/gs change 7");
+		<![CDATA[ 
+			ff14bot.Managers.ChatManager.SendChat("/gs change 7");
 		]]>
 		</CodeChunk>
     </CodeChunks>

@@ -39,23 +39,23 @@ IMPORTANT:
 
 	<CodeChunks>
 		<CodeChunk Name="Botanist">
-			<![CDATA[ 
-				ff14bot.Managers.ChatManager.SendChat("/gs change 6");
+		<![CDATA[ 
+			ff14bot.Managers.ChatManager.SendChat("/gs change 6");
 		]]>
 		</CodeChunk>
 		<CodeChunk Name="EnableMount">
-			<![CDATA[
-				ff14bot.Settings.CharacterSettings.Instance.UseMount = true;
+		<![CDATA[
+			ff14bot.Settings.CharacterSettings.Instance.UseMount = true;
 		]]>
 		</CodeChunk>
 		<CodeChunk Name="DisableMount">
-			<![CDATA[
-				ff14bot.Settings.CharacterSettings.Instance.UseMount = false;
+		<![CDATA[
+			ff14bot.Settings.CharacterSettings.Instance.UseMount = false;
 		]]>
 		</CodeChunk>
 		<CodeChunk Name="BotanistStealth">
-			<![CDATA[ SpellData data;
-				if (!Core.Me.HasAura(47) && ActionManager.CurrentActions.TryGetValue(212, out data) && ActionManager.CanCast(data, Core.Me)) ActionManager.DoAction(212, Core.Me);
+		<![CDATA[ SpellData data;
+			if (!Core.Me.HasAura(47) && ActionManager.CurrentActions.TryGetValue(212, out data) && ActionManager.CanCast(data, Core.Me)) ActionManager.DoAction(212, Core.Me);
 		]]>
 		</CodeChunk>
 	</CodeChunks>

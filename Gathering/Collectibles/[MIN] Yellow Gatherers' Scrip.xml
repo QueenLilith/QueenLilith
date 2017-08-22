@@ -35,8 +35,8 @@ IMPORTANT:
 	
 	<CodeChunks>
 		<CodeChunk Name="Miner">
-			<![CDATA[ 
-				ff14bot.Managers.ChatManager.SendChat("/gs change 5");
+		<![CDATA[ 
+			ff14bot.Managers.ChatManager.SendChat("/gs change 5");
 		]]>
 		</CodeChunk>
 	</CodeChunks>

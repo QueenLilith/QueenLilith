@@ -33,28 +33,28 @@ IMPORTANT:
 
 	<CodeChunks>
 		<CodeChunk Name="Miner">
-			<![CDATA[ 
-				ff14bot.Managers.ChatManager.SendChat("/gs change 5");
+		<![CDATA[ 
+			ff14bot.Managers.ChatManager.SendChat("/gs change 5");
 		]]>
 		</CodeChunk>
 		<CodeChunk Name="Botanist">
-			<![CDATA[ 
-				ff14bot.Managers.ChatManager.SendChat("/gs change 6");
+		<![CDATA[ 
+			ff14bot.Managers.ChatManager.SendChat("/gs change 6");
 		]]>
 		</CodeChunk>
 		<CodeChunk Name="EnableMount">
-			<![CDATA[
-				ff14bot.Settings.CharacterSettings.Instance.UseMount = true;
+		<![CDATA[
+			ff14bot.Settings.CharacterSettings.Instance.UseMount = true;
 		]]>
 		</CodeChunk>
 		<CodeChunk Name="DisableMount">
-			<![CDATA[
-				ff14bot.Settings.CharacterSettings.Instance.UseMount = false;
+		<![CDATA[
+			ff14bot.Settings.CharacterSettings.Instance.UseMount = false;
 		]]>
 		</CodeChunk>
 		<CodeChunk Name="BotanistStealth">
-			<![CDATA[ SpellData data;
-				if (!Core.Me.HasAura(47) && ActionManager.CurrentActions.TryGetValue(212, out data) && ActionManager.CanCast(data, Core.Me)) ActionManager.DoAction(212, Core.Me);
+		<![CDATA[ SpellData data;
+			if (!Core.Me.HasAura(47) && ActionManager.CurrentActions.TryGetValue(212, out data) && ActionManager.CanCast(data, Core.Me)) ActionManager.DoAction(212, Core.Me);
 		]]>
 		</CodeChunk>
 	</CodeChunks>
@@ -122,6 +122,7 @@ IMPORTANT:
 				<TeleportTo name="Castrum Oriens" aetheryteId="98" />
 			</If>
 
+			<NoCombatMoveTo Name="Farm Area" XYZ="-629.0375, 152.2415, -509.1203" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="162.5724, 83.72106, -655.4832" />
 	
 			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
@@ -218,6 +219,7 @@ IMPORTANT:
 				<TeleportTo name="Castrum Oriens" aetheryteId="98" />
 			</If>
 
+			<NoCombatMoveTo Name="Farm Area" XYZ="-629.0375, 152.2415, -509.1203" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="-533.5005, 104.188, -120.0941" />
 	
 			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
@@ -438,6 +440,7 @@ IMPORTANT:
 				<TeleportTo name="Castrum Oriens" aetheryteId="98" />
 			</If>
 
+			<NoCombatMoveTo Name="Farm Area" XYZ="-629.0375, 152.2415, -509.1203" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="162.5724, 83.72106, -655.4832" />
 	
 			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
@@ -534,6 +537,7 @@ IMPORTANT:
 				<TeleportTo name="Castrum Oriens" aetheryteId="98" />
 			</If>
 
+			<NoCombatMoveTo Name="Farm Area" XYZ="-629.0375, 152.2415, -509.1203" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="-533.5005, 104.188, -120.0941" />
 	
 			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">

@@ -40,8 +40,8 @@ REQUIRED:
 
 	<CodeChunks>
 		<CodeChunk Name="Botanist">
-			<![CDATA[ 
-				ff14bot.Managers.ChatManager.SendChat("/gs change 6");
+		<![CDATA[ 
+			ff14bot.Managers.ChatManager.SendChat("/gs change 6");
 		]]>
 		</CodeChunk>
 	</CodeChunks>
@@ -457,9 +457,9 @@ REQUIRED:
 		</If>
 
 		<!-- Go to Wait Location -->
-		<If>
+		<If Condition="True">
 			
-			<ExLog Color="&LogColor;" Name="INFO" Message="Collection complete. Moving to AFK Area." />
+			<ExLog Color="&LogColor;" Name="INFO" Message="Collection complete. Moving to Wait Area." />
 			
 			<If Condition="not IsOnMap(&WaitZoneID;)">
 				<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />

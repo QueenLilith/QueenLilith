@@ -33,8 +33,8 @@ IMPORTANT:
 	
 	<CodeChunks>
 		<CodeChunk Name="Miner">
-			<![CDATA[ 
-				ff14bot.Managers.ChatManager.SendChat("/gs change 5");
+		<![CDATA[ 
+			ff14bot.Managers.ChatManager.SendChat("/gs change 5");
 		]]>
 		</CodeChunk>
 	</CodeChunks>
@@ -98,6 +98,7 @@ IMPORTANT:
 				<TeleportTo name="Castrum Oriens" aetheryteId="98" />
 			</If>
 
+			<NoCombatMoveTo Name="Farm Area" XYZ="-629.0375, 152.2415, -509.1203" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="162.5724, 83.72106, -655.4832" />
 	
 			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">
@@ -226,6 +227,7 @@ IMPORTANT:
 				<TeleportTo name="Castrum Oriens" aetheryteId="98" />
 			</If>
 
+			<NoCombatMoveTo Name="Farm Area" XYZ="-629.0375, 152.2415, -509.1203" />
 			<NoCombatMoveTo Name="Farm Area" XYZ="162.5724, 83.72106, -655.4832" />
 	
 			<GatherCollectable while="True" DiscoverUnknowns="&DiscoverUnknowns;" CordialType="&CordialGrade;" CordialTime="&CordialTime;" Loops="1" SpellDelay="1000">

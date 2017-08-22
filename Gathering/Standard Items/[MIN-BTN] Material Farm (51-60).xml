@@ -1,0 +1,106 @@
+<!--
+Author: QueenLilith
+
+REQUIRED:
+- ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
+-->
+
+<!DOCTYPE Profile [
+
+<!-- ################ -->
+<!-- ##   Miner    ## -->
+<!-- ################ -->
+<!ENTITY GatheringMIN "True"> <!-- Are you gathering anything that requires a Miner? True or False -->
+
+<!ENTITY ITEMNAME "0">
+<!ENTITY ITEMNAME "0">
+<!ENTITY ITEMNAME "0">
+<!ENTITY ITEMNAME "0">
+
+
+<!-- ################ -->
+<!-- ##  Botanist  ## -->
+<!-- ################ -->
+<!ENTITY GatheringBTN "True"> <!-- Are you gathering anything that requires a Botanist? True or False -->
+
+<!ENTITY ITEMNAME "0">
+<!ENTITY ITEMNAME "0">
+<!ENTITY ITEMNAME "0">
+<!ENTITY ITEMNAME "0">
+
+
+<!-- ################ -->
+<!-- ##  Settings  ## -->
+<!-- ################ -->
+<!ENTITY CordialType "Cordial"> <!-- None, Cordial, HiCordial or Auto -->
+<!ENTITY CordialTime "BeforeGather"> <!-- None, BeforeGather, AfterGather, IfNeeded, IfNeededOrAfter, or Auto -->
+
+<!ENTITY GatherSkillMIN "King's Yield II"> <!-- Unearth III or King's Yield II -->
+<!ENTITY GatherSkillBTN "Blessed Harvest II"> <!-- Leaf Turn III or Blessed Harvest II -->
+
+<!ENTITY WaitZoneID "478">
+<!ENTITY WaitTeleportName "Idyllshire">
+<!ENTITY WaitTeleportID "75">
+
+<!ENTITY LogColor "#66FF66">
+]>
+
+<!-- Start Routine -->
+<Profile>
+	
+	<Name>[MIN-BTN] Material Farm (51-60)</Name>
+	<KillRadius>25</KillRadius>
+
+	<CodeChunks>
+		<CodeChunk Name="Miner">
+		<![CDATA[ 
+			ff14bot.Managers.ChatManager.SendChat("/gs change 5");
+		]]>
+		</CodeChunk>
+		<CodeChunk Name="Botanist">
+		<![CDATA[ 
+			ff14bot.Managers.ChatManager.SendChat("/gs change 6");
+		]]>
+		</CodeChunk>
+	</CodeChunks>
+
+	<Order>
+
+
+	<!-- ################ -->
+	<!-- ##    Miner   ## -->
+	<!-- ################ -->
+	<If Condition="&GatheringMIN;">
+
+		<ExLog Color="&LogColor;" Name="INFO" Message="ADD SOMETHING HERE ASSCLOWN!" />
+
+	</If>
+
+
+	<!-- ################ -->
+	<!-- ##  Botanist  ## -->
+	<!-- ################ -->
+	<If Condition="&GatheringBTN;">
+
+		<ExLog Color="&LogColor;" Name="INFO" Message="ADD SOMETHING HERE ASSCLOWN!" />
+
+	</If>
+
+
+
+
+	<!-- Go to Wait Location -->
+	<If Condition="True">
+			
+		<ExLog Color="&LogColor;" Name="INFO" Message="Collection complete. Moving to Wait Area." />
+			
+		<If Condition="not IsOnMap(&WaitZoneID;)">
+			<TeleportTo name="&WaitTeleportName;" aetheryteId="&WaitTeleportID;" />
+		</If>
+
+	</If>
+
+
+	</Order>
+
+</Profile>
