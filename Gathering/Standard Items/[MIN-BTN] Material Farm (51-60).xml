@@ -69,7 +69,7 @@ REQUIRED:
 
 <!ENTITY DarkChestnutLog "0">
 <!ENTITY DarkChestnutBranch "0">
-<!ENTITY DarkChestnut "0"> <!-- Normally Hidden :: Collects Dark Chestnut Log when not present -->
+<!ENTITY DarkChestnut "99"> <!-- Normally Hidden :: Collects Dark Chestnut Log when not present -->
 
 <!ENTITY Coneflower "0">
 
@@ -1435,9 +1435,9 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="193.0099, -93.63028, 338.4214" name="Dark Chestnut Log" />
-					<HotSpot Radius="100" XYZ="246.1857, -59.56891, 161.0342" name="Dark Chestnut Log" />
-					<HotSpot Radius="100" XYZ="160.9896, -62.86692, 147.5341" name="Dark Chestnut Log" />
+					<HotSpot Radius="75" XYZ="193.0099, -93.63028, 338.4214" name="Dark Chestnut Log" />
+					<HotSpot Radius="75" XYZ="246.1857, -59.56891, 161.0342" name="Dark Chestnut Log" />
+					<HotSpot Radius="75" XYZ="160.9896, -62.86692, 147.5341" name="Dark Chestnut Log" />
 				</HotSpots>
 		
 				<ItemNames>
@@ -1472,9 +1472,9 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="193.0099, -93.63028, 338.4214" name="Dark Chestnut Branch" />
-					<HotSpot Radius="100" XYZ="246.1857, -59.56891, 161.0342" name="Dark Chestnut Branch" />
-					<HotSpot Radius="100" XYZ="160.9896, -62.86692, 147.5341" name="Dark Chestnut Branch" />
+					<HotSpot Radius="75" XYZ="193.0099, -93.63028, 338.4214" name="Dark Chestnut Branch" />
+					<HotSpot Radius="75" XYZ="246.1857, -59.56891, 161.0342" name="Dark Chestnut Branch" />
+					<HotSpot Radius="75" XYZ="160.9896, -62.86692, 147.5341" name="Dark Chestnut Branch" />
 				</HotSpots>
 		
 				<ItemNames>
@@ -1509,9 +1509,9 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="193.0099, -93.63028, 338.4214" name="Dark Chestnut" />
-					<HotSpot Radius="100" XYZ="246.1857, -59.56891, 161.0342" name="Dark Chestnut" />
-					<HotSpot Radius="100" XYZ="160.9896, -62.86692, 147.5341" name="Dark Chestnut" />
+					<HotSpot Radius="75" XYZ="193.0099, -93.63028, 338.4214" name="Dark Chestnut" />
+					<HotSpot Radius="75" XYZ="246.1857, -59.56891, 161.0342" name="Dark Chestnut" />
+					<HotSpot Radius="75" XYZ="160.9896, -62.86692, 147.5341" name="Dark Chestnut" />
 				</HotSpots>
 		
 				<ItemNames>
@@ -1584,9 +1584,9 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="106.2666, -146.5234, 578.4235" name="Birch Sap" />
-					<HotSpot Radius="100" XYZ="178.7294, -147.8377, 461.3153" name="Birch Sap" />
-					<HotSpot Radius="100" XYZ="336.1294, -125.2895, 563.8704" name="Birch Sap" />
+					<HotSpot Radius="50" XYZ="106.2666, -146.5234, 578.4235" name="Birch Sap" />
+					<HotSpot Radius="50" XYZ="178.7294, -147.8377, 461.3153" name="Birch Sap" />
+					<HotSpot Radius="50" XYZ="336.1294, -125.2895, 563.8704" name="Birch Sap" />
 				</HotSpots>
 		
 				<ItemNames>
@@ -1621,9 +1621,9 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="106.2666, -146.5234, 578.4235" name="Birch Branch" />
-					<HotSpot Radius="100" XYZ="178.7294, -147.8377, 461.3153" name="Birch Branch" />
-					<HotSpot Radius="100" XYZ="336.1294, -125.2895, 563.8704" name="Birch Branch" />
+					<HotSpot Radius="50" XYZ="106.2666, -146.5234, 578.4235" name="Birch Branch" />
+					<HotSpot Radius="50" XYZ="178.7294, -147.8377, 461.3153" name="Birch Branch" />
+					<HotSpot Radius="50" XYZ="336.1294, -125.2895, 563.8704" name="Birch Branch" />
 				</HotSpots>
 		
 				<ItemNames>
@@ -1658,9 +1658,9 @@ REQUIRED:
 				<GatherObject>Mature Tree</GatherObject>
 
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="106.2666, -146.5234, 578.4235" name="Birch Log" />
-					<HotSpot Radius="100" XYZ="178.7294, -147.8377, 461.3153" name="Birch Log" />
-					<HotSpot Radius="100" XYZ="336.1294, -125.2895, 563.8704" name="Birch Log" />
+					<HotSpot Radius="50" XYZ="106.2666, -146.5234, 578.4235" name="Birch Log" />
+					<HotSpot Radius="50" XYZ="178.7294, -147.8377, 461.3153" name="Birch Log" />
+					<HotSpot Radius="50" XYZ="336.1294, -125.2895, 563.8704" name="Birch Log" />
 				</HotSpots>
 		
 				<ItemNames>
@@ -1697,7 +1697,7 @@ REQUIRED:
 
 				<HotSpots>
 					<HotSpot Radius="75" XYZ="-13.01679, 11.69121, -434.0702" name="Sesame Seeds" />
-					<HotSpot Radius="75" XYZ="-45.98537, 12.22764, -559.9008" name="Sesame Seeds" />
+					<HotSpot Radius="50" XYZ="-45.98537, 12.22764, -559.9008" name="Sesame Seeds" />
 					<HotSpot Radius="75" XYZ="64.88289, 12.13588, -626.5817" name="Sesame Seeds" />
 				</HotSpots>
 		
@@ -1727,7 +1727,9 @@ REQUIRED:
 			<If Condition="not IsOnMap(400)">
 				<TeleportTo Name="Zenith" AetheryteId="79" />
 			</If>
-			
+
+			<NoCombatMoveTo Name="Farm Area" XYZ="-169.0372, 20.54077, 290.7263" />
+
 			<ExGather While="not HasAtLeast(12640,&Dandelion;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
 		
 				<GatherObject>Lush Vegetation Patch</GatherObject>
