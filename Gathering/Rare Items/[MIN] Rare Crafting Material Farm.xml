@@ -21,8 +21,8 @@ IMPORTANT:
 <!ENTITY FarmItemID "19968"> <!-- Item ID you wish in the loop you wish to track --> 
 <!ENTITY FarmAmount "990"> <!-- Number of above item farmed until profile stops -->
 
-<!ENTITY FarmSkillGMIN "Sharp Vision II">
-<!ENTITY FarmSkillQMIN "King's Yield II">
+<!ENTITY GatherSkillGMIN "Sharp Vision II">
+<!ENTITY GatherSkillQMIN "King's Yield II">
 
 <!ENTITY WaitZoneID "635">
 <!ENTITY WaitTeleportName "Rhalgr's Reach">
@@ -90,8 +90,8 @@ IMPORTANT:
 				<Slot>7</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 
 			</ExGather>
@@ -134,8 +134,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 
 			</ExGather>
@@ -179,8 +179,8 @@ IMPORTANT:
 				<Slot>6</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 
 			</ExGather>
@@ -223,8 +223,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 
 			</ExGather>
@@ -266,8 +266,8 @@ IMPORTANT:
 				<Slot>6</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 
 			</ExGather>
@@ -309,8 +309,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 
 			</ExGather>
@@ -353,8 +353,8 @@ IMPORTANT:
 				<Slot>7</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 
 			</ExGather>
@@ -397,8 +397,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 
 			</ExGather>
@@ -442,8 +442,8 @@ IMPORTANT:
 				<Slot>6</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 
 			</ExGather>
@@ -486,8 +486,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 
 			</ExGather>
@@ -529,8 +529,8 @@ IMPORTANT:
 				<Slot>6</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 
 			</ExGather>
@@ -572,8 +572,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 
 			</ExGather>

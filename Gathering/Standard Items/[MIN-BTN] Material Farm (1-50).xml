@@ -12,10 +12,101 @@ REQUIRED:
 <!-- ################ -->
 <!ENTITY GatheringMIN "True"> <!-- Are you gathering anything that requires a Miner? True or False -->
 
-<!ENTITY ITEMNAME "0">
-<!ENTITY ITEMNAME "0">
-<!ENTITY ITEMNAME "0">
-<!ENTITY ITEMNAME "0">
+<!ENTITY CopperOre "0">
+<!ENTITY MuddyWater "0">
+
+<!ENTITY BoneChip "0">
+
+<!ENTITY RawLapisLazuli "0">
+<!ENTITY PottersClay "0">
+
+<!ENTITY RawSunstone "0">
+
+<!ENTITY Obsidian "0">
+<!ENTITY SoiledFemur "0">
+<!ENTITY ZincOre "0">
+<!ENTITY TinOre "0">
+
+<!ENTITY IronOre "0">
+
+<!ENTITY FineSand "0">
+<!ENTITY Ragstone "0">
+<!ENTITY RockSalt "0">
+
+<!ENTITY CopperSand "0">
+<!ENTITY Cinnabar "0">
+<!ENTITY IronSand "0">
+
+<!ENTITY RawSphene "0">
+
+<!ENTITY Limestone "0">
+<!ENTITY Mudstone "0">
+
+<!ENTITY RawDanburite "0">
+<!ENTITY SunriseTellin "0">
+
+<!ENTITY RawFluorite "0">
+<!ENTITY RawMalachite "0">
+<!ENTITY Alumen "0">
+
+<!ENTITY SilverOre "0">
+<!ENTITY EffervescentWater "0">
+
+<!ENTITY WindRock "0">
+<!ENTITY IceRock "0">
+<!ENTITY EarthRock "0">
+<!ENTITY SilverSand "0">
+
+<!ENTITY LightningRock "0">
+<!ENTITY WaterRock "0">
+<!ENTITY FireRock "0">
+
+<!ENTITY WyvernObsidian "0">
+<!ENTITY Saltpeter "0">
+
+<!ENTITY Silex "0">
+<!ENTITY BombAsh "0">
+
+<!ENTITY Brimstone "0">
+<!ENTITY Siltstone "0">
+
+<!ENTITY RawGoshenite "0">
+<!ENTITY RawAquamarine "0">
+<!ENTITY RawGarnet "0">
+
+<!ENTITY Granite "0">
+<!ENTITY RawAmethyst "0">
+<!ENTITY RawPeridot "0">
+
+<!ENTITY MythrilOre "0">
+<!ENTITY RawHeliodor "0">
+
+<!ENTITY MythrilSand "0">
+
+<!ENTITY RawSpinel "0">
+<!ENTITY RawTourmaline "0">
+<!ENTITY BlackAlumen "0">
+
+<!ENTITY RawZircon "0">
+<!ENTITY Jade "0">
+
+<!ENTITY GrenadeAsh "0">
+
+<!ENTITY RawTurquoise "0">
+<!ENTITY ElectrumOre "0">
+
+<!ENTITY Marble "0">
+<!ENTITY ElectrumSand "0">
+
+<!ENTITY RawRubellite "0">
+<!ENTITY RawAmber "0">
+
+<!ENTITY OgreHorn "0">
+<!ENTITY BasiliskEgg "0">
+<!ENTITY AdamantoiseShell "0">
+<!ENTITY CobaltOre "0">
+
+
 
 
 <!-- ################ -->
@@ -28,23 +119,101 @@ REQUIRED:
 <!ENTITY Latex "0">
 <!ENTITY AllaganSnail "0">
 
+<!ENTITY MapleSap "0">
+<!ENTITY Cinnamon "0">
+<!ENTITY BeehiveChip "0">
+
+<!ENTITY CockFeather "0">
+<!ENTITY Cloves "0">
+
 <!ENTITY AshLog "0">
 <!ENTITY AshBranch "0">
 <!ENTITY CrowFeather "0">
 <!ENTITY TinolqaMistletoe "0">
 
+<!ENTITY LaNosceanOrange "0">
+<!ENTITY KukuruBean "0">
+
 <!ENTITY ElmLog "0">
 <!ENTITY GridanianChestnut "0">
+
+<!ENTITY HighlandParsley "0">
+<!ENTITY CieldalaesSpinach "0">
+<!ENTITY LowlandGrapes "0">
+<!ENTITY CinderfootOlive "0">
+
+<!ENTITY TreeToad "0">
+<!ENTITY Humus "0">
+<!ENTITY Marjoram "0">
+<!ENTITY BuffaloBeans "0">
+
+<!ENTITY Chanterelle "0">
+<!ENTITY Lavender "0">
+<!ENTITY CottonBoll "0">
+<!ENTITY Carnation "0">
+
+<!ENTITY GrassViper "0">
+<!ENTITY CoerthanCarrot "0">
+<!ENTITY MokoGrass "0">
+<!ENTITY Rye "0">
+
+<!ENTITY LaNosceanLettuce "0">
+<!ENTITY Straw "0">
+<!ENTITY SunsetWheat "0">
+<!ENTITY RubyTomato "0">
+
+<!ENTITY WildOnion "0">
+<!ENTITY GarleanGarlic "0">
+<!ENTITY OgrePumpkin "0">
+
+<!ENTITY AlpineParsnip "0">
+<!ENTITY YellowGinseng "0">
+<!ENTITY BlackPepper "0">
 
 <!ENTITY YewLog "0">
 <!ENTITY YewBranch "0">
 <!ENTITY FaerieApple "0">
 
-<!ENTITY WalnutLog "594">
+<!ENTITY SunLemon "0">
+
+<!ENTITY Nopales "0">
+
+<!ENTITY IslandSeedling "0">
+<!ENTITY Paprika "0">
+<!ENTITY LalafellinLentil "0">
+
+<!ENTITY WhiteScorpion "0">
+<!ENTITY Popoto "0">
+<!ENTITY DesertSeedling "0">
+
+<!ENTITY ShroudSeedling "0">
+<!ENTITY GilBun "0">
+<!ENTITY GalagoMint "0">
+<!ENTITY Belladonna "0">
+
+<!ENTITY WalnutLog "0">
 <!ENTITY GridanianWalnut "0">
 <!ENTITY MatronsMistletoe "0">
 
-<!ENTITY OakLog "594">
+<!ENTITY StickyRice "0">
+<!ENTITY PixiePlums "0">
+<!ENTITY NobleGrapes "0">
+<!ENTITY Chamomile "0">
+
+<!ENTITY ButtonMushroom "0">
+<!ENTITY MillionCorn "0">
+<!ENTITY PearlGinger "0">
+<!ENTITY AlaMhiganMustard "0">
+
+<!ENTITY AlligatorPear "0">
+<!ENTITY ChocoboFeather "0">
+
+<!ENTITY MidlandCabbage "0">
+<!ENTITY JadePeas "0">
+<!ENTITY WizardEggplant "0">
+<!ENTITY MoorLeech "0">
+
+<!ENTITY OakLog "0">
 <!ENTITY OakBranch "0">
 <!ENTITY Tarantula "0">
 
@@ -52,7 +221,17 @@ REQUIRED:
 <!ENTITY WhiteTruffle "0">
 <!ENTITY WildfowlFeather "0">
 
-<!ENTITY MahoganyLog "891">
+<!ENTITY Aloe "0">
+<!ENTITY Bloodgrass "0">
+<!ENTITY Laurel "0">
+<!ENTITY DesertSaffron "0">
+
+<!ENTITY SaltLeek "0">
+<!ENTITY Mandrake "0">
+<!ENTITY MidlandBasil "0">
+<!ENTITY DragonPepper "0">
+
+<!ENTITY MahoganyLog "0">
 <!ENTITY Nutmeg "0">
 <!ENTITY Almonds "0">
 <!ENTITY IronAcorn "0">
@@ -61,18 +240,25 @@ REQUIRED:
 <!ENTITY RamhornZucchini "0">
 <!ENTITY MaidenArtichoke "0">
 
-<!ENTITY RosewoodLog "891">
-<!ENTITY RosewoodBranch "0">
+<!ENTITY Thyme "0">
+<!ENTITY BloodCurrants "0">
 
-<!ENTITY StickyRice "0">
-<!ENTITY PixiePlums "0">
-<!ENTITY NobleGrapes "0">
-<!ENTITY Chamomile "0">
+<!ENTITY Mistletoe "0">
+<!ENTITY MirrorApple "0">
 
 <!ENTITY BlackScorpion "0">
 <!ENTITY DartFrog "0">
 <!ENTITY SagoliiSage "0">
 <!ENTITY Rolanberry "0">
+
+<!ENTITY RosewoodLog "0">
+<!ENTITY RosewoodBranch "0">
+
+<!ENTITY LavaToad "0">
+<!ENTITY ThanalanTeaLeaves "0">
+<!ENTITY MaidenGrass "0">
+
+
 
 
 <!-- ################ -->
@@ -118,7 +304,2304 @@ REQUIRED:
 	<!-- ################ -->
 	<If Condition="&GatheringMIN;">
 
-		<ExLog Color="&LogColor;" Name="INFO" Message="ADD SOMETHING HERE!" />
+		<!-- Copper Ore -->
+		<If Condition="not HasAtLeast(5106,&CopperOre;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Copper Ore count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(141)">
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5106,&CopperOre;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-112.8729, 1.445981, 206.1592" name="Copper Ore" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Copper Ore</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Muddy Water -->
+		<If Condition="not HasAtLeast(5488,&MuddyWater;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Muddy Water count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(141)">
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5488,&MuddyWater;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-112.8729, 1.445981, 206.1592" name="Muddy Water" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Muddy Water</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Bone Chip -->
+		<If Condition="not HasAtLeast(5432,&BoneChip;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Bone Chip count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(141)">
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5432,&BoneChip;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="110.0327, 2.708662, 268.3261" name="Bone Chip" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Bone Chip</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Lapis Lazuli -->
+		<If Condition="not HasAtLeast(5133,&RawLapisLazuli;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Lapis Lazuli count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(154)">
+				<TeleportTo Name="Fallgourd Float" AetheryteId="7" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5133,&RawLapisLazuli;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="347.5869, -3.072953, 176.5818" name="Raw Lapis Lazuli" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Lapis Lazuli</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Potter's Clay -->
+		<If Condition="not HasAtLeast(5513,&PottersClay;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Potter's Clay count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(154)">
+				<TeleportTo Name="Fallgourd Float" AetheryteId="7" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5513,&PottersClay;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="347.5869, -3.072953, 176.5818" name="Potter's Clay" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Potter's Clay</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Sunstone -->
+		<If Condition="not HasAtLeast(5128,&RawSunstone;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Sunstone count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(135)">
+				<TeleportTo Name="Moraby Drydocks" AetheryteId="10" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5128,&RawSunstone;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="319.9058, 68.31721, -136.7269" name="Raw Sunstone" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Sunstone</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Obsidian -->
+		<If Condition="not HasAtLeast(5124,&Obsidian;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Obsidian count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5124,&Obsidian;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="47.12181, 57.97332, 361.4926" name="Obsidian" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Obsidian</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Soiled Femur -->
+		<If Condition="not HasAtLeast(5433,&SoiledFemur;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Soiled Femur count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5433,&SoiledFemur;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="47.12181, 57.97332, 361.4926" name="Soiled Femur" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Soiled Femur</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Zinc Ore -->
+		<If Condition="not HasAtLeast(5110,&ZincOre;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Zinc Ore count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5110,&ZincOre;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="47.12181, 57.97332, 361.4926" name="Zinc Ore" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Zinc Ore</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Tin Ore -->
+		<If Condition="not HasAtLeast(5107,&TinOre;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Tin Ore count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5107,&TinOre;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="47.12181, 57.97332, 361.4926" name="Tin Ore" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Tin Ore</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Iron Ore -->
+		<If Condition="not HasAtLeast(5111,&IronOre;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Iron Ore count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5111,&IronOre;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="302.0987, 62.40686, -223.8885" name="Iron Ore" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Iron Ore</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Fine Sand -->
+		<If Condition="not HasAtLeast(5267,&FineSand;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Fine Sand count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(141)">
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5267,&FineSand;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-349.4957, 0.9003992, 56.98325" name="Fine Sand" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Fine Sand</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Ragstone -->
+		<If Condition="not HasAtLeast(5228,&Ragstone;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Ragstone count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(141)">
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5228,&Ragstone;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-349.4957, 0.9003992, 56.98325" name="Ragstone" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Ragstone</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Rock Salt -->
+		<If Condition="not HasAtLeast(5518,&RockSalt;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Rock Salt count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(141)">
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5518,&RockSalt;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-349.4957, 0.9003992, 56.98325" name="Rock Salt" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Rock Salt</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Copper Sand -->
+		<If Condition="not HasAtLeast(5268,&CopperSand;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Copper Sand count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5268,&CopperSand;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="151.8644, 49.75554, -137.7911" name="Copper Sand" />
+					<HotSpot Radius="5" XYZ="151.8644, 49.75554, -137.7911" name="Copper Sand" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Copper Sand</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Cinnabar -->
+		<If Condition="not HasAtLeast(5519,&Cinnabar;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Cinnabar count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5519,&Cinnabar;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="151.8644, 49.75554, -137.7911" name="Cinnabar" />
+					<HotSpot Radius="5" XYZ="151.8644, 49.75554, -137.7911" name="Cinnabar" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Cinnabar</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Iron Sand -->
+		<If Condition="not HasAtLeast(5269,&IronSand;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Iron Sand count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5269,&IronSand;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="151.8644, 49.75554, -137.7911" name="Iron Sand" />
+					<HotSpot Radius="5" XYZ="151.8644, 49.75554, -137.7911" name="Iron Sand" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Iron Sand</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Sphene -->
+		<If Condition="not HasAtLeast(5131,&RawSphene;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Sphene count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(154)">
+				<TeleportTo Name="Fallgourd Float" AetheryteId="7" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5131,&RawSphene;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="398.0911, -5.458813, 74.43238" name="Raw Sphene" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Sphene</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Limestone -->
+		<If Condition="not HasAtLeast(5230,&Limestone;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Limestone count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Aleport" AetheryteId="14" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5230,&Limestone;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="234.6718, -16.35868, 135.785" name="Limestone" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Limestone</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Mudstone -->
+		<If Condition="not HasAtLeast(5229,&Mudstone;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Mudstone count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Aleport" AetheryteId="14" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5229,&Mudstone;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="234.6718, -16.35868, 135.785" name="Mudstone" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Mudstone</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Danburite -->
+		<If Condition="not HasAtLeast(5129,&RawDanburite;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Danburite count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Aleport" AetheryteId="14" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5129,&RawDanburite;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="369.8455, 8.542834, 58.13945" name="Raw Danburite" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Danburite</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Sunrise Tellin -->
+		<If Condition="not HasAtLeast(5465,&SunriseTellin;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Sunrise Tellin count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Aleport" AetheryteId="14" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5465,&SunriseTellin;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="369.8455, 8.542834, 58.13945" name="Sunrise Tellin" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Sunrise Tellin</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Fluorite -->
+		<If Condition="not HasAtLeast(5132,&RawFluorite;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Fluorite count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(145)">
+				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5132,&RawFluorite;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-197.5536, -36.40213, -46.84772" name="Raw Fluorite" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Fluorite</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Malachite -->
+		<If Condition="not HasAtLeast(5130,&RawMalachite;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Malachite count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(145)">
+				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5130,&RawMalachite;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-197.5536, -36.40213, -46.84772" name="Raw Malachite" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Malachite</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Alumen -->
+		<If Condition="not HasAtLeast(5524,&Alumen;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Alumen count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(145)">
+				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5524,&Alumen;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-197.5536, -36.40213, -46.84772" name="Alumen" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Alumen</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Silver Ore -->
+		<If Condition="not HasAtLeast(5113,&SilverOre;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Silver Ore count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(153)">
+				<TeleportTo Name="Quarrymill" AetheryteId="5" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5113,&SilverOre;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-273.4907, 13.86439, -98.13058" name="Silver Ore" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Silver Ore</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Effervescent Water -->
+		<If Condition="not HasAtLeast(5491,&EffervescentWater;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Effervescent Water count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(153)">
+				<TeleportTo Name="Quarrymill" AetheryteId="5" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5491,&EffervescentWater;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-273.4907, 13.86439, -98.13058" name="Effervescent Water" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Effervescent Water</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Wind Rock -->
+		<If Condition="not HasAtLeast(5154,&WindRock;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Wind Rock count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(153)">
+				<TeleportTo Name="Quarrymill" AetheryteId="5" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5154,&WindRock;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="76.17238, 9.151626, 7.479784" name="Wind Rock" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Wind Rock</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Ice Rock -->
+		<If Condition="not HasAtLeast(5153,&IceRock;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Ice Rock count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(153)">
+				<TeleportTo Name="Quarrymill" AetheryteId="5" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5153,&IceRock;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="76.17238, 9.151626, 7.479784" name="Ice Rock" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Ice Rock</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Earth Rock -->
+		<If Condition="not HasAtLeast(5155,&EarthRock;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Earth Rock count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(153)">
+				<TeleportTo Name="Quarrymill" AetheryteId="5" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5155,&EarthRock;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="76.17238, 9.151626, 7.479784" name="Earth Rock" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Earth Rock</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Silver Sand -->
+		<If Condition="not HasAtLeast(5270,&SilverSand;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Silver Sand count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(153)">
+				<TeleportTo Name="Quarrymill" AetheryteId="5" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5270,&SilverSand;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="76.17238, 9.151626, 7.479784" name="Silver Sand" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Silver Sand</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Lightning Rock -->
+		<If Condition="not HasAtLeast(5156,&LightningRock;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Lightning Rock count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Aleport" AetheryteId="14" />
+			</If>
+
+			<If Condition="not IsOnMap(139)">
+				<GetTo ZoneId="139" XYZ="-422.8884, -1.633857, 68.33002" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5156,&LightningRock;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="-422.8884, -1.633857, 68.33002" name="Lightning Rock" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Lightning Rock</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Water Rock -->
+		<If Condition="not HasAtLeast(5157,&WaterRock;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Water Rock count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Aleport" AetheryteId="14" />
+			</If>
+
+			<If Condition="not IsOnMap(139)">
+				<GetTo ZoneId="139" XYZ="-422.8884, -1.633857, 68.33002" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5157,&WaterRock;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="-422.8884, -1.633857, 68.33002" name="Water Rock" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Water Rock</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Fire Rock -->
+		<If Condition="not HasAtLeast(5152,&FireRock;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Fire Rock count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Aleport" AetheryteId="14" />
+			</If>
+
+			<If Condition="not IsOnMap(139)">
+				<GetTo ZoneId="139" XYZ="-422.8884, -1.633857, 68.33002" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5152,&FireRock;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="-422.8884, -1.633857, 68.33002" name="Fire Rock" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Fire Rock</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Wyvern Obsidian -->
+		<If Condition="not HasAtLeast(5125,&WyvernObsidian;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Wyvern Obsidian count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(145)">
+				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5125,&WyvernObsidian;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="244.4843, 1.978561, -222.985" name="Wyvern Obsidian" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Wyvern Obsidian</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Saltpeter -->
+		<If Condition="not HasAtLeast(5521,&Saltpeter;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Saltpeter count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(145)">
+				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5521,&Saltpeter;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="244.4843, 1.978561, -222.985" name="Saltpeter" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Saltpeter</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Silex -->
+		<If Condition="not HasAtLeast(5523,&Silex;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Silex count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(146)">
+				<TeleportTo Name="Forgotten Springs" AetheryteId="20" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5523,&Silex;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="45.93065, 8.60612, 409.4629" name="Silex" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Silex</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Bomb Ash -->
+		<If Condition="not HasAtLeast(5528,&BombAsh;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Bomb Ash count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(146)">
+				<TeleportTo Name="Forgotten Springs" AetheryteId="20" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5528,&BombAsh;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="45.93065, 8.60612, 409.4629" name="Bomb Ash" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Bomb Ash</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Brimstone -->
+		<If Condition="not HasAtLeast(5527,&Brimstone;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Brimstone count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Aleport" AetheryteId="14" />
+			</If>
+
+			<If Condition="not IsOnMap(139)">
+				<GetTo ZoneId="139" XYZ="-442.6422, -11.47213, 228.101" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5527,&Brimstone;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="-442.6422, -11.47213, 228.101" name="Brimstone" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Brimstone</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Siltstone -->
+		<If Condition="not HasAtLeast(5231,&Siltstone;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Siltstone count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Aleport" AetheryteId="14" />
+			</If>
+
+			<If Condition="not IsOnMap(139)">
+				<GetTo ZoneId="139" XYZ="-442.6422, -11.47213, 228.101" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5231,&Siltstone;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="50" XYZ="-442.6422, -11.47213, 228.101" name="Siltstone" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Siltstone</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Goshenite -->
+		<If Condition="not HasAtLeast(5135,&RawGoshenite;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Goshenite count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(137)">
+				<TeleportTo Name="Costa Del Sol" AetheryteId="11" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5135,&RawGoshenite;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="389.6783, 31.18603, 282.399" name="Raw Goshenite" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Goshenite</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Aquamarine -->
+		<If Condition="not HasAtLeast(5139,&RawAquamarine;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Aquamarine count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(137)">
+				<TeleportTo Name="Costa Del Sol" AetheryteId="11" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5139,&RawAquamarine;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="389.6783, 31.18603, 282.399" name="Raw Aquamarine" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Aquamarine</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Garnet -->
+		<If Condition="not HasAtLeast(5134,&RawGarnet;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Garnet count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(137)">
+				<TeleportTo Name="Costa Del Sol" AetheryteId="11" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5134,&RawGarnet;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="389.6783, 31.18603, 282.399" name="Raw Garnet" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Garnet</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Granite -->
+		<If Condition="not HasAtLeast(7008,&Granite;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Granite count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(148)">
+				<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
+			</If>
+
+			<ExGather While="not HasAtLeast(7008,&Granite;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-384.5323, 50.40652, 17.54728" name="Granite" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Granite</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Amethyst -->
+		<If Condition="not HasAtLeast(5138,&RawAmethyst;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Amethyst count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(148)">
+				<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5138,&RawAmethyst;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-384.5323, 50.40652, 17.54728" name="Raw Amethyst" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Amethyst</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Peridot -->
+		<If Condition="not HasAtLeast(5136,&RawPeridot;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Peridot count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(148)">
+				<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5136,&RawPeridot;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-384.5323, 50.40652, 17.54728" name="Raw Peridot" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Peridot</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Mythril Ore -->
+		<If Condition="not HasAtLeast(5114,&MythrilOre;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Mythril Ore count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(146)">
+				<TeleportTo Name="Forgotten Springs" AetheryteId="20" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5114,&MythrilOre;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="209.9236, 5.96199, 963.556" name="Mythril Ore" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Mythril Ore</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Heliodor -->
+		<If Condition="not HasAtLeast(5137,&RawHeliodor;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Heliodor count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(146)">
+				<TeleportTo Name="Forgotten Springs" AetheryteId="20" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5137,&RawHeliodor;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="209.9236, 5.96199, 963.556" name="Raw Heliodor" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Heliodor</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Mythril Sand -->
+		<If Condition="not HasAtLeast(5271,&MythrilSand;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Mythril Sand count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(146)">
+				<TeleportTo Name="Little Ala Mhigo" AetheryteId="19" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5271,&MythrilSand;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-166.9081, 4.750758, -148.1751" name="Mythril Sand" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Mythril Sand</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Spinel -->
+		<If Condition="not HasAtLeast(5144,&RawSpinel;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Spinel count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(153)">
+				<TeleportTo Name="Quarrymill" AetheryteId="5" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5144,&RawSpinel;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="364.0552, -4.975834, 65.91225" name="Raw Spinel" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Spinel</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Tourmaline -->
+		<If Condition="not HasAtLeast(5142,&RawTourmaline;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Tourmaline count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(153)">
+				<TeleportTo Name="Quarrymill" AetheryteId="5" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5142,&RawTourmaline;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="364.0552, -4.975834, 65.91225" name="Raw Tourmaline" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Tourmaline</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Black Alumen -->
+		<If Condition="not HasAtLeast(5525,&BlackAlumen;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Black Alumen count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(153)">
+				<TeleportTo Name="Quarrymill" AetheryteId="5" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5525,&BlackAlumen;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="364.0552, -4.975834, 65.91225" name="Black Alumen" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Black Alumen</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Zircon -->
+		<If Condition="not HasAtLeast(5141,&RawZircon;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Zircon count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(155)">
+				<TeleportTo Name="Camp Dragonhead" AetheryteId="23" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5141,&RawZircon;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="135.4174, 285.9175, -78.7505" name="Raw Zircon" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Zircon</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Jade -->
+		<If Condition="not HasAtLeast(5168,&Jade;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Jade count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(155)">
+				<TeleportTo Name="Camp Dragonhead" AetheryteId="23" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5168,&Jade;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="135.4174, 285.9175, -78.7505" name="Jade" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Jade</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Grenade Ash -->
+		<If Condition="not HasAtLeast(5526,&GrenadeAsh;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Grenade Ash count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(147)">
+				<TeleportTo Name="Camp Bluefog" AetheryteId="21" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5526,&GrenadeAsh;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="3.603128, 1.800119, 335.7373" name="Grenade Ash" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Grenade Ash</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Turquoise -->
+		<If Condition="not HasAtLeast(5145,&RawTurquoise;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Turquoise count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(139)">
+				<TeleportTo Name="Camp Bronze Lake" AetheryteId="15" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5145,&RawTurquoise;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="435.1463, -3.4, 186.4314" name="Raw Turquoise" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Turquoise</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Electrum Ore -->
+		<If Condition="not HasAtLeast(5115,&ElectrumOre;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Electrum Ore count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(139)">
+				<TeleportTo Name="Camp Bronze Lake" AetheryteId="15" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5115,&ElectrumOre;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="435.1463, -3.4, 186.4314" name="Electrum Ore" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Electrum Ore</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Marble -->
+		<If Condition="not HasAtLeast(7010,&Marble;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Marble count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(139)">
+				<TeleportTo Name="Camp Bronze Lake" AetheryteId="15" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(7010,&Marble;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="346.5503, -3.052768, 37.77577" name="Marble" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Marble</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Electrum Sand -->
+		<If Condition="not HasAtLeast(5272,&ElectrumSand;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Electrum Sand count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(139)">
+				<TeleportTo Name="Camp Bronze Lake" AetheryteId="15" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(5272,&ElectrumSand;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Rocky Outcrop</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="346.5503, -3.052768, 37.77577" name="Electrum Sand" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Electrum Sand</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Rubellite -->
+		<If Condition="not HasAtLeast(5140,&RawRubellite;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Rubellite count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(145)">
+				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5140,&RawRubellite;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-435.6917, -15.24871, -115.3015" name="Raw Rubellite" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Rubellite</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Raw Amber -->
+		<If Condition="not HasAtLeast(5143,&RawAmber;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Raw Amber count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(145)">
+				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5143,&RawAmber;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-435.6917, -15.24871, -115.3015" name="Raw Amber" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Raw Amber</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Ogre Horn -->
+		<If Condition="not HasAtLeast(5439,&OgreHorn;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Ogre Horn count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(147)">
+				<TeleportTo Name="Ceruleum Processing Plant" AetheryteId="22" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5439,&OgreHorn;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="87.44923, 21.25798, 154.2003" name="Ogre Horn" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Ogre Horn</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Basilisk Egg -->
+		<If Condition="not HasAtLeast(5263,&BasiliskEgg;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Basilisk Egg count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(147)">
+				<TeleportTo Name="Ceruleum Processing Plant" AetheryteId="22" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5263,&BasiliskEgg;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="87.44923, 21.25798, 154.2003" name="Basilisk Egg" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Basilisk Egg</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Adamantoise Shell -->
+		<If Condition="not HasAtLeast(5458,&AdamantoiseShell;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Adamantoise Shell count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(147)">
+				<TeleportTo Name="Ceruleum Processing Plant" AetheryteId="22" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5458,&AdamantoiseShell;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="87.44923, 21.25798, 154.2003" name="Adamantoise Shell" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Adamantoise Shell</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Cobalt Ore -->
+		<If Condition="not HasAtLeast(5116,&CobaltOre;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Cobalt Ore count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Miner -->
+			<If Condition="ClassName != ClassJobType.Miner">
+				<RunCode Name="Miner" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(147)">
+				<TeleportTo Name="Ceruleum Processing Plant" AetheryteId="22" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5116,&CobaltOre;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mineral Deposit</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="87.44923, 21.25798, 154.2003" name="Cobalt Ore" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Cobalt Ore</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillMIN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
 
 	</If>
 
@@ -268,6 +2751,181 @@ REQUIRED:
 	
 		</If>
 
+		<!-- Maple Sap -->
+		<If Condition="not HasAtLeast(5498,&MapleSap;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Maple Sap count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(154)">
+				<TeleportTo Name="Fallgourd Float" AetheryteId="7" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5498,&MapleSap;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="246.4034, -22.86481, 292.5398" name="Maple Sap" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Maple Sap</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Cinnamon -->
+		<If Condition="not HasAtLeast(4828,&Cinnamon;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Cinnamon count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(154)">
+				<TeleportTo Name="Fallgourd Float" AetheryteId="7" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4828,&Cinnamon;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="246.4034, -22.86481, 292.5398" name="Cinnamon" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Cinnamon</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Beehive Chip -->
+		<If Condition="not HasAtLeast(5516,&BeehiveChip;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Beehive Chip count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(154)">
+				<TeleportTo Name="Fallgourd Float" AetheryteId="7" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5516,&BeehiveChip;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="246.4034, -22.86481, 292.5398" name="Beehive Chip" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Beehive Chip</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Cock Feather -->
+		<If Condition="not HasAtLeast(5351,&CockFeather;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Cock Feather count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(141)">
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5351,&CockFeather;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="51.11828, 2.853151, 276.4095" name="Cock Feather" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Cock Feather</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Cloves -->
+		<If Condition="not HasAtLeast(4831,&Cloves;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Cloves count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(141)">
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4831,&Cloves;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="51.11828, 2.853151, 276.4095" name="Cloves" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Cloves</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
 		<!-- Ash Log -->
 		<If Condition="not HasAtLeast(5383,&AshLog;)">
 
@@ -408,6 +3066,76 @@ REQUIRED:
 	
 		</If>
 
+		<!-- La Noscean Orange -->
+		<If Condition="not HasAtLeast(4809,&LaNosceanOrange;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="La Noscean Orange count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(135)">
+				<TeleportTo Name="Moraby Drydocks" AetheryteId="10" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4809,&LaNosceanOrange;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="542.2685, 74.1956, -271.9188" name="La Noscean Orange" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>La Noscean Orange</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Kukuru Bean -->
+		<If Condition="not HasAtLeast(4803,&KukuruBean;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Kukuru Bean count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(135)">
+				<TeleportTo Name="Moraby Drydocks" AetheryteId="10" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4803,&KukuruBean;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="542.2685, 74.1956, -271.9188" name="Kukuru Bean" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Kukuru Bean</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
 		<!-- Elm Log -->
 		<If Condition="not HasAtLeast(5385,&ElmLog;)">
 
@@ -480,6 +3208,916 @@ REQUIRED:
 			
 			</ExGather>
 	
+		</If>
+
+		<!-- Highland Parsley -->
+		<If Condition="not HasAtLeast(4784,&HighlandParsley;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Highland Parsley count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(135)">
+				<TeleportTo Name="Moraby Drydocks" AetheryteId="10" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4784,&HighlandParsley;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="255.0106, 42.88206, 46.8484" name="Highland Parsley" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Highland Parsley</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Cieldalaes Spinach -->
+		<If Condition="not HasAtLeast(4783,&CieldalaesSpinach;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Cieldalaes Spinach count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(135)">
+				<TeleportTo Name="Moraby Drydocks" AetheryteId="10" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4783,&CieldalaesSpinach;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="255.0106, 42.88206, 46.8484" name="Cieldalaes Spinach" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Cieldalaes Spinach</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Lowland Grapes -->
+		<If Condition="not HasAtLeast(4808,&LowlandGrapes;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Lowland Grapes count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(135)">
+				<TeleportTo Name="Moraby Drydocks" AetheryteId="10" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4808,&LowlandGrapes;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="255.0106, 42.88206, 46.8484" name="Lowland Grapes" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Lowland Grapes</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Cinderfoot Olive -->
+		<If Condition="not HasAtLeast(4804,&CinderfootOlive;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Cinderfoot Olive count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(135)">
+				<TeleportTo Name="Moraby Drydocks" AetheryteId="10" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4804,&CinderfootOlive;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="255.0106, 42.88206, 46.8484" name="Cinderfoot Olive" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Cinderfoot Olive</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Tree Toad -->
+		<If Condition="not HasAtLeast(5051,&TreeToad;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Tree Toad count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(148)">
+				<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5051,&TreeToad;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-132.0347, 0.5053511, -109.7399" name="Tree Toad" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Tree Toad</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Humus -->
+		<If Condition="not HasAtLeast(5514,&Humus;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Humus count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(148)">
+				<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5514,&Humus;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-132.0347, 0.5053511, -109.7399" name="Humus" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Humus</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Marjoram -->
+		<If Condition="not HasAtLeast(4832,&Marjoram;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Marjoram count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(148)">
+				<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4832,&Marjoram;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-132.0347, 0.5053511, -109.7399" name="Marjoram" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Marjoram</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Buffalo Beans -->
+		<If Condition="not HasAtLeast(4818,&BuffaloBeans;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Buffalo Beans count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(148)">
+				<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4818,&BuffaloBeans;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-132.0347, 0.5053511, -109.7399" name="Buffalo Beans" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Buffalo Beans</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Chanterelle -->
+		<If Condition="not HasAtLeast(4795,&Chanterelle;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Chanterelle count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(148)">
+				<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4795,&Chanterelle;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="43.03345, -9.326075, 118.2901" name="Chanterelle" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Chanterelle</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Lavender -->
+		<If Condition="not HasAtLeast(5539,&Lavender;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Lavender count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(148)">
+				<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5539,&Lavender;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="43.03345, -9.326075, 118.2901" name="Lavender" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Lavender</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Cotton Boll -->
+		<If Condition="not HasAtLeast(5343,&CottonBoll;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Cotton Boll count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(148)">
+				<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5343,&CottonBoll;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="43.03345, -9.326075, 118.2901" name="Cotton Boll" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Cotton Boll</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Carnation -->
+		<If Condition="not HasAtLeast(5540,&Carnation;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Carnation count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(148)">
+				<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5540,&Carnation;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="43.03345, -9.326075, 118.2901" name="Carnation" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Carnation</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Grass Viper -->
+		<If Condition="not HasAtLeast(5560,&GrassViper;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Grass Viper count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5560,&GrassViper;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="146.797, 49.80062, -123.7879" name="Grass Viper" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Grass Viper</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Coerthan Carrot -->
+		<If Condition="not HasAtLeast(4778,&CoerthanCarrot;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Coerthan Carrot count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4778,&CoerthanCarrot;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="146.797, 49.80062, -123.7879" name="Coerthan Carrot" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Coerthan Carrot</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Moko Grass -->
+		<If Condition="not HasAtLeast(5341,&MokoGrass;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Moko Grass count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5341,&MokoGrass;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="146.797, 49.80062, -123.7879" name="Moko Grass" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Moko Grass</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Rye -->
+		<If Condition="not HasAtLeast(4823,&Rye;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Rye count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4823,&Rye;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="146.797, 49.80062, -123.7879" name="Rye" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Rye</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- La Noscean Lettuce -->
+		<If Condition="not HasAtLeast(4782,&LaNosceanLettuce;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="La Noscean Lettuce count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(134)">
+				<TeleportTo Name="Summerford Farms" AetheryteId="52" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4782,&LaNosceanLettuce;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="56.86753, 53.61405, -117.0476" name="La Noscean Lettuce" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>La Noscean Lettuce</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Straw -->
+		<If Condition="not HasAtLeast(5342,&Straw;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Straw count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(134)">
+				<TeleportTo Name="Summerford Farms" AetheryteId="52" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5342,&Straw;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="56.86753, 53.61405, -117.0476" name="Straw" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Straw</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Sunset Wheat -->
+		<If Condition="not HasAtLeast(4824,&SunsetWheat;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Sunset Wheat count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(134)">
+				<TeleportTo Name="Summerford Farms" AetheryteId="52" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4824,&SunsetWheat;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="56.86753, 53.61405, -117.0476" name="Sunset Wheat" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Sunset Wheat</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Ruby Tomato -->
+		<If Condition="not HasAtLeast(4780,&RubyTomato;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Ruby Tomato count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(134)">
+				<TeleportTo Name="Summerford Farms" AetheryteId="52" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4780,&RubyTomato;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="56.86753, 53.61405, -117.0476" name="Ruby Tomato" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Ruby Tomato</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Wild Onion -->
+		<If Condition="not HasAtLeast(4777,&WildOnion;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Wild Onion count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4777,&WildOnion;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="93.07089, 20.2547, 98.17441" name="Wild Onion" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Wild Onion</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Garlean Garlic -->
+		<If Condition="not HasAtLeast(4829,&GarleanGarlic;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Garlean Garlic count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4829,&GarleanGarlic;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="93.07089, 20.2547, 98.17441" name="Garlean Garlic" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Garlean Garlic</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Ogre Pumpkin -->
+		<If Condition="not HasAtLeast(4779,&OgrePumpkin;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Ogre Pumpkin count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4779,&OgrePumpkin;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="93.07089, 20.2547, 98.17441" name="Ogre Pumpkin" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Ogre Pumpkin</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Alpine Parsnip -->
+		<If Condition="not HasAtLeast(4781,&AlpineParsnip;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Alpine Parsnip count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(141)">
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4781,&AlpineParsnip;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="178.7821, 0.6406661, -57.70824" name="Alpine Parsnip" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Alpine Parsnip</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Yellow Ginseng -->
+		<If Condition="not HasAtLeast(5538,&YellowGinseng;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Yellow Ginseng count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(141)">
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5538,&YellowGinseng;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="178.7821, 0.6406661, -57.70824" name="Yellow Ginseng" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Yellow Ginseng</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Black Pepper -->
+		<If Condition="not HasAtLeast(4830,&BlackPepper;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Black Pepper count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(141)">
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4830,&BlackPepper;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="178.7821, 0.6406661, -57.70824" name="Black Pepper" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Black Pepper</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
 		</If>
 
 		<!-- Yew Log -->
@@ -587,6 +4225,426 @@ REQUIRED:
 	
 		</If>
 
+		<!-- Sun Lemon -->
+		<If Condition="not HasAtLeast(4811,&SunLemon;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Sun Lemon count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(135)">
+				<TeleportTo Name="Moraby Drydocks" AetheryteId="10" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4811,&SunLemon;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="671.8719, 64.25697, -204.1487" name="Sun Lemon" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Sun Lemon</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Nopales -->
+		<If Condition="not HasAtLeast(4786,&Nopales;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Nopales count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(141)">
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4786,&Nopales;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-19.6329, -5.080761, -64.97572" name="Nopales" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Nopales</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Island Seedling -->
+		<If Condition="not HasAtLeast(7029,&IslandSeedling;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Island Seedling count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Swiftperch" AetheryteId="13" />
+			</If>
+
+			<ExGather While="not HasAtLeast(7029,&IslandSeedling;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="525.2842, 12.98111, 380.604" name="Island Seedling" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Island Seedling</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Paprika -->
+		<If Condition="not HasAtLeast(4785,&Paprika;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Paprika count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Swiftperch" AetheryteId="13" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4785,&Paprika;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="525.2842, 12.98111, 380.604" name="Paprika" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Paprika</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Lalafellin Lentil -->
+		<If Condition="not HasAtLeast(4820,&LalafellinLentil;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Lalafellin Lentil count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Swiftperch" AetheryteId="13" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4820,&LalafellinLentil;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="525.2842, 12.98111, 380.604" name="Lalafellin Lentil" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Lalafellin Lentil</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- White Scorpion -->
+		<If Condition="not HasAtLeast(5563,&WhiteScorpion;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="White Scorpion count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(145)">
+				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5563,&Popoto;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-263.3271, -32.53546, 281.2487" name="White Scorpion" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>White Scorpion</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Popoto -->
+		<If Condition="not HasAtLeast(4787,&Popoto;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Popoto count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(145)">
+				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4787,&Popoto;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-263.3271, -32.53546, 281.2487" name="Popoto" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Popoto</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Desert Seedling -->
+		<If Condition="not HasAtLeast(7031,&DesertSeedling;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Desert Seedling count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(145)">
+				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
+			</If>
+
+			<ExGather While="not HasAtLeast(7031,&DesertSeedling;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-263.3271, -32.53546, 281.2487" name="Desert Seedling" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Desert Seedling</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Shroud Seedling -->
+		<If Condition="not HasAtLeast(7030,&ShroudSeedling;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Shroud Seedling count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(152)">
+				<TeleportTo Name="Hawthorne Hut" AetheryteId="4" />
+			</If>
+
+			<ExGather While="not HasAtLeast(7030,&ShroudSeedling;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-155.8332, -2.665475, 332.1419" name="Shroud Seedling" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Shroud Seedling</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Gil Bun -->
+		<If Condition="not HasAtLeast(4796,&GilBun;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Gil Bun count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(152)">
+				<TeleportTo Name="Hawthorne Hut" AetheryteId="4" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4796,&GilBun;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-155.8332, -2.665475, 332.1419" name="Gil Bun" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Gil Bun</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Galago Mint -->
+		<If Condition="not HasAtLeast(4834,&GalagoMint;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Galago Mint count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(152)">
+				<TeleportTo Name="Hawthorne Hut" AetheryteId="4" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4834,&GalagoMint;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-155.8332, -2.665475, 332.1419" name="Galago Mint" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Galago Mint</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Belladonna -->
+		<If Condition="not HasAtLeast(5541,&Belladonna;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Belladonna count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(152)">
+				<TeleportTo Name="Hawthorne Hut" AetheryteId="4" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5541,&Belladonna;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-155.8332, -2.665475, 332.1419" name="Belladonna" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Belladonna</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
 		<!-- Walnut Log -->
 		<If Condition="not HasAtLeast(5388,&WalnutLog;)">
 
@@ -690,6 +4748,512 @@ REQUIRED:
 			
 			</ExGather>
 	
+		</If>
+
+		<!-- Sticky Rice -->
+		<If Condition="not HasAtLeast(4819,&StickyRice;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Sticky Rice count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Aleport" AetheryteId="14" />
+			</If>
+
+			<If Condition="not IsOnMap(139)">
+				<GetTo ZoneId="139" XYZ="-363.869, -1.99144, 160.5187" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4819,&StickyRice;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="125" XYZ="-363.869, -1.99144, 160.5187" name="Sticky Rice" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Sticky Rice</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+	
+		</If>
+
+		<!-- Pixie Plums -->
+		<If Condition="not HasAtLeast(4812,&PixiePlums;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Pixie Plums count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Aleport" AetheryteId="14" />
+			</If>
+
+			<If Condition="not IsOnMap(139)">
+				<GetTo ZoneId="139" XYZ="-363.869, -1.99144, 160.5187" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4812,&PixiePlums;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="125" XYZ="-363.869, -1.99144, 160.5187" name="Pixie Plums" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Pixie Plums</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+	
+		</If>
+
+		<!-- Noble Grapes -->
+		<If Condition="not HasAtLeast(6145,&NobleGrapes;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Noble Grapes count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Aleport" AetheryteId="14" />
+			</If>
+
+			<If Condition="not IsOnMap(139)">
+				<GetTo ZoneId="139" XYZ="-363.869, -1.99144, 160.5187" />
+			</If>
+
+			<ExGather While="not HasAtLeast(6145,&NobleGrapes;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="125" XYZ="-363.869, -1.99144, 160.5187" name="Noble Grapes" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Noble Grapes</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+	
+		</If>
+
+		<!-- Chamomile -->
+		<If Condition="not HasAtLeast(5542,&Chamomile;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Chamomile count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Aleport" AetheryteId="14" />
+			</If>
+
+			<If Condition="not IsOnMap(139)">
+				<GetTo ZoneId="139" XYZ="-363.869, -1.99144, 160.5187" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5542,&Chamomile;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="125" XYZ="-363.869, -1.99144, 160.5187" name="Chamomile" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Chamomile</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+	
+		</If>
+
+		<!-- Button Mushroom -->
+		<If Condition="not HasAtLeast(4797,&ButtonMushroom;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Button Mushroom count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(145)">
+				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4797,&ButtonMushroom;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-336.5699, -29.47358, -39.15458" name="Button Mushroom" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Button Mushroom</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Millioncorn -->
+		<If Condition="not HasAtLeast(4821,&Millioncorn;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Millioncorn count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(145)">
+				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4821,&Millioncorn;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-336.5699, -29.47358, -39.15458" name="Millioncorn" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Millioncorn</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Pearl Ginger -->
+		<If Condition="not HasAtLeast(4836,&PearlGinger;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Pearl Ginger count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(145)">
+				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4836,&PearlGinger;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-336.5699, -29.47358, -39.15458" name="Pearl Ginger" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Pearl Ginger</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Ala Mhigan Mustard -->
+		<If Condition="not HasAtLeast(4835,&AlaMhiganMustard;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Ala Mhigan Mustard count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(145)">
+				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4835,&AlaMhiganMustard;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-336.5699, -29.47358, -39.15458" name="Ala Mhigan Mustard" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Ala Mhigan Mustard</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Alligator Pear -->
+		<If Condition="not HasAtLeast(4813,&AlligatorPear;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Alligator Pear count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(153)">
+				<TeleportTo Name="Quarrymill" AetheryteId="5" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4813,&AlligatorPear;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="250.2525, 15.39341, -120.6981" name="Alligator Pear" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Alligator Pear</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Chocobo Feather -->
+		<If Condition="not HasAtLeast(5359,&ChocoboFeather;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Chocobo Feather count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(153)">
+				<TeleportTo Name="Quarrymill" AetheryteId="5" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5359,&ChocoboFeather;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="250.2525, 15.39341, -120.6981" name="Chocobo Feather" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Chocobo Feather</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Midland Cabbage -->
+		<If Condition="not HasAtLeast(4789,&MidlandCabbage;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Midland Cabbage count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(154)">
+				<TeleportTo Name="Fallgourd Float" AetheryteId="7" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4789,&MidlandCabbage;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="98.77876, -34.50142, 233.4648" name="Midland Cabbage" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Midland Cabbage</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Jade Peas -->
+		<If Condition="not HasAtLeast(4822,&JadePeas;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Jade Peas count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(154)">
+				<TeleportTo Name="Fallgourd Float" AetheryteId="7" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4822,&JadePeas;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="98.77876, -34.50142, 233.4648" name="Jade Peas" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Jade Peas</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Wizard Eggplant -->
+		<If Condition="not HasAtLeast(4788,&WizardEggplant;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Wizard Eggplant count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(154)">
+				<TeleportTo Name="Fallgourd Float" AetheryteId="7" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4788,&WizardEggplant;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="98.77876, -34.50142, 233.4648" name="Wizard Eggplant" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Wizard Eggplant</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Moor Leech -->
+		<If Condition="not HasAtLeast(5559,&MoorLeech;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Moor Leech count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(154)">
+				<TeleportTo Name="Fallgourd Float" AetheryteId="7" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5559,&MoorLeech;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="98.77876, -34.50142, 233.4648" name="Moor Leech" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Moor Leech</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
 		</If>
 
 		<!-- Oak Log -->
@@ -900,6 +5464,286 @@ REQUIRED:
 			
 			</ExGather>
 	
+		</If>
+
+		<!-- Aloe -->
+		<If Condition="not HasAtLeast(4790,&Aloe;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Aloe count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(146)">
+				<TeleportTo Name="Little Ala Mhigo" AetheryteId="19" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4790,&Aloe;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-62.01575, 3.88742, -635.817" name="Aloe" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Aloe</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Bloodgrass -->
+		<If Condition="not HasAtLeast(7011,&Bloodgrass;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Bloodgrass count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(146)">
+				<TeleportTo Name="Little Ala Mhigo" AetheryteId="19" />
+			</If>
+
+			<ExGather While="not HasAtLeast(7011,&Bloodgrass;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-62.01575, 3.88742, -635.817" name="Bloodgrass" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Bloodgrass</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Laurel -->
+		<If Condition="not HasAtLeast(4839,&Laurel;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Laurel count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(146)">
+				<TeleportTo Name="Little Ala Mhigo" AetheryteId="19" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4839,&Laurel;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-62.01575, 3.88742, -635.817" name="Laurel" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Laurel</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Desert Saffron -->
+		<If Condition="not HasAtLeast(4843,&DesertSaffron;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Desert Saffron count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(146)">
+				<TeleportTo Name="Little Ala Mhigo" AetheryteId="19" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4843,&DesertSaffron;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-62.01575, 3.88742, -635.817" name="Desert Saffron" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Desert Saffron</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Salt Leek -->
+		<If Condition="not HasAtLeast(4791,&SaltLeek;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Salt Leek count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(137)">
+				<TeleportTo Name="Costa Del Sol" AetheryteId="11" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4791,&SaltLeek;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="258.5242, 40.36834, 430.1008" name="Salt Leek" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Salt Leek</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Mandrake -->
+		<If Condition="not HasAtLeast(5543,&Mandrake;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Mandrake count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(137)">
+				<TeleportTo Name="Costa Del Sol" AetheryteId="11" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5543,&Mandrake;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="258.5242, 40.36834, 430.1008" name="Mandrake" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Mandrake</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Midland Basil -->
+		<If Condition="not HasAtLeast(4837,&MidlandBasil;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Midland Basil count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(137)">
+				<TeleportTo Name="Costa Del Sol" AetheryteId="11" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4837,&MidlandBasil;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="258.5242, 40.36834, 430.1008" name="Midland Basil" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Midland Basil</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Dragon Pepper -->
+		<If Condition="not HasAtLeast(4838,&DragonPepper;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Dragon Pepper count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(137)">
+				<TeleportTo Name="Costa Del Sol" AetheryteId="11" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4838,&DragonPepper;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="258.5242, 40.36834, 430.1008" name="Dragon Pepper" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Dragon Pepper</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
 		</If>
 
 		<!-- Mahogany Log -->
@@ -1147,10 +5991,10 @@ REQUIRED:
 	
 		</If>
 
-		<!-- Rosewood Log -->
-		<If Condition="not HasAtLeast(5393,&RosewoodLog;)">
+		<!-- Thyme -->
+		<If Condition="not HasAtLeast(4841,&Thyme;)">
 
-			<ExLog Color="&LogColor;" Name="INFO" Message="Rosewood Log count below threshold. Moving to gather more." />
+			<ExLog Color="&LogColor;" Name="INFO" Message="Thyme count below threshold. Moving to gather more." />
 
 			<!-- Switch Gear Set to Botanist -->
 			<If Condition="ClassName != ClassJobType.Botanist">
@@ -1158,20 +6002,90 @@ REQUIRED:
 				<WaitTimer WaitTime="2" />
 			</If>
 
-			<If Condition="not IsOnMap(152)">
-				<TeleportTo Name="Hawthorne Hut" AetheryteId="4" />
+			<If Condition="not IsOnMap(153)">
+				<TeleportTo Name="Camp Tranquil" AetheryteId="6" />
 			</If>
 
-			<ExGather While="not HasAtLeast(5393,&RosewoodLog;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+			<ExGather While="not HasAtLeast(4841,&Thyme;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-4.057873, 0.6300796, 363.4778" name="Thyme" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Thyme</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Blood Currants -->
+		<If Condition="not HasAtLeast(4814,&BloodCurrants;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Blood Currants count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(153)">
+				<TeleportTo Name="Camp Tranquil" AetheryteId="6" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4814,&BloodCurrants;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-4.057873, 0.6300796, 363.4778" name="Blood Currants" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Blood Currants</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Mistletoe -->
+		<If Condition="not HasAtLeast(5536,&Mistletoe;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Mistletoe count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(155)">
+				<TeleportTo Name="Camp Dragonhead" AetheryteId="23" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5536,&Mistletoe;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
 		
 				<GatherObject>Mature Tree</GatherObject>
-		
+
 				<HotSpots>
-					<HotSpot Radius="75" XYZ="-251.9745, 5.970093, 86.32704" name="Rosewood Log" />
+					<HotSpot Radius="75" XYZ="65.75943, 286.1924, -184.7778" name="Mistletoe" />
 				</HotSpots>
 		
 				<ItemNames>
-					<ItemName>Rosewood Log</ItemName>
+					<ItemName>Mistletoe</ItemName>
 				</ItemNames>
 
 				<GatheringSkillOrder>
@@ -1179,13 +6093,13 @@ REQUIRED:
 				</GatheringSkillOrder>
 			
 			</ExGather>
-	
+
 		</If>
 
-		<!-- Rosewood Branch -->
-		<If Condition="not HasAtLeast(5414,&RosewoodBranch;)">
+		<!-- Mirror Apple -->
+		<If Condition="not HasAtLeast(6146,&MirrorApple;)">
 
-			<ExLog Color="&LogColor;" Name="INFO" Message="Rosewood Branch count below threshold. Moving to gather more." />
+			<ExLog Color="&LogColor;" Name="INFO" Message="Mirror Apple count below threshold. Moving to gather more." />
 
 			<!-- Switch Gear Set to Botanist -->
 			<If Condition="ClassName != ClassJobType.Botanist">
@@ -1193,20 +6107,20 @@ REQUIRED:
 				<WaitTimer WaitTime="2" />
 			</If>
 
-			<If Condition="not IsOnMap(152)">
-				<TeleportTo Name="Hawthorne Hut" AetheryteId="4" />
+			<If Condition="not IsOnMap(155)">
+				<TeleportTo Name="Camp Dragonhead" AetheryteId="23" />
 			</If>
 
-			<ExGather While="not HasAtLeast(5414,&RosewoodBranch;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+			<ExGather While="not HasAtLeast(6146,&MirrorApple;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
 		
 				<GatherObject>Mature Tree</GatherObject>
-		
+
 				<HotSpots>
-					<HotSpot Radius="75" XYZ="-251.9745, 5.970093, 86.32704" name="Rosewood Branch" />
+					<HotSpot Radius="75" XYZ="65.75943, 286.1924, -184.7778" name="Mirror Apple" />
 				</HotSpots>
 		
 				<ItemNames>
-					<ItemName>Rosewood Branch</ItemName>
+					<ItemName>Mirror Apple</ItemName>
 				</ItemNames>
 
 				<GatheringSkillOrder>
@@ -1214,163 +6128,7 @@ REQUIRED:
 				</GatheringSkillOrder>
 			
 			</ExGather>
-	
-		</If>
 
-		<!-- Sticky Rice -->
-		<If Condition="not HasAtLeast(4819,&StickyRice;)">
-
-			<ExLog Color="&LogColor;" Name="INFO" Message="Sticky Rice count below threshold. Moving to gather more." />
-
-			<!-- Switch Gear Set to Botanist -->
-			<If Condition="ClassName != ClassJobType.Botanist">
-				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="2" />
-			</If>
-
-			<If Condition="not IsOnMap(138)">
-				<TeleportTo Name="Aleport" AetheryteId="14" />
-			</If>
-
-			<If Condition="not IsOnMap(139)">
-				<GetTo ZoneId="139" XYZ="-363.869, -1.99144, 160.5187" />
-			</If>
-
-			<ExGather While="not HasAtLeast(4819,&StickyRice;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
-		
-				<GatherObject>Lush Vegetation Patch</GatherObject>
-		
-				<HotSpots>
-					<HotSpot Radius="125" XYZ="-363.869, -1.99144, 160.5187" name="Sticky Rice" />
-				</HotSpots>
-		
-				<ItemNames>
-					<ItemName>Sticky Rice</ItemName>
-				</ItemNames>
-
-				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
-				</GatheringSkillOrder>
-			
-			</ExGather>
-	
-		</If>
-
-		<!-- Pixie Plums -->
-		<If Condition="not HasAtLeast(4812,&PixiePlums;)">
-
-			<ExLog Color="&LogColor;" Name="INFO" Message="Pixie Plums count below threshold. Moving to gather more." />
-
-			<!-- Switch Gear Set to Botanist -->
-			<If Condition="ClassName != ClassJobType.Botanist">
-				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="2" />
-			</If>
-
-			<If Condition="not IsOnMap(138)">
-				<TeleportTo Name="Aleport" AetheryteId="14" />
-			</If>
-
-			<If Condition="not IsOnMap(139)">
-				<GetTo ZoneId="139" XYZ="-363.869, -1.99144, 160.5187" />
-			</If>
-
-			<ExGather While="not HasAtLeast(4812,&PixiePlums;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
-		
-				<GatherObject>Lush Vegetation Patch</GatherObject>
-		
-				<HotSpots>
-					<HotSpot Radius="125" XYZ="-363.869, -1.99144, 160.5187" name="Pixie Plums" />
-				</HotSpots>
-		
-				<ItemNames>
-					<ItemName>Pixie Plums</ItemName>
-				</ItemNames>
-
-				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
-				</GatheringSkillOrder>
-			
-			</ExGather>
-	
-		</If>
-
-		<!-- Noble Grapes -->
-		<If Condition="not HasAtLeast(6145,&NobleGrapes;)">
-
-			<ExLog Color="&LogColor;" Name="INFO" Message="Noble Grapes count below threshold. Moving to gather more." />
-
-			<!-- Switch Gear Set to Botanist -->
-			<If Condition="ClassName != ClassJobType.Botanist">
-				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="2" />
-			</If>
-
-			<If Condition="not IsOnMap(138)">
-				<TeleportTo Name="Aleport" AetheryteId="14" />
-			</If>
-
-			<If Condition="not IsOnMap(139)">
-				<GetTo ZoneId="139" XYZ="-363.869, -1.99144, 160.5187" />
-			</If>
-
-			<ExGather While="not HasAtLeast(6145,&NobleGrapes;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
-		
-				<GatherObject>Lush Vegetation Patch</GatherObject>
-		
-				<HotSpots>
-					<HotSpot Radius="125" XYZ="-363.869, -1.99144, 160.5187" name="Noble Grapes" />
-				</HotSpots>
-		
-				<ItemNames>
-					<ItemName>Noble Grapes</ItemName>
-				</ItemNames>
-
-				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
-				</GatheringSkillOrder>
-			
-			</ExGather>
-	
-		</If>
-
-		<!-- Chamomile -->
-		<If Condition="not HasAtLeast(5542,&Chamomile;)">
-
-			<ExLog Color="&LogColor;" Name="INFO" Message="Chamomile count below threshold. Moving to gather more." />
-
-			<!-- Switch Gear Set to Botanist -->
-			<If Condition="ClassName != ClassJobType.Botanist">
-				<RunCode Name="Botanist" />
-				<WaitTimer WaitTime="2" />
-			</If>
-
-			<If Condition="not IsOnMap(138)">
-				<TeleportTo Name="Aleport" AetheryteId="14" />
-			</If>
-
-			<If Condition="not IsOnMap(139)">
-				<GetTo ZoneId="139" XYZ="-363.869, -1.99144, 160.5187" />
-			</If>
-
-			<ExGather While="not HasAtLeast(5542,&Chamomile;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
-		
-				<GatherObject>Lush Vegetation Patch</GatherObject>
-		
-				<HotSpots>
-					<HotSpot Radius="125" XYZ="-363.869, -1.99144, 160.5187" name="Chamomile" />
-				</HotSpots>
-		
-				<ItemNames>
-					<ItemName>Chamomile</ItemName>
-				</ItemNames>
-
-				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
-				</GatheringSkillOrder>
-			
-			</ExGather>
-	
 		</If>
 
 		<!-- Black Scorpion -->
@@ -1511,6 +6269,181 @@ REQUIRED:
 			
 			</ExGather>
 	
+		</If>
+
+		<!-- Rosewood Log -->
+		<If Condition="not HasAtLeast(5393,&RosewoodLog;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Rosewood Log count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(152)">
+				<TeleportTo Name="Hawthorne Hut" AetheryteId="4" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5393,&RosewoodLog;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-251.9745, 5.970093, 86.32704" name="Rosewood Log" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Rosewood Log</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+	
+		</If>
+
+		<!-- Rosewood Branch -->
+		<If Condition="not HasAtLeast(5414,&RosewoodBranch;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Rosewood Branch count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(152)">
+				<TeleportTo Name="Hawthorne Hut" AetheryteId="4" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5414,&RosewoodBranch;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Mature Tree</GatherObject>
+		
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-251.9745, 5.970093, 86.32704" name="Rosewood Branch" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Rosewood Branch</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+	
+		</If>
+
+		<!-- Lava Toad -->
+		<If Condition="not HasAtLeast(5055,&LavaToad;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Lava Toad count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(146)">
+				<TeleportTo Name="Forgotten Springs" AetheryteId="20" />
+			</If>
+
+			<ExGather While="not HasAtLeast(5055,&LavaToad;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-384.9421, 14.29681, 493.726" name="Lava Toad" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Lava Toad</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Thanalan Tea Leaves -->
+		<If Condition="not HasAtLeast(4846,&ThanalanTeaLeaves;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Thanalan Tea Leaves count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(146)">
+				<TeleportTo Name="Forgotten Springs" AetheryteId="20" />
+			</If>
+
+			<ExGather While="not HasAtLeast(4846,&ThanalanTeaLeaves;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-384.9421, 14.29681, 493.726" name="Thanalan Tea Leaves" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Thanalan Tea Leaves</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Maiden Grass -->
+		<If Condition="not HasAtLeast(7012,&MaidenGrass;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Maiden Grass count below threshold. Moving to gather more." />
+
+			<!-- Switch Gear Set to Botanist -->
+			<If Condition="ClassName != ClassJobType.Botanist">
+				<RunCode Name="Botanist" />
+				<WaitTimer WaitTime="2" />
+			</If>
+
+			<If Condition="not IsOnMap(146)">
+				<TeleportTo Name="Forgotten Springs" AetheryteId="20" />
+			</If>
+
+			<ExGather While="not HasAtLeast(7012,&MaidenGrass;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+		
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+
+				<HotSpots>
+					<HotSpot Radius="75" XYZ="-384.9421, 14.29681, 493.726" name="Maiden Grass" />
+				</HotSpots>
+		
+				<ItemNames>
+					<ItemName>Maiden Grass</ItemName>
+				</ItemNames>
+
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="&GatherSkillBTN;" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
 		</If>
 
 

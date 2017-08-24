@@ -23,10 +23,10 @@ IMPORTANT:
 <!ENTITY FarmItemID "19959"> <!-- Palladium Ore: 19958, Chromite Ore: 19959, Rhea: 19991, Torreya Log: 19934. ONLY ONE! --> 
 <!ENTITY FarmAmount "990"> <!-- Number of above item farmed until profile stops -->
 
-<!ENTITY FarmSkillGMIN "Sharp Vision II">
-<!ENTITY FarmSkillGBTN "Field Mastery II">
-<!ENTITY FarmSkillQMIN "King's Yield II">
-<!ENTITY FarmSkillQBTN "Blessed Harvest II">
+<!ENTITY GatherSkillGMIN "Sharp Vision II">
+<!ENTITY GatherSkillGBTN "Field Mastery II">
+<!ENTITY GatherSkillQMIN "King's Yield II">
+<!ENTITY GatherSkillQBTN "Blessed Harvest II">
 
 <!ENTITY WaitZoneID "635">
 <!ENTITY WaitTeleportName "Rhalgr's Reach">
@@ -101,8 +101,8 @@ IMPORTANT:
 				<Slot>3</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQBTN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 
 			</ExGather>
@@ -152,8 +152,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
@@ -208,8 +208,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQBTN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
@@ -260,8 +260,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
@@ -311,8 +311,8 @@ IMPORTANT:
 				<Slot>3</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQBTN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
@@ -362,8 +362,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
@@ -418,8 +418,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGBTN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGBTN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQBTN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
@@ -470,8 +470,8 @@ IMPORTANT:
 				<Slot>5</Slot>
 
 				<GatheringSkillOrder>
-					<GatheringSkill SpellName="&FarmSkillGMIN;" TimesToCast="1" />
-					<GatheringSkill SpellName="&FarmSkillQMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillGMIN;" TimesToCast="1" />
+					<GatheringSkill SpellName="&GatherSkillQMIN;" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
