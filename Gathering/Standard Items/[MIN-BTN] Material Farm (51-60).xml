@@ -69,7 +69,7 @@ REQUIRED:
 
 <!ENTITY DarkChestnutLog "0">
 <!ENTITY DarkChestnutBranch "0">
-<!ENTITY DarkChestnut "99"> <!-- Normally Hidden :: Collects Dark Chestnut Log when not present -->
+<!ENTITY DarkChestnut "0"> <!-- Normally Hidden :: Collects Dark Chestnut Log when not present -->
 
 <!ENTITY Coneflower "0">
 

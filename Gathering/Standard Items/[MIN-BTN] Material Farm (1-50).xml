@@ -78,8 +78,8 @@ REQUIRED:
 <!ENTITY RawAmethyst "0">
 <!ENTITY RawPeridot "0">
 
-<!ENTITY MythrilOre "0">
-<!ENTITY RawHeliodor "0">
+<!ENTITY MythrilOre "0"> <!-- Will also collect Little Worm when available -->
+<!ENTITY RawHeliodor "0"> <!-- Will also collect Little Worm when available -->
 
 <!ENTITY MythrilSand "0">
 
@@ -131,16 +131,16 @@ REQUIRED:
 <!ENTITY CrowFeather "0">
 <!ENTITY TinolqaMistletoe "0">
 
-<!ENTITY LaNosceanOrange "0">
+<!ENTITY LaNosceanOrange "0"> <!-- Will also collect Seeds when available -->
 <!ENTITY KukuruBean "0">
 
-<!ENTITY ElmLog "0">
+<!ENTITY ElmLog "792">
 <!ENTITY GridanianChestnut "0">
 
 <!ENTITY HighlandParsley "0">
 <!ENTITY CieldalaesSpinach "0">
-<!ENTITY LowlandGrapes "0">
-<!ENTITY CinderfootOlive "0">
+<!ENTITY LowlandGrapes "0"> <!-- Will also collect Seeds when available -->
+<!ENTITY CinderfootOlive "0"> <!-- Will also collect Seeds when available -->
 
 <!ENTITY TreeToad "0">
 <!ENTITY Humus "0">
@@ -148,42 +148,42 @@ REQUIRED:
 <!ENTITY BuffaloBeans "0">
 
 <!ENTITY Chanterelle "0">
-<!ENTITY Lavender "0">
+<!ENTITY Lavender "0"> <!-- Will also collect Seeds when available -->
 <!ENTITY CottonBoll "0">
 <!ENTITY Carnation "0">
 
 <!ENTITY GrassViper "0">
-<!ENTITY CoerthanCarrot "0">
+<!ENTITY CoerthanCarrot "0"> <!-- Will also collect Seeds when available -->
 <!ENTITY MokoGrass "0">
 <!ENTITY Rye "0">
 
-<!ENTITY LaNosceanLettuce "0">
+<!ENTITY LaNosceanLettuce "0"> <!-- Will also collect Seeds when available -->
 <!ENTITY Straw "0">
 <!ENTITY SunsetWheat "0">
 <!ENTITY RubyTomato "0">
 
-<!ENTITY WildOnion "0">
-<!ENTITY GarleanGarlic "0">
+<!ENTITY WildOnion "0"> <!-- Will also collect Seeds when available -->
+<!ENTITY GarleanGarlic "0"> <!-- Will also collect Seeds when available -->
 <!ENTITY OgrePumpkin "0">
 
 <!ENTITY AlpineParsnip "0">
 <!ENTITY YellowGinseng "0">
-<!ENTITY BlackPepper "0">
+<!ENTITY BlackPepper "0"> <!-- Will also collect Seeds when available -->
 
-<!ENTITY YewLog "0">
+<!ENTITY YewLog "792">
 <!ENTITY YewBranch "0">
-<!ENTITY FaerieApple "0">
+<!ENTITY FaerieApple "0"> <!-- Will also collect Seeds when available -->
 
-<!ENTITY SunLemon "0">
+<!ENTITY SunLemon "0"> <!-- Will also collect Seeds when available -->
 
 <!ENTITY Nopales "0">
 
 <!ENTITY IslandSeedling "0">
-<!ENTITY Paprika "0">
+<!ENTITY Paprika "0"> <!-- Will also collect Seeds when available -->
 <!ENTITY LalafellinLentil "0">
 
 <!ENTITY WhiteScorpion "0">
-<!ENTITY Popoto "0">
+<!ENTITY Popoto "0"> <!-- Will also collect Seeds when available -->
 <!ENTITY DesertSeedling "0">
 
 <!ENTITY ShroudSeedling "0">
@@ -191,33 +191,33 @@ REQUIRED:
 <!ENTITY GalagoMint "0">
 <!ENTITY Belladonna "0">
 
-<!ENTITY WalnutLog "0">
+<!ENTITY WalnutLog "792">
 <!ENTITY GridanianWalnut "0">
 <!ENTITY MatronsMistletoe "0">
 
 <!ENTITY StickyRice "0">
-<!ENTITY PixiePlums "0">
+<!ENTITY PixiePlums "0"> <!-- Will also collect Seeds when available -->
 <!ENTITY NobleGrapes "0">
-<!ENTITY Chamomile "0">
+<!ENTITY Chamomile "0"> <!-- Will also collect Seeds when available -->
 
 <!ENTITY ButtonMushroom "0">
-<!ENTITY MillionCorn "0">
-<!ENTITY PearlGinger "0">
-<!ENTITY AlaMhiganMustard "0">
+<!ENTITY Millioncorn "0"> <!-- Will also collect Seeds when available -->
+<!ENTITY PearlGinger "0"> <!-- Will also collect Seeds when available -->
+<!ENTITY AlaMhiganMustard "0"> <!-- Will also collect Seeds when available -->
 
 <!ENTITY AlligatorPear "0">
 <!ENTITY ChocoboFeather "0">
 
-<!ENTITY MidlandCabbage "0">
+<!ENTITY MidlandCabbage "0"> <!-- Will also collect Seeds when available -->
 <!ENTITY JadePeas "0">
-<!ENTITY WizardEggplant "0">
+<!ENTITY WizardEggplant "0"> <!-- Will also collect Seeds when available -->
 <!ENTITY MoorLeech "0">
 
 <!ENTITY OakLog "0">
 <!ENTITY OakBranch "0">
 <!ENTITY Tarantula "0">
 
-<!ENTITY Flax "0">
+<!ENTITY Flax "0"> <!-- Will also collect Seeds when available -->
 <!ENTITY WhiteTruffle "0">
 <!ENTITY WildfowlFeather "0">
 
@@ -227,13 +227,13 @@ REQUIRED:
 <!ENTITY DesertSaffron "0">
 
 <!ENTITY SaltLeek "0">
-<!ENTITY Mandrake "0">
-<!ENTITY MidlandBasil "0">
+<!ENTITY Mandrake "0"> <!-- Will also collect Seeds when available -->
+<!ENTITY MidlandBasil "0"> <!-- Will also collect Seeds when available -->
 <!ENTITY DragonPepper "0">
 
 <!ENTITY MahoganyLog "0">
 <!ENTITY Nutmeg "0">
-<!ENTITY Almonds "0">
+<!ENTITY Almonds "0"> <!-- Will also collect Seeds when available -->
 <!ENTITY IronAcorn "0">
 
 <!ENTITY Mugwort "0">
@@ -241,15 +241,15 @@ REQUIRED:
 <!ENTITY MaidenArtichoke "0">
 
 <!ENTITY Thyme "0">
-<!ENTITY BloodCurrants "0">
+<!ENTITY BloodCurrants "0"> <!-- Will also collect Seeds when available -->
 
 <!ENTITY Mistletoe "0">
-<!ENTITY MirrorApple "0">
+<!ENTITY MirrorApple "0"> <!-- Will also collect Seeds when available -->
 
 <!ENTITY BlackScorpion "0">
 <!ENTITY DartFrog "0">
 <!ENTITY SagoliiSage "0">
-<!ENTITY Rolanberry "0">
+<!ENTITY Rolanberry "0"> <!-- Will also collect Seeds when available -->
 
 <!ENTITY RosewoodLog "0">
 <!ENTITY RosewoodBranch "0">
@@ -1961,6 +1961,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Little Worm</ItemName>
 					<ItemName>Mythril Ore</ItemName>
 				</ItemNames>
 
@@ -1996,6 +1997,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Little Worm</ItemName>
 					<ItemName>Raw Heliodor</ItemName>
 				</ItemNames>
 
@@ -3090,6 +3092,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>La Noscean Orange Seeds</ItemName>
 					<ItemName>La Noscean Orange</ItemName>
 				</ItemNames>
 
@@ -3304,6 +3307,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Lowland Grape Seeds</ItemName>
 					<ItemName>Lowland Grapes</ItemName>
 				</ItemNames>
 
@@ -3339,6 +3343,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Olive Seeds</ItemName>
 					<ItemName>Cinderfoot Olive</ItemName>
 				</ItemNames>
 
@@ -3549,6 +3554,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Lavender Seeds</ItemName>
 					<ItemName>Lavender</ItemName>
 				</ItemNames>
 
@@ -3689,6 +3695,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Coerthan Carrot Seeds</ItemName>
 					<ItemName>Coerthan Carrot</ItemName>
 				</ItemNames>
 
@@ -3794,6 +3801,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>La Noscean Lettuce Seeds</ItemName>
 					<ItemName>La Noscean Lettuce</ItemName>
 				</ItemNames>
 
@@ -3934,6 +3942,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Wild Onion Set</ItemName>
 					<ItemName>Wild Onion</ItemName>
 				</ItemNames>
 
@@ -3969,6 +3978,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Garlic Cloves</ItemName>
 					<ItemName>Garlean Garlic</ItemName>
 				</ItemNames>
 
@@ -4109,6 +4119,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Black Pepper Seeds</ItemName>
 					<ItemName>Black Pepper</ItemName>
 				</ItemNames>
 
@@ -4214,6 +4225,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Faerie Apple Seeds</ItemName>
 					<ItemName>Faerie Apple</ItemName>
 				</ItemNames>
 
@@ -4249,6 +4261,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Sun Lemon Seeds</ItemName>
 					<ItemName>Sun Lemon</ItemName>
 				</ItemNames>
 
@@ -4354,6 +4367,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Paprika Seeds</ItemName>
 					<ItemName>Paprika</ItemName>
 				</ItemNames>
 
@@ -4415,7 +4429,7 @@ REQUIRED:
 				<TeleportTo Name="Camp Drybone" AetheryteId="18" />
 			</If>
 
-			<ExGather While="not HasAtLeast(5563,&Popoto;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
+			<ExGather While="not HasAtLeast(5563,&WhiteScorpion;)" CordialType="&CordialType;" CordialTime="&CordialTime;" DiscoverUnknowns="True">
 		
 				<GatherObject>Lush Vegetation Patch</GatherObject>
 		
@@ -4459,6 +4473,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Popoto Set</ItemName>
 					<ItemName>Popoto</ItemName>
 				</ItemNames>
 
@@ -4817,6 +4832,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Pixie Plum Seeds</ItemName>
 					<ItemName>Pixie Plums</ItemName>
 				</ItemNames>
 
@@ -4895,6 +4911,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Chamomile Seeds</ItemName>
 					<ItemName>Chamomile</ItemName>
 				</ItemNames>
 
@@ -4965,6 +4982,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Millioncorn Seeds</ItemName>
 					<ItemName>Millioncorn</ItemName>
 				</ItemNames>
 
@@ -5000,6 +5018,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Pearl Ginger Root</ItemName>
 					<ItemName>Pearl Ginger</ItemName>
 				</ItemNames>
 
@@ -5035,6 +5054,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Ala Mhigan Mustard Seeds</ItemName>
 					<ItemName>Ala Mhigan Mustard</ItemName>
 				</ItemNames>
 
@@ -5140,6 +5160,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Midland Cabbage Seeds</ItemName>
 					<ItemName>Midland Cabbage</ItemName>
 				</ItemNames>
 
@@ -5210,6 +5231,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Wizard Eggplant Seeds</ItemName>
 					<ItemName>Wizard Eggplant</ItemName>
 				</ItemNames>
 
@@ -5385,6 +5407,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Linseed</ItemName>
 					<ItemName>Flax</ItemName>
 				</ItemNames>
 
@@ -5665,6 +5688,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Mandrake Seeds</ItemName>
 					<ItemName>Mandrake</ItemName>
 				</ItemNames>
 
@@ -5700,6 +5724,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Midland Basil Seeds</ItemName>
 					<ItemName>Midland Basil</ItemName>
 				</ItemNames>
 
@@ -5840,6 +5865,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Almond Seeds</ItemName>
 					<ItemName>Almonds</ItemName>
 				</ItemNames>
 
@@ -6050,6 +6076,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Blood Currant Seeds</ItemName>
 					<ItemName>Blood Currants</ItemName>
 				</ItemNames>
 
@@ -6120,6 +6147,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Mirror Apple Seeds</ItemName>
 					<ItemName>Mirror Apple</ItemName>
 				</ItemNames>
 
@@ -6260,6 +6288,7 @@ REQUIRED:
 				</HotSpots>
 		
 				<ItemNames>
+					<ItemName>Rolanberry Seeds</ItemName>
 					<ItemName>Rolanberry</ItemName>
 				</ItemNames>
 

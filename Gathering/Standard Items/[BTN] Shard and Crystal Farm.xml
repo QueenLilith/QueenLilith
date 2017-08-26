@@ -1,6 +1,5 @@
 <!--
-Original: y2krazy
-Customized: QueenLilith
+Author: QueenLilith
 
 REQUIRED:
 - ExMatt's ExBuddy :: https://github.com/MGramolini/ExBuddy/trunk/ExBuddy
@@ -8,8 +7,6 @@ REQUIRED:
 
 <!-- User Configuration -->
 <!DOCTYPE Profile [
-
-<!ENTITY DiscoverUnknowns "True">
 
 <!ENTITY FireShard "0">
 <!ENTITY IceShard "0">
@@ -25,9 +22,16 @@ REQUIRED:
 <!ENTITY LightningCrystal "0">
 <!ENTITY WaterCrystal "0">
 
-<!ENTITY WaitZoneID "635">
-<!ENTITY WaitTeleportName "Rhalgr's Reach">
-<!ENTITY WaitTeleportID "104">
+<!ENTITY FirelightSeeds "33"> <!-- Normally Hidden :: Collects Fire Shards when not present -->
+<!ENTITY IcelightSeeds "33"> <!-- Normally Hidden :: Collects Ice Shards when not present -->
+<!ENTITY WindlightSeeds "33"> <!-- Normally Hidden :: Collects Wind Shards when not present -->
+<!ENTITY EarthlightSeeds "33"> <!-- Normally Hidden :: Collects Earth Shards when not present -->
+<!ENTITY LevinlightSeeds "33"> <!-- Normally Hidden :: Collects Lightning Shards when not present -->
+<!ENTITY WaterlightSeeds "33"> <!-- Normally Hidden :: Collects Water Shards when not present -->
+
+<!ENTITY WaitZoneID "129">
+<!ENTITY WaitTeleportName "Limsa Lominsa">
+<!ENTITY WaitTeleportID "8">
 
 <!ENTITY LogColor "#66FF66">
 ]>
@@ -54,24 +58,22 @@ REQUIRED:
 			<WaitTimer WaitTime="2" />
 		</If>
 
-		<!-- Fire Shard -->
+		<!-- Fire Shards -->
 		<If Condition="not HasAtLeast(2,&FireShard;)">
 
-			<ExLog Color="&LogColor;" Name="INFO" Message="Fire Shard count below threshold. Moving to gather more." />
+			<ExLog Color="&LogColor;" Name="INFO" Message="Fire Shards count below threshold. Moving to gather more." />
 				
 			<If Condition="not IsOnMap(134)">
-				<GetTo ZoneId="134" XYZ="222.3688, 113.1, -256.9429" /> <!-- Summerford Farms -->
+				<TeleportTo Name="Summerford Farms" AetheryteId="52" />
 			</If>
 			
-			<NoCombatMoveTo Name="Farming Area" XYZ="40.98051, 52.17653, -114.0182" />
-			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(2,&FireShard;)">
+			<ExGather While="not HasAtLeast(2,&FireShard;)" DiscoverUnknowns="True">
 				
 				<GatherObject>Lush Vegetation Patch</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="40.98051, 52.17653, -114.0182" name="Lush Vegetation Patch" />
-					<HotSpot Radius="5" XYZ="40.98051, 52.17653, -114.0182" name="Lush Vegetation Patch" />
+					<HotSpot Radius="100" XYZ="56.86753, 53.61405, -117.0476" name="Fire Shards" />
+					<HotSpot Radius="5" XYZ="56.86753, 53.61405, -117.0476" name="Fire Shards" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -80,31 +82,28 @@ REQUIRED:
 				
 				<GatheringSkillOrder>
 					<GatheringSkill SpellName="Nald'thal's Ward" TimesToCast="1" />
-					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
 
 		</If>
 
-		<!-- Ice Shard -->
+		<!-- Ice Shards -->
 		<If Condition="not HasAtLeast(3,&IceShard;)">
 		
 			<ExLog Color="&LogColor;" Name="INFO" Message="Ice Shards count below threshold. Moving to gather more." />
 			
-			<If Condition="not IsOnMap(148)">
-				<GetTo ZoneId="148" XYZ="5.736485, -1.221331, 36.01854" /> <!-- Bentbranch Meadows -->
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Swiftperch" AetheryteId="13" />
 			</If>
 			
-			<NoCombatMoveTo Name="Farming Area" XYZ="95.58908, -3.38692, -135.0398" />
-			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(3,&IceShard;)">
+			<ExGather While="not HasAtLeast(3,&IceShard;)" DiscoverUnknowns="True">
 				
-				<GatherObject>Mature Tree</GatherObject>
+				<GatherObject>Lush Vegetation Patch</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="76.97958, 5.136707, -185.5606" name="Mature Trees" />
-					<HotSpot Radius="5" XYZ="76.97958, 5.136707, -185.5606" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="525.2842, 12.98111, 380.604" name="Ice Shards" />
+					<HotSpot Radius="5" XYZ="525.2842, 12.98111, 380.604" name="Ice Shards" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -113,31 +112,28 @@ REQUIRED:
 				
 				<GatheringSkillOrder>
 					<GatheringSkill SpellName="Menphina's Ward" TimesToCast="1" />
-					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
 		
 		</If>
 
-		<!-- Wind Shard -->
+		<!-- Wind Shards -->
 		<If Condition="not HasAtLeast(4,&WindShard;)">
 			
 			<ExLog Color="&LogColor;" Name="INFO" Message="Wind Shards count below threshold. Moving to gather more." />
 			
 			<If Condition="not IsOnMap(148)">
-				<GetTo ZoneId="148" XYZ="5.736485, -1.221331, 36.01854" /> <!-- Bentbranch Meadows -->
+				<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
 			</If>
 			
-			<NoCombatMoveTo Name="Farming Area" XYZ="184.803, -8.851445, -27.4311" />
-			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(4,&WindShard;)">
+			<ExGather While="not HasAtLeast(4,&WindShard;)" DiscoverUnknowns="True">
 				
-				<GatherObject>Mature Tree</GatherObject>
+				<GatherObject>Lush Vegetation Patch</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="247.9115, -12.2392, -53.57527" name="Mature Trees" />
-					<HotSpot Radius="5" XYZ="247.9115, -12.2392, -53.57527" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="43.03345, -9.326075, 118.2901" name="Wind Shards" />
+					<HotSpot Radius="5" XYZ="43.03345, -9.326075, 118.2901" name="Wind Shards" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -146,31 +142,28 @@ REQUIRED:
 				
 				<GatheringSkillOrder>
 					<GatheringSkill SpellName="Llymlaen's Ward" TimesToCast="1" />
-					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
 		
 		</If>
 
-		<!-- Earth Shard -->
+		<!-- Earth Shards -->
 		<If Condition="not HasAtLeast(5,&EarthShard;)">
 			
 			<ExLog Color="&LogColor;" Name="INFO" Message="Earth Shards count below threshold. Moving to gather more." />
 			
-			<If Condition="not IsOnMap(154)">
-				<GetTo ZoneId="154" XYZ="-43.92079, -40.88041, 241.8634" /> <!-- Fallgourd Float -->
+			<If Condition="not IsOnMap(135)">
+				<TeleportTo Name="Moraby Drydocks" AetheryteId="10" />
 			</If>
 			
-			<NoCombatMoveTo Name="Farming Area" XYZ="192.6879, -27.27029, 293.5937" />
-			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(5,&EarthShard;)">
+			<ExGather While="not HasAtLeast(5,&EarthShard;)" DiscoverUnknowns="True">
 				
-				<GatherObject>Mature Tree</GatherObject>
+				<GatherObject>Lush Vegetation Patch</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="253.7264, -20.969, 289.4138" name="Mature Trees" />
-					<HotSpot Radius="5" XYZ="253.7264, -20.969, 289.4138" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="255.0106, 42.88206, 46.8484" name="Earth Shards" />
+					<HotSpot Radius="5" XYZ="255.0106, 42.88206, 46.8484" name="Earth Shards" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -179,31 +172,28 @@ REQUIRED:
 				
 				<GatheringSkillOrder>
 					<GatheringSkill SpellName="Nophica's Ward" TimesToCast="1" />
-					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
 				</GatheringSkillOrder>
 				
 			</ExGather>
 		
 		</If>
 
-		<!-- Lightning Shard -->
+		<!-- Lightning Shards -->
 		<If Condition="not HasAtLeast(6,&LightningShard;)">
 			
 			<ExLog Color="&LogColor;" Name="INFO" Message="Lightning Shards count below threshold. Moving to gather more." />
 			
 			<If Condition="not IsOnMap(141)">
-				<GetTo ZoneId="141" XYZ="-13.56739, -1.877733, -163.8" /> <!-- Black Brush Station -->
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
 			</If>
 			
-			<NoCombatMoveTo Name="Farming Area" XYZ="66.88654, 13.19682, 181.055" />
-			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(6,&LightningShard;)">
+			<ExGather While="not HasAtLeast(6,&LightningShard;)" DiscoverUnknowns="True">
 				
-				<GatherObject>Mature Tree</GatherObject>
+				<GatherObject>Lush Vegetation Patch</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="200" XYZ="62.14651, 2.785228, 284.068" name="Mature Trees" />
-					<HotSpot Radius="5" XYZ="62.14651, 2.785228, 284.068" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="178.7821, 0.6406661, -57.70824" name="Lightning Shards" />
+					<HotSpot Radius="5" XYZ="178.7821, 0.6406661, -57.70824" name="Lightning Shards" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -212,31 +202,28 @@ REQUIRED:
 				
 				<GatheringSkillOrder>
 					<GatheringSkill SpellName="Byregot's Ward" TimesToCast="1" />
-					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
 		
 		</If>
 
-		<!-- Water Shard -->
+		<!-- Water Shards -->
 		<If Condition="not HasAtLeast(7,&WaterShard;)">
 			
 			<ExLog Color="&LogColor;" Name="INFO" Message="Water Shards count below threshold. Moving to gather more." />
 			
 			<If Condition="not IsOnMap(140)">
-				<GetTo ZoneId="140" XYZ="61.26291, 45, -227.1376" /> <!-- Horizon -->
+				<TeleportTo Name="Horizon" AetheryteId="17" />
 			</If>
 			
-			<NoCombatMoveTo Name="Farming Area" XYZ="155.1757, 49.41785, -122.2227" />
-			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(7,&WaterShard;)">
+			<ExGather While="not HasAtLeast(7,&WaterShard;)" DiscoverUnknowns="True">
 			
 				<GatherObject>Lush Vegetation Patch</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="155.1757, 49.41785, -122.2227" name="Lush Vegetation Patch" />
-					<HotSpot Radius="5" XYZ="155.1757, 49.41785, -122.2227" name="Lush Vegetation Patch" />
+					<HotSpot Radius="100" XYZ="146.797, 49.80062, -123.7879" name="Water Shards" />
+					<HotSpot Radius="5" XYZ="146.797, 49.80062, -123.7879" name="Water Shards" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -245,31 +232,31 @@ REQUIRED:
 				
 				<GatheringSkillOrder>
 					<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1" />
-					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
 		
 		</If>
 
-		<!-- Fire Crystal -->
+
+
+
+		<!-- Fire Crystals -->
 		<If Condition="not HasAtLeast(8,&FireCrystal;)">
 			
 			<ExLog Color="&LogColor;" Name="INFO" Message="Fire Crystals count below threshold. Moving to gather more." />
 			
 			<If Condition="not IsOnMap(134)">
-				<GetTo ZoneId="134" XYZ="222.3688, 113.1, -256.9429" /> <!-- Summerford Farms -->
+				<TeleportTo Name="Summerford Farms" AetheryteId="52" />
 			</If>
 			
-			<NoCombatMoveTo Name="Farming Area" XYZ="-177.4732, 12.04764, -367.3405" />
-			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(8,&FireCrystal;)">
+			<ExGather While="not HasAtLeast(8,&FireCrystal;)" DiscoverUnknowns="True">
 			
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="-232.7466, 15.10347, -382.7352" name="Mature Trees" />
-					<HotSpot Radius="5" XYZ="-232.7466, 15.10347, -382.7352" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="-232.7466, 15.10347, -382.7352" name="Fire Crystals" />
+					<HotSpot Radius="5" XYZ="-232.7466, 15.10347, -382.7352" name="Fire Crystals" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -279,31 +266,28 @@ REQUIRED:
 				
 				<GatheringSkillOrder>
 					<GatheringSkill SpellName="Nald'thal's Ward" TimesToCast="1" />
-					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
 		
 		</If>
 
-		<!-- Ice Crystal -->
+		<!-- Ice Crystals -->
 		<If Condition="not HasAtLeast(9,&IceCrystal;)">
 			
 			<ExLog Color="&LogColor;" Name="INFO" Message="Ice Crystals count below threshold. Moving to gather more." />
 			
 			<If Condition="not IsOnMap(153)">
-				<GetTo ZoneId="153" XYZ="181.2881, 8.417254, -63.92673" /> <!-- Quarrymill -->
+				<TeleportTo Name="Quarrymill" AetheryteId="5" />
 			</If>
 			
-			<NoCombatMoveTo Name="Farming Area" XYZ="-174.0778, 7.315338, -10.8868" />
-			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(9,&IceCrystal;)">
+			<ExGather While="not HasAtLeast(9,&IceCrystal;)" DiscoverUnknowns="True">
 				
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="-202.1286, 6.432597, 27.724" name="Mature Trees" />
-					<HotSpot Radius="5" XYZ="-202.1286, 6.432597, 27.724" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="-202.1286, 6.432597, 27.724" name="Ice Crystals" />
+					<HotSpot Radius="5" XYZ="-202.1286, 6.432597, 27.724" name="Ice Crystals" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -313,31 +297,28 @@ REQUIRED:
 				
 				<GatheringSkillOrder>
 					<GatheringSkill SpellName="Menphina's Ward" TimesToCast="1" />
-					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
 		
 		</If>
 
-		<!-- Wind Crystal -->
+		<!-- Wind Crystals -->
 		<If Condition="not HasAtLeast(10,&WindCrystal;)">
 			
 			<ExLog Color="&LogColor;" Name="INFO" Message="Wind Crystals count below threshold. Moving to gather more." />
 			
 			<If Condition="not IsOnMap(148)">
-				<GetTo ZoneId="148" XYZ="5.736485, -1.221331, 36.01854" /> <!-- Bentbranch Meadows -->
+				<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
 			</If>
 			
-			<NoCombatMoveTo Name="Farming Area" XYZ="189.1244, -32.63171, 409.1171" />
-			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(10,&WindCrystal;)">
+			<ExGather While="not HasAtLeast(10,&WindCrystal;)" DiscoverUnknowns="True">
 				
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="154.5393, -23.913, 478.6511" name="Mature Trees" />
-					<HotSpot Radius="5" XYZ="154.5393, -23.913, 478.6511" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="154.5393, -23.913, 478.6511" name="Wind Crystals" />
+					<HotSpot Radius="5" XYZ="154.5393, -23.913, 478.6511" name="Wind Crystals" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -347,31 +328,28 @@ REQUIRED:
 				
 				<GatheringSkillOrder>
 					<GatheringSkill SpellName="Llymlaen's Ward" TimesToCast="1" />
-					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
 		
 		</If>
 
-		<!-- Earth Crystal -->
+		<!-- Earth Crystals -->
 		<If Condition="not HasAtLeast(11,&EarthCrystal;)">
 			
 			<ExLog Color="&LogColor;" Name="INFO" Message="Earth Crystals count below threshold. Moving to gather more." />
 			
 			<If Condition="not IsOnMap(154)">
-				<GetTo ZoneId="154" XYZ="-43.92079, -40.88041, 241.8634" /> <!-- Fallgourd Float -->
+				<TeleportTo Name="Fallgourd Float" AetheryteId="7" />
 			</If>
 			
-			<NoCombatMoveTo Name="Farming Area" XYZ="288.5969, -11.66098, 47.45194" />
-			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(11,&EarthCrystal;)">
+			<ExGather While="not HasAtLeast(11,&EarthCrystal;)" DiscoverUnknowns="True">
 			
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="251.9866, -9.133508, 14.80032" name="Mature Trees" />
-					<HotSpot Radius="5" XYZ="251.9866, -9.133508, 14.80032" name="Mature Trees" />
+					<HotSpot Radius="100" XYZ="251.9866, -9.133508, 14.80032" name="Earth Crystals" />
+					<HotSpot Radius="5" XYZ="251.9866, -9.133508, 14.80032" name="Earth Crystals" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -381,31 +359,28 @@ REQUIRED:
 				
 				<GatheringSkillOrder>
 					<GatheringSkill SpellName="Nophica's Ward" TimesToCast="1" />
-					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
 		
 		</If>
 
-		<!-- Lightning Crystal -->
+		<!-- Lightning Crystals -->
 		<If Condition="not HasAtLeast(12,&LightningCrystal;)">
 			
 			<ExLog Color="&LogColor;" Name="INFO" Message="Lightning Crystals count below threshold. Moving to gather more." />
 			
 			<If Condition="not IsOnMap(141)">
-				<GetTo ZoneId="141" XYZ="-13.56739, -1.877733, -163.8" /> <!-- Black Brush Station -->
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
 			</If>
 			
-			<NoCombatMoveTo Name="Farming Area" XYZ="107.2583, 3.673464, 427.6072" />
-			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(12,&LightningCrystal;)">
+			<ExGather While="not HasAtLeast(12,&LightningCrystal;)" DiscoverUnknowns="True">
 			
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="200" XYZ="156.0196, 11.17611, 459.9057" name="Mature Trees" />
-					<HotSpot Radius="5" XYZ="156.0196, 11.17611, 459.9057" name="Mature Trees" />
+					<HotSpot Radius="200" XYZ="156.0196, 11.17611, 459.9057" name="Lightning Crystals" />
+					<HotSpot Radius="5" XYZ="156.0196, 11.17611, 459.9057" name="Lightning Crystals" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -415,31 +390,28 @@ REQUIRED:
 				
 				<GatheringSkillOrder>
 					<GatheringSkill SpellName="Byregot's Ward" TimesToCast="1" />
-					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
 				</GatheringSkillOrder>
 			
 			</ExGather>
 		
 		</If>
 
-		<!-- Water Crystal -->
+		<!-- Water Crystals -->
 		<If Condition="not HasAtLeast(13,&WaterCrystal;)">
 			
 			<ExLog Color="&LogColor;" Name="INFO" Message="Water Crystals count below threshold. Moving to gather more." />
 			
-			<If Condition="not IsOnSubMap(206)">
-				<GetTo ZoneId="137" XYZ="493.9612, 17.39324, 463.9441" /> <!-- Costa del Sol -->
+			<If Condition="not IsOnMap(137)">
+				<TeleportTo Name="Costa Del Sol" AetheryteId="11" />
 			</If>
 			
-			<NoCombatMoveTo Name="Farming Area" XYZ="340.5255, 24.45108, 563.5051" />
-			
-			<ExGather DiscoverUnknowns="&DiscoverUnknowns;" While="not HasAtLeast(13,&WaterCrystal;)">
+			<ExGather While="not HasAtLeast(13,&WaterCrystal;)" DiscoverUnknowns="True">
 			
 				<GatherObject>Mature Tree</GatherObject>
 				
 				<HotSpots>
-					<HotSpot Radius="100" XYZ="321.0446, 32.97112, 612.6232" name="Mature Treee" />
-					<HotSpot Radius="5" XYZ="321.0446, 32.97112, 612.6232" name="Mature Treee" />
+					<HotSpot Radius="100" XYZ="321.0446, 32.97112, 612.6232" name="Water Crystals" />
+					<HotSpot Radius="5" XYZ="321.0446, 32.97112, 612.6232" name="Water Crystals" />
 				</HotSpots>
 				
 				<ItemNames>
@@ -449,12 +421,203 @@ REQUIRED:
 				
 				<GatheringSkillOrder>
 					<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1" />
+				</GatheringSkillOrder>
+				
+			</ExGather>
+		
+		</If>
+
+
+
+
+		<!-- Firelight Seeds -->
+		<If Condition="not HasAtLeast(15865,&FirelightSeeds;)">
+
+			<ExLog Color="&LogColor;" Name="INFO" Message="Firelight Seeds count below threshold. Moving to gather more." />
+				
+			<If Condition="not IsOnMap(134)">
+				<TeleportTo Name="Summerford Farms" AetheryteId="52" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(15865,&FirelightSeeds;)" DiscoverUnknowns="True">
+				
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+				
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="56.86753, 53.61405, -117.0476" name="Firelight Seeds" />
+					<HotSpot Radius="5" XYZ="56.86753, 53.61405, -117.0476" name="Firelight Seeds" />
+				</HotSpots>
+				
+				<ItemNames>
+					<ItemName>Firelight Seeds</ItemName>
+					<ItemName>Fire Shard</ItemName>
+				</ItemNames>
+				
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+
+		</If>
+
+		<!-- Icelight Seeds -->
+		<If Condition="not HasAtLeast(15866,&IcelightSeeds;)">
+		
+			<ExLog Color="&LogColor;" Name="INFO" Message="Icelight Seeds count below threshold. Moving to gather more." />
+			
+			<If Condition="not IsOnMap(138)">
+				<TeleportTo Name="Swiftperch" AetheryteId="13" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(15866,&IcelightSeeds;)" DiscoverUnknowns="True">
+				
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+				
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="525.2842, 12.98111, 380.604" name="Icelight Seeds" />
+					<HotSpot Radius="5" XYZ="525.2842, 12.98111, 380.604" name="Icelight Seeds" />
+				</HotSpots>
+				
+				<ItemNames>
+					<ItemName>Icelight Seeds</ItemName>
+					<ItemName>Ice Shard</ItemName>
+				</ItemNames>
+				
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+		
+		</If>
+
+		<!-- Windlight Seeds -->
+		<If Condition="not HasAtLeast(15867,&WindlightSeeds;)">
+			
+			<ExLog Color="&LogColor;" Name="INFO" Message="Windlight Seeds count below threshold. Moving to gather more." />
+			
+			<If Condition="not IsOnMap(148)">
+				<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(15867,&WindlightSeeds;)" DiscoverUnknowns="True">
+				
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+				
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="43.03345, -9.326075, 118.2901" name="Windlight Seeds" />
+					<HotSpot Radius="5" XYZ="43.03345, -9.326075, 118.2901" name="Windlight Seeds" />
+				</HotSpots>
+				
+				<ItemNames>
+					<ItemName>Windlight Seeds</ItemName>
+					<ItemName>Wind Shard</ItemName>
+				</ItemNames>
+				
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+		
+		</If>
+
+		<!-- Earthlight Seeds -->
+		<If Condition="not HasAtLeast(15868,&EarthlightSeeds;)">
+			
+			<ExLog Color="&LogColor;" Name="INFO" Message="Earthlight Seeds count below threshold. Moving to gather more." />
+			
+			<If Condition="not IsOnMap(135)">
+				<TeleportTo Name="Moraby Drydocks" AetheryteId="10" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(15868,&EarthlightSeeds;)" DiscoverUnknowns="True">
+				
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+				
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="255.0106, 42.88206, 46.8484" name="Earthlight Seeds" />
+					<HotSpot Radius="5" XYZ="255.0106, 42.88206, 46.8484" name="Earthlight Seeds" />
+				</HotSpots>
+				
+				<ItemNames>
+					<ItemName>Earthlight Seeds</ItemName>
+					<ItemName>Earth Shard</ItemName>
+				</ItemNames>
+				
+				<GatheringSkillOrder>
 					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
 				</GatheringSkillOrder>
 				
 			</ExGather>
 		
 		</If>
+
+		<!-- Levinlight Seeds -->
+		<If Condition="not HasAtLeast(15869,&LevinlightSeeds;)">
+			
+			<ExLog Color="&LogColor;" Name="INFO" Message="Levinlight Seeds count below threshold. Moving to gather more." />
+			
+			<If Condition="not IsOnMap(141)">
+				<TeleportTo Name="Black Brush Station" AetheryteId="53" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(15869,&LevinlightSeeds;)" DiscoverUnknowns="True">
+				
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+				
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="178.7821, 0.6406661, -57.70824" name="Levinlight Seeds" />
+					<HotSpot Radius="5" XYZ="178.7821, 0.6406661, -57.70824" name="Levinlight Seeds" />
+				</HotSpots>
+				
+				<ItemNames>
+					<ItemName>Levinlight Seeds</ItemName>
+					<ItemName>Lightning Shard</ItemName>
+				</ItemNames>
+				
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+		
+		</If>
+
+		<!-- Waterlight Seeds -->
+		<If Condition="not HasAtLeast(15870,&WaterlightSeeds;)">
+			
+			<ExLog Color="&LogColor;" Name="INFO" Message="Waterlight Seeds count below threshold. Moving to gather more." />
+			
+			<If Condition="not IsOnMap(140)">
+				<TeleportTo Name="Horizon" AetheryteId="17" />
+			</If>
+			
+			<ExGather While="not HasAtLeast(15870,&WaterlightSeeds;)" DiscoverUnknowns="True">
+			
+				<GatherObject>Lush Vegetation Patch</GatherObject>
+				
+				<HotSpots>
+					<HotSpot Radius="100" XYZ="146.797, 49.80062, -123.7879" name="Waterlight Seeds" />
+					<HotSpot Radius="5" XYZ="146.797, 49.80062, -123.7879" name="Waterlight Seeds" />
+				</HotSpots>
+				
+				<ItemNames>
+					<ItemName>Waterlight Seeds</ItemName>
+					<ItemName>Water Shard</ItemName>
+				</ItemNames>
+				
+				<GatheringSkillOrder>
+					<GatheringSkill SpellName="Blessed Harvest II" TimesToCast="1" />
+				</GatheringSkillOrder>
+			
+			</ExGather>
+		
+		</If>
+
+
+
 
 		<!-- Go to Wait Location -->
 		<If Condition="True">
